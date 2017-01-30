@@ -2,6 +2,7 @@
   line-height: 1;
   z-index: 10;
   background: white;
+  font-size: 0;
   @include media-breakpoint-down(sm) {
     transform: translateY(-100%);
     position: absolute;

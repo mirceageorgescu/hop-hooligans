@@ -1,8 +1,7 @@
 $font-primary: 'Bebas Neue', sans-serif;
 $font-secondary: 'Roboto Condensed', sans-serif;
-$brand-bg: #f3f3f3;
 
-$brand-gray: #F6F6F6;
+$brand-accent: #ffff00;
 
 // Bootstrap Variables
 //
@@ -55,7 +54,7 @@ $gray-lightest:             #f7f7f9;
 $brand-primary:             #000000;
 $brand-success:             #5cb85c;
 $brand-info:                #5bc0de;
-$brand-warning:             #ffff00;
+$brand-warning:             $brand-accent;
 $brand-danger:              #d9534f;
 $brand-inverse:             $gray-dark;
 
