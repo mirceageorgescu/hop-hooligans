@@ -1,0 +1,13 @@
+extends ../layouts/default
+
+block content
+
+  include ../mixins/_hero
+
+  +hero(locals.home.hero)
+
+  //- +section-title({
+  //-   title: 'Grid demo',
+  //-   subtitle: 'Add ?grid=true to any page URL to activate the debug grid.',
+  //-   modifier: 'section-title--dark'
+  //- })

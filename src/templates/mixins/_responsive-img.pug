@@ -1,0 +1,16 @@
+mixin responsive-img(url, sizes, alt, extension)
+  - var srcset = ''
+  - var lowRes = 'images/' + url + '-320.' + extension
+
+  each width, index in sizes
+    - srcset += 'images/' + url + '-' + width + '.' + extension + ' ' + width + 'w'
+    if(index + 1 < sizes.length)
+      - srcset += ', '
+
+  img(data-sizes='auto'
+    data-srcset=srcset
+    alt=alt
+    class='lazyload ' + attributes.class)
+
+  noscript
+    img(src=lowRes, alt=alt, class=attributes.class)

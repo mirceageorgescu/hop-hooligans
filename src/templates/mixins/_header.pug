@@ -1,0 +1,40 @@
+mixin header(data)
+
+  .header
+    .container
+      .row.header__wrapper
+        .col-sm-12
+          a.logo.text-hide(href=data.logo.href)= data.logo.copy
+
+          ul.header__social.social
+            each item in data.social
+              li.social__item
+                a.social__link(href=item.href)
+                  +icon(item.icon)(class='social__icon')
+
+    //- .clearfix
+    //-   button.navbar-toggler.btn-link.float-xs-right(data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation")
+
+
+
+    //- .collapse.hamburger-content(id='navbar')
+    //-   .container
+    //-     .row
+    //-       .col-xs-12
+    //-         .pt-3.pb-2
+    //-           .row
+    //-             .col-sm-6
+    //-               h1.pb-1 Components
+    //-               ul.list-unstyled
+    //-                 each item in locals.nav.styleguide
+    //-                   li
+    //-                     a(href=item.url)= item.name
+    //-                 //- li
+    //-                 //-     a(href='styleguide-grid[archived].html?grid=true') Grid
+
+    //-             .col-sm-6
+    //-               h1.pb-1 Pages
+    //-               ul.list-unstyled
+    //-                 each item in locals.nav.pages
+    //-                   li
+    //-                     a(href=item.url)= item.name

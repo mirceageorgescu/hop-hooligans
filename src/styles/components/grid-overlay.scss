@@ -1,0 +1,24 @@
+// Grid Overlay
+//
+// A bunch of lines that could be displayed above
+// the grid for debugging purposes
+//----------------------------------------------------------
+.grid-overlay--fixed {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  display: none;
+  .has-visible-grid & {
+    display: block;
+  }
+}
+
+.grid-overlay__bg {
+  height: 100vh;
+  background: #00deff;
+  opacity: 0.3;
+}

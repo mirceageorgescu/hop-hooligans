@@ -1,0 +1,21 @@
+mixin hero(data)
+
+  section.container-fluid.hero(class= data.modifier ? data.modifier : '')
+
+    .row.full-height
+      .col-sm-12.col-xs-center
+
+        .hero__content
+
+          if data.title
+            h1.hero__title !{data.title}
+
+          if data.subtitle
+            p.hero__subtitle !{data.subtitle}
+
+          if data.cta
+            a.btn.btn-warning.btn-lg.btn-uppercase(href=data.cta.href)= data.cta.copy
+
+    if data.img
+      +responsive-background(data.img)(class='hero__bg lazyload--zoom')
+

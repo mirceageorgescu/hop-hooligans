@@ -1,0 +1,18 @@
+.logo {
+  display: block;
+  background: url(../images/logo.png);
+  background-size: 100%;
+  width: 150px;
+  height: 32px;
+  margin: 20px auto;
+  @include media-breakpoint-up(md) {
+    width: 200px;
+    height: 43px;
+    margin: 40px auto;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 282px;
+    height: 61px;
+    margin: 80px auto;
+  }
+}

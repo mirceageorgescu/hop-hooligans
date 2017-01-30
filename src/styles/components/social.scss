@@ -1,0 +1,22 @@
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social__item {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.social__link {
+  display: block;
+  padding: 8px;
+  font-size: 0;
+}
+
+.social__icon {
+  width: 32px;
+  height: 32px;
+}

@@ -1,0 +1,13 @@
+mixin section-title(item)
+
+  .container-fluid.section-title(class=item.modifier)
+    .row
+      .col-xs-12
+        .text-xs-center
+
+          if item.title
+            h1.section-title__title= item.title
+
+          if item.subtitle
+            p= item.subtitle
+

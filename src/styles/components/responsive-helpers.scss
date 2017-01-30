@@ -1,0 +1,7 @@
+.full-bleed--sm {
+  @include media-breakpoint-down(sm) {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}

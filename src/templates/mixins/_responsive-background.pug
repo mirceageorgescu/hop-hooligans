@@ -1,0 +1,29 @@
+mixin responsive-background(url, extension, sizes)
+  if !extension
+    - extension = 'jpg'
+
+  if !sizes
+    - sizes = locals.sizes
+
+  - var srcset = ''
+  - var lowRes = '/images/' + url + '-xs.' + extension
+
+  each size, index in sizes
+    - srcset += '/images/' + url + '-' + size + '.' + extension + ' ' + size + 'w'
+    if(index + 1 < sizes.length)
+      - srcset += ', '
+
+  div(data-sizes='auto'
+    data-bgset=srcset
+    class="lazyload " + attributes.class)
+
+    if block
+      block
+
+  noscript
+    div(data-sizes='auto'
+      style='background-image:url(' + lowRes + ')'
+      class="lazyloaded " + attributes.class)
+
+      if block
+        block

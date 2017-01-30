@@ -1,0 +1,13 @@
+.btn {
+  font-family: $font-primary;
+  font-weight: bold;
+}
+
+.btn-lg {
+  font-size: 36px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 24px;
+    padding: 15px 30px;
+  }
+}

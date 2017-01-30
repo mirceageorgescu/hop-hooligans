@@ -1,0 +1,11 @@
+mixin nav(data)
+
+  nav.nav
+    .container.full-bleed--sm
+      .row.nav__wrapper.full-bleed--sm
+        .col-sm-12.full-bleed--sm
+
+          ul.nav__list
+            each item in data
+              li.nav__item
+                a.nav__link(href=item.href)= item.copy

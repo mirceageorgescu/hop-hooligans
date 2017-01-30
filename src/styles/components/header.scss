@@ -1,0 +1,19 @@
+.header {
+  background: #000;
+  z-index: 11;
+  position: relative;
+}
+
+.header__wrapper {
+  position: relative;
+}
+
+.header__social {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: block;
+    position: absolute;
+    top: 34px;
+    right: 7px;
+  }
+}

@@ -1,0 +1,24 @@
+.lazyload,
+.lazyloading,
+.lazyloaded {
+  transition: opacity 500ms ease-out;
+
+  &.lazyload--zoom {
+    transition: opacity 500ms ease-out, transform 2s ease-out;
+  }
+}
+
+.lazyload,
+.lazyloading {
+  opacity: 0;
+  &.lazyload--zoom {
+    transform: scale(1);
+  }
+}
+
+.lazyloaded {
+  opacity: 1;
+  &.lazyload--zoom {
+    transform: scale(1.02);
+  }
+}

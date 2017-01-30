@@ -1,0 +1,35 @@
+sizes: [320, 640, 720, 1024, 1504, 2048]
+
+header:
+  logo:
+    href: /
+    copy: Hop Hooligans
+  social:
+    - copy: Follow us on Facebook
+      href: https://www.facebook.com/hophooligans
+      icon: fb
+    - copy: Follow us on Instagram
+      href: '#'
+      icon: instagram
+
+nav:
+  - copy: Home
+    href: '/'
+  - copy: Our Beers
+    href: 'beers.html'
+  - copy: Our Brewery
+    href: 'brewery.html'
+  - copy: Beer Map
+    href: 'beer-map.html'
+  - copy: Contact
+    href: 'contact.html'
+
+home:
+  hero:
+    img: hero
+    modifier: hero--full hero--dark
+    title: We only brew the beers<br>we want to drink. Period.
+    subtitle: And we like powerful, flavorful crazy shit so you better get used to it.
+    cta:
+      href: beers.html
+      copy: Explore our beers
