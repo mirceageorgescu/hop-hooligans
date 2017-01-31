@@ -1,0 +1,8 @@
+.products__item {
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 30px;
+  }
+}

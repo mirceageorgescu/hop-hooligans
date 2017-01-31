@@ -1,0 +1,10 @@
+mixin beer-map(data)
+  section.section.section--alpha.section--light.text-center.section--b-0
+    .container
+      .row
+        .col-sm-12
+          header.section__header
+            h1.section__title= data.title
+            p.section__subtitle= data.subtitle
+
+    iframe.beer-map(src=data.iframe, allowfullscreen)

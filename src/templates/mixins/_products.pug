@@ -1,0 +1,31 @@
+mixin products(data)
+  section.section.section--alpha.section--light.text-center.section--b-0
+    .container.products
+      .row
+        .col-sm-12
+          header.section__header
+            h1.section__title= data.title
+            p.section__subtitle= data.subtitle
+
+
+      .row
+        each item in data.list
+          if item.featured
+            .col-12.col-md-6
+              a(href=item.img + '.html').products__item
+                +responsive-img(item.img)(class='img--full')
+
+        .col-12.col-md-6
+          .row
+            each item, index in data.list
+              if !item.featured && index < 5
+                .col-6
+                  a(href=item.img + '.html').products__item
+                    +responsive-img(item.img)(class='img--full')
+
+      .row
+        each item, index in data.list
+          if !item.featured && index > 4
+            .col-6.col-md-3
+              a(href=item.img + '.html').products__item
+                +responsive-img(item.img)(class='img--full')

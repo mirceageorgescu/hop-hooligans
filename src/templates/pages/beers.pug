@@ -1,0 +1,13 @@
+extends ../layouts/default
+
+block content
+
+  include ../mixins/_products
+  include ../mixins/_hashtag
+  include ../mixins/_the-end
+  include ../mixins/_footer
+
+  +products(locals.products)
+  +hashtag(locals.hashtag)
+  +the-end(locals.theEnd)
+  +footer(locals.nav)

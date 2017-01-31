@@ -72,3 +72,34 @@ brewery:
       img: https://i.imgur.com/ZSJtIrH.jpg
     - copy: Storage
       img: https://i.imgur.com/cHyOzcr.jpg
+
+beerMap:
+  title: Beer Map
+  subtitle: Cozy places that we know of to be selling our beer.
+  iframe: https://www.google.com/maps/d/u/0/embed?mid=1q4wGm78jotpdx7ssEhOQbYiwGgk&ll=44.42846336965222%2C26.116044878417938&z=12&sw=false
+
+products:
+  title: Our beers
+  subtitle: Much stuff
+  list:
+    - name: Crowd Control
+      img: product-crowd-control
+      featured: true
+    - name: Dumpster Bear
+      img: product-dumpster-bear
+    - name: Emperor
+      img: product-emperor
+    - name: Melting Pot
+      img: product-melting-pot
+    - name: Shock Therapy
+      img: product-shock-therapy
+    - name: Cannon Fire
+      img: product-cannon-fire
+    - name: Chupacabra
+      img: product-chupacabra
+    - name: Night Lights
+      img: product-night-lights
+    - name: Royal Execution
+      img: product-royal-execution
+    - name: Summer Punch
+      img: product-summer-punch
