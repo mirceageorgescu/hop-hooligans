@@ -1,12 +1,11 @@
 .gallery {
   position: relative;
   display: block;
-  &:hover {
-    .gallery__cta {
-      background: $brand-accent;
-      color: black;
-    }
-  }
+}
+
+.no-touch .gallery:hover .gallery__cta {
+  background: $brand-accent;
+  color: black;
 }
 
 .gallery__item {

@@ -1,0 +1,52 @@
+mixin hashtag(data)
+  section.section.section--gamma.section--dark.text-center
+    .container
+      .row
+        .col-sm-12
+          header.section__header
+            h1.section__title= data.title
+            p.section__subtitle= data.subtitle
+
+          .row
+            .col-6.col-sm-3.col-md-2.grid-b-m
+              a(href='#')
+                img.img--full(src='images/instagram.jpg')
+            .col-6.col-sm-3.col-md-2.grid-b-m
+              a(href='#')
+                img.img--full(src='images/instagram.jpg')
+            .col-6.col-sm-3.col-md-2.grid-b-m
+              a(href='#')
+                img.img--full(src='images/instagram.jpg')
+            .col-6.col-sm-3.col-md-2.grid-b-m
+              a(href='#')
+                img.img--full(src='images/instagram.jpg')
+            .col-6.col-sm-3.col-md-2.grid-b-m.hidden-xs-down
+              a(href='#')
+                img.img--full(src='images/instagram.jpg')
+            .col-6.col-sm-3.col-md-2.grid-b-m.hidden-xs-down
+              a(href='#')
+                img.img--full(src='images/instagram.jpg')
+            .col-6.col-sm-3.col-md-2.grid-b-m.hidden-xs-down
+              a(href='#')
+                img.img--full(src='images/instagram.jpg')
+            .col-6.col-sm-3.col-md-2.grid-b-m.hidden-xs-down
+              a(href='#')
+                img.img--full(src='images/instagram.jpg')
+            .col-6.col-sm-3.col-md-2.grid-b-m.hidden-xs-down
+              a(href='#')
+                img.img--full(src='images/instagram.jpg')
+            .col-6.col-sm-3.col-md-2.grid-b-m.hidden-xs-down
+              a(href='#')
+                img.img--full(src='images/instagram.jpg')
+            .col-6.col-sm-3.col-md-2.grid-b-m.hidden-xs-down
+              a(href='#')
+                img.img--full(src='images/instagram.jpg')
+            .col-6.col-sm-3.col-md-2.grid-b-m.hidden-xs-down
+              a(href='#')
+                img.img--full(src='images/instagram.jpg')
+
+          ul.social.mt-3
+            each item in locals.social
+              li.social__item
+                a.social__link(href=item.href)
+                  +icon(item.icon)(class='social__icon')

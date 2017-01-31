@@ -5,7 +5,13 @@ block content
   include ../mixins/_hero
   include ../mixins/_gallery
   include ../mixins/_find
+  include ../mixins/_hashtag
+  include ../mixins/_the-end
+  include ../mixins/_footer
 
   +hero(locals.home.hero)
   +gallery(locals.home.brewery)
   +find(locals.home.find)
+  +hashtag(locals.hashtag)
+  +the-end(locals.theEnd)
+  +footer(locals.nav)

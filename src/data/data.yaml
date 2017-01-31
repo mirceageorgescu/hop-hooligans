@@ -4,13 +4,14 @@ header:
   logo:
     href: /
     copy: Hop Hooligans
-  social:
-    - copy: Follow us on Facebook
-      href: https://www.facebook.com/hophooligans
-      icon: fb
-    - copy: Follow us on Instagram
-      href: '#'
-      icon: instagram
+
+social:
+  - copy: Follow us on Facebook
+    href: https://www.facebook.com/hophooligans
+    icon: fb
+  - copy: Follow us on Instagram
+    href: '#'
+    icon: instagram
 
 nav:
   - copy: Home
@@ -23,6 +24,14 @@ nav:
     href: 'beer-map.html'
   - copy: Contact
     href: 'contact.html'
+
+hashtag:
+  title: '#hophooligans'
+  subtitle: Fans drinking our beer and posting cute photos. Awww.
+
+theEnd:
+  title: Whoa, you reached the end
+  subtitle: But there’s more where that came from. Check out the rest of the site!
 
 home:
   hero:

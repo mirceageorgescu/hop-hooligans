@@ -1,0 +1,11 @@
+mixin footer(data)
+
+    nav.footer
+      .container.full-bleed--sm
+        .row.full-bleed--sm
+          .col-sm-12.full-bleed--sm
+
+            ul.footer__nav
+              each item in data
+                li.footer__nav__item
+                  a.footer__nav__link(href=item.href)= item.copy
