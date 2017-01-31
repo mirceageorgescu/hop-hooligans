@@ -19,7 +19,7 @@ nav:
   - copy: Our Beers
     href: 'beers.html'
   - copy: Our Brewery
-    href: 'brewery.html'
+    href: 'our-brewery.html'
   - copy: Beer Map
     href: 'beer-map.html'
   - copy: Contact
@@ -53,8 +53,22 @@ home:
       - img: brewery-fermentor-door
       - img: brewery-electrical-panel-front
     cta:
-      href: brewery.html
+      href: our-brewery.html
       copy: Take a 3d tour
   find:
     title: Find our beer
     subtitle: Took about a year to build it and we’re damn proud of it.
+
+brewery:
+  title: Our brewery
+  subtitle: Take a 3d tour of our brewery
+  scenes:
+    - copy: Brewery
+      img: https://i.imgur.com/TxdleUR.jpg
+    - copy: Office
+      img: https://i.imgur.com/LQuYyIM.jpg
+      active: true
+    - copy: Ingredients
+      img: https://i.imgur.com/ZSJtIrH.jpg
+    - copy: Storage
+      img: https://i.imgur.com/cHyOzcr.jpg

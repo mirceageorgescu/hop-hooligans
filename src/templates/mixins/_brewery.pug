@@ -1,0 +1,17 @@
+mixin brewery(data)
+  section.section.section--alpha.section--light.text-center.section--b-0
+    .container
+      .row
+        .col-sm-12
+          header.section__header
+            h1.section__title= data.title
+            p.section__subtitle= data.subtitle
+
+
+    .vrview__list.js-vrview-list
+      each item in data.scenes
+        a.btn.btn-md.js-vrview-item.vrview__btn(href=item.img, class= item.active ? 'btn-warning' : 'btn-primary')= item.copy
+
+    .vrview.js-vrview
+
+  script(src='//storage.googleapis.com/vrview/2.0/build/vrview.min.js')

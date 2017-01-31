@@ -1,0 +1,13 @@
+extends ../layouts/default
+
+block content
+
+  include ../mixins/_brewery
+  include ../mixins/_hashtag
+  include ../mixins/_the-end
+  include ../mixins/_footer
+
+  +brewery(locals.brewery)
+  +hashtag(locals.hashtag)
+  +the-end(locals.theEnd)
+  +footer(locals.nav)
