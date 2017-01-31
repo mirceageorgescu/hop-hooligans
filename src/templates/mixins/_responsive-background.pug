@@ -6,7 +6,7 @@ mixin responsive-background(url, extension, sizes)
     - sizes = locals.sizes
 
   - var srcset = ''
-  - var lowRes = '/images/' + url + '-xs.' + extension
+  - var lowRes = '/images/' + url + '-320.' + extension
 
   each size, index in sizes
     - srcset += '/images/' + url + '-' + size + '.' + extension + ' ' + size + 'w'

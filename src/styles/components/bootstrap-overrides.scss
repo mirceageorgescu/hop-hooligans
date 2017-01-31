@@ -1,6 +1,7 @@
 .btn {
   font-family: $font-primary;
   font-weight: bold;
+  transition: background 200ms ease-out, color 200ms ease-out;
 }
 
 .btn-lg {

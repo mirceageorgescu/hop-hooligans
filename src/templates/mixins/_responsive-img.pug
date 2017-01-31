@@ -1,4 +1,10 @@
 mixin responsive-img(url, sizes, alt, extension)
+  if !extension
+    - extension = 'jpg'
+
+  if !sizes
+    - sizes = locals.sizes
+
   - var srcset = ''
   - var lowRes = 'images/' + url + '-320.' + extension
 

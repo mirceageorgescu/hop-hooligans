@@ -33,3 +33,19 @@ home:
     cta:
       href: beers.html
       copy: Explore our beers
+  brewery:
+    title: Our brewery
+    subtitle: Took about a year to build it and we’re damn proud of it.
+    gallery:
+      - img: brewery-fermentors
+        featured: true
+      - img: brewery-boil-kettle
+      - img: brewery-electrical-panel
+      - img: brewery-fermentor-door
+      - img: brewery-electrical-panel-front
+    cta:
+      href: brewery.html
+      copy: Take a 3d tour
+  find:
+    title: Find our beer
+    subtitle: Took about a year to build it and we’re damn proud of it.

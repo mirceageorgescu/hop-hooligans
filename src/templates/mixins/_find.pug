@@ -1,0 +1,10 @@
+mixin find(data)
+  section.section.section--beta.section--dark.text-center
+    .container
+      .row
+        .col-sm-12
+          header.section__header
+            h1.section__title= data.title
+            p.section__subtitle= data.subtitle
+
+          +responsive-img('map')(class='img--full')

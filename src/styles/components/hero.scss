@@ -46,11 +46,11 @@
   }
 
   @include media-breakpoint-up(lg) {
-    height: calc(100vh - 221px - 72px);
+    height: 60vw;
   }
 
   @include media-breakpoint-up(xl) {
-    height: calc(100vh - 221px - 76px);
+    height: 55vw;
   }
 }
 

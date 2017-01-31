@@ -1,0 +1,59 @@
+.section {
+  padding-bottom: 32px;
+
+  @include media-breakpoint-up(sm) {
+    padding-bottom: 64px;
+  }
+}
+
+.section__header {
+  padding: 32px;
+
+  @include media-breakpoint-up(sm) {
+    padding: 64px 0;
+  }
+  .section--light & {
+    color: #222;
+  }
+  .section--dark & {
+    color: white;
+  }
+}
+
+.section__title {
+  font-size: 24px;
+
+  @include media-breakpoint-up(xs) {
+    font-size: 32px;
+  }
+
+  @include media-breakpoint-up(sm) {
+    font-size: 46px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 64px;
+  }
+}
+
+.section__subtitle {
+  font-size: 14px;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 16px;
+  }
+}
+
+//modifiers
+
+.section--alpha {
+  background: #ebebeb url(../images/weird-pattern.png);
+}
+
+.section--beta {
+  background: #212121 url(../images/cartographer.png);
+}
+
+.section--b-0 {
+  padding-bottom: 0;
+}

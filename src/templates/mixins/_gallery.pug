@@ -1,0 +1,27 @@
+mixin gallery(data)
+  section.section.section--alpha.section--light.text-center
+    .container
+      .row
+        .col-sm-12
+          header.section__header
+            h1.section__title= data.title
+            p.section__subtitle= data.subtitle
+
+          a(href=data.cta.href).gallery
+            .row
+              each item in data.gallery
+                if item.featured
+                  .col-sm-6.col-xs-12
+                    .gallery__item.gallery__item--featured
+                      +responsive-background(item.img)(class='gallery__image')
+
+              .col-sm-6.col-12.hidden-xs-down
+                .row.gallery__item__row--non-featured
+                  each item in data.gallery
+                    if !item.featured
+                      .col-sm-6.col-6
+                        .gallery__item
+                          +responsive-background(item.img)(class='gallery__image')
+
+              if data.cta
+                .btn.btn-primary.btn-lg.btn-uppercase.gallery__cta= data.cta.copy

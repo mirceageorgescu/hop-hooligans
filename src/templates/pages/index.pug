@@ -3,11 +3,9 @@ extends ../layouts/default
 block content
 
   include ../mixins/_hero
+  include ../mixins/_gallery
+  include ../mixins/_find
 
   +hero(locals.home.hero)
-
-  //- +section-title({
-  //-   title: 'Grid demo',
-  //-   subtitle: 'Add ?grid=true to any page URL to activate the debug grid.',
-  //-   modifier: 'section-title--dark'
-  //- })
+  +gallery(locals.home.brewery)
+  +find(locals.home.find)
