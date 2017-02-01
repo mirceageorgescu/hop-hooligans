@@ -38,7 +38,7 @@ home:
     img: hero
     modifier: hero--full hero--dark
     title: We only brew the beers<br>we want to drink. Period.
-    subtitle: And we like powerful, flavorful crazy shit so you better get used to it.
+    subtitle: And we like powerful, flavorful crazy shit.
     cta:
       href: beers.html
       copy: Explore our beers
@@ -64,10 +64,10 @@ brewery:
   subtitle: Take a 3d tour of our brewery
   scenes:
     - copy: Brewery
-      img: https://i.imgur.com/TxdleUR.jpg
+      img: http://i.imgur.com/R26YDTr.jpg
+      active: true
     - copy: Office
       img: https://i.imgur.com/LQuYyIM.jpg
-      active: true
     - copy: Ingredients
       img: https://i.imgur.com/ZSJtIrH.jpg
     - copy: Storage
@@ -80,26 +80,54 @@ beerMap:
 
 products:
   title: Our beers
-  subtitle: Much stuff
+  subtitle: Much stuff happening here
   list:
-    - name: Crowd Control
+    - title: Crowd Control
+      style: India Pale Ale
       img: product-crowd-control
+      abv: 6
       featured: true
-    - name: Dumpster Bear
+    - title: Dumpster Bear
+      style: Blueberry Milk Stout
       img: product-dumpster-bear
-    - name: Emperor
+      abv: 7
+    - title: Emperor
+      style: Mango Wheat Ale
       img: product-emperor
-    - name: Melting Pot
+      abv: 6,5
+    - title: Melting Pot
+      style: English Barleywine
       img: product-melting-pot
-    - name: Shock Therapy
+      abv: 11,5
+    - title: Shock Therapy
+      style: India Pale Ale
       img: product-shock-therapy
-    - name: Cannon Fire
+      abv: 6,5
+    - title: Cannon Fire
+      style: Coconut Porter
       img: product-cannon-fire
-    - name: Chupacabra
+      abv: 6
+    - title: Chupacabra
+      style: Spiced Stout
       img: product-chupacabra
-    - name: Night Lights
+      abv: 7,5
+    - title: Night Lights
+      style: Black India Pale Ale
       img: product-night-lights
-    - name: Royal Execution
+      abv: 6,5
+    - title: Royal Execution
+      style: ESB
+      abv: 6,5
       img: product-royal-execution
-    - name: Summer Punch
+    - title: Summer Punch
+      style: American Pale Ale
+      abv: 5
       img: product-summer-punch
+    - title: Coming soon
+      isPlaceholder: true
+    - title: Coming soon
+      isPlaceholder: true
+    - title: Coming soon
+      isPlaceholder: true
+
+abv: '% ABV'

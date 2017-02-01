@@ -11,21 +11,43 @@ mixin products(data)
       .row
         each item in data.list
           if item.featured
-            .col-12.col-md-6
+            article.col-12.col-md-6.products__article.products__article--featured
               a(href=item.img + '.html').products__item
                 +responsive-img(item.img)(class='img--full')
+                .products__details
+                  div
+                    h1.products__title= item.title
+                    h3.products__style= item.style
+                    div.products__abv= item.abv + locals.abv
+
 
         .col-12.col-md-6
           .row
             each item, index in data.list
-              if !item.featured && index < 5
-                .col-6
+              if !item.featured && !item.isPlaceholder && index < 5
+                article.col-6.products__article
                   a(href=item.img + '.html').products__item
                     +responsive-img(item.img)(class='img--full')
+                    .products__details
+                      div
+                        h1.products__title= item.title
+                        h3.products__style= item.style
+                        div.products__abv= item.abv + locals.abv
 
       .row
         each item, index in data.list
-          if !item.featured && index > 4
-            .col-6.col-md-3
+          if !item.featured && !item.isPlaceholder && index > 4
+            article.col-6.col-md-3.products__article
               a(href=item.img + '.html').products__item
                 +responsive-img(item.img)(class='img--full')
+                .products__details
+                  div
+                    h1.products__title= item.title
+                    h3.products__style= item.style
+                    div.products__abv= item.abv + locals.abv
+
+        each item in data.list
+          if item.isPlaceholder
+            article.col-6.col-md-3.products__article
+              .products__item.products__item__placeholder
+                h1.products__title.products__item__placeholder__title= item.title
