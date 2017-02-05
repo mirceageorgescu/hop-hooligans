@@ -2,17 +2,18 @@ mixin product(data)
 
   section.section.text-center(style='background:' + locals.currentBeer.bg)
 
-    .container.product__container
+    article.container.product__container
       .row.hidden-md-up
         .col-12
           header.product__header
             h1.product__title= data.title
             p.product__style= data.style
+
       .row
-        .col-12.col-md-6
+        .col-12.col-md-6.offset-lg-1.col-lg-5
           +responsive-img(data.url)(class='img--full product__image')
 
-        article.product.col-12.col-md-6
+        .product.col-12.col-md-6.col-lg-5
           header.product__header.hidden-sm-down
             h1.product__title= data.title
             p.product__style= data.style
