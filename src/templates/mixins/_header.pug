@@ -9,5 +9,5 @@ mixin header(data)
           ul.header__social.social
             each item in locals.social
               li.social__item
-                a.social__link(href=item.href)
+                a.social__link(href=item.href, target='_blank')
                   +icon(item.icon)(class='social__icon')

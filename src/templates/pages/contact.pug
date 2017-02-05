@@ -1,0 +1,19 @@
+extends ../layouts/default
+
+block content
+
+  include ../mixins/_products
+  include ../mixins/_hashtag
+  include ../mixins/_the-end
+  include ../mixins/_footer
+
+  section.section.section--alpha.section--light.text-center.section--b-0
+    .container
+      .row
+        .col-sm-12
+          header.section__header
+            h1.section__title= locals.contact.title
+            p.section__subtitle= locals.contact.subtitle
+
+  +the-end(locals.theEnd)
+  +footer(locals.nav)

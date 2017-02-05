@@ -1,0 +1,19 @@
+.loader {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 3px solid white;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+}
+
+.loader__container {
+  padding: 32px;
+  text-align: center;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

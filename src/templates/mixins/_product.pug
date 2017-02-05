@@ -1,0 +1,37 @@
+mixin product(data)
+
+  section.section.text-center(style='background:' + locals.currentBeer.bg)
+
+    .container.product__container
+      .row.hidden-md-up
+        .col-12
+          header.product__header
+            h1.product__title= data.title
+            p.product__style= data.style
+      .row
+        .col-12.col-md-6
+          +responsive-img(data.url)(class='img--full product__image')
+
+        article.product.col-12.col-md-6
+          header.product__header.hidden-sm-down
+            h1.product__title= data.title
+            p.product__style= data.style
+
+          ul.product__descriptors
+            if data.abv
+              li
+                span.product__descriptors__attribute= data.abv
+                span.product__descriptors__definition= locals.translations.abv
+            if data.og
+              li
+                span.product__descriptors__attribute= data.og
+                span.product__descriptors__definition= locals.translations.og
+            if data.fg
+              li
+                span.product__descriptors__attribute= data.fg
+                span.product__descriptors__definition= locals.translations.fg
+
+          if data.description
+            .product__description.text-left
+              each item in data.description
+                p= item

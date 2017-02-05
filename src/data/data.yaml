@@ -10,7 +10,7 @@ social:
     href: https://www.facebook.com/hophooligans
     icon: fb
   - copy: Follow us on Instagram
-    href: '#'
+    href: https://www.instagram.com/hophooligans/
     icon: instagram
 
 nav:
@@ -28,6 +28,9 @@ nav:
 hashtag:
   title: '#hophooligans'
   subtitle: Fans drinking our beer and posting cute photos. Awww.
+  token: 4573439601.ba4c844.0a00a3eb713046f29c2d0529eda23152
+  limit: 12
+  hashtag: hophooligans
 
 theEnd:
   title: Whoa, you reached the end
@@ -145,3 +148,11 @@ translations:
   abv: '% ABV'
   og: 'OG'
   fg: 'FG'
+
+reviews:
+  title: Reviews
+  subtitle: Much shit people say
+
+contact:
+  title: Contact us
+  subtitle: Nice title

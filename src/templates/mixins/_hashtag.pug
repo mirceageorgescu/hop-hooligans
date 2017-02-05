@@ -7,46 +7,13 @@ mixin hashtag(data)
             h1.section__title= data.title
             p.section__subtitle= data.subtitle
 
-          .row
-            .col-6.col-sm-3.col-md-2.grid-b-m
-              a(href='#')
-                img.img--full(src='images/instagram.jpg')
-            .col-6.col-sm-3.col-md-2.grid-b-m
-              a(href='#')
-                img.img--full(src='images/instagram.jpg')
-            .col-6.col-sm-3.col-md-2.grid-b-m
-              a(href='#')
-                img.img--full(src='images/instagram.jpg')
-            .col-6.col-sm-3.col-md-2.grid-b-m
-              a(href='#')
-                img.img--full(src='images/instagram.jpg')
-            .col-6.col-sm-3.col-md-2.grid-b-m.hidden-xs-down
-              a(href='#')
-                img.img--full(src='images/instagram.jpg')
-            .col-6.col-sm-3.col-md-2.grid-b-m.hidden-xs-down
-              a(href='#')
-                img.img--full(src='images/instagram.jpg')
-            .col-6.col-sm-3.col-md-2.grid-b-m.hidden-xs-down
-              a(href='#')
-                img.img--full(src='images/instagram.jpg')
-            .col-6.col-sm-3.col-md-2.grid-b-m.hidden-xs-down
-              a(href='#')
-                img.img--full(src='images/instagram.jpg')
-            .col-6.col-sm-3.col-md-2.grid-b-m.hidden-xs-down
-              a(href='#')
-                img.img--full(src='images/instagram.jpg')
-            .col-6.col-sm-3.col-md-2.grid-b-m.hidden-xs-down
-              a(href='#')
-                img.img--full(src='images/instagram.jpg')
-            .col-6.col-sm-3.col-md-2.grid-b-m.hidden-xs-down
-              a(href='#')
-                img.img--full(src='images/instagram.jpg')
-            .col-6.col-sm-3.col-md-2.grid-b-m.hidden-xs-down
-              a(href='#')
-                img.img--full(src='images/instagram.jpg')
+          ul.row.hashtag.js-hashtag
+            .col-12
+              .loader__container
+                .loader
 
           ul.social.mt-3
             each item in locals.social
               li.social__item
-                a.social__link(href=item.href)
+                a.social__link(href=item.href, target="_blank")
                   +icon(item.icon)(class='social__icon')
