@@ -29,9 +29,6 @@ var config = {
   ],
   version: require('./package.json').version,
   minify: argv.minify || false,
-  // images: fs.readdirSync('src/images/').filter(function(file){
-  //   return file.endsWith('.png') || file.endsWith('.jpg') ? file : false ;
-  // }),
   environment: argv.environment || 'local',
   screenshotSizes: ['320x480', '414x736', '720x1024', '1024x748', '1440x900', '1920x1200']
 };
