@@ -12,13 +12,13 @@ mixin products(data)
         each item in data.list
           if item.featured
             article.col-12.col-md-6.products__article.products__article--featured
-              a(href=item.img + '.html').products__item
-                +responsive-img(item.img)(class='img--full')
+              a(href=item.url + '.html').products__item
+                +responsive-img(item.url)(class='img--full')
                 .products__details
                   div
                     h1.products__title= item.title
                     h3.products__style= item.style
-                    div.products__abv= item.abv + locals.abv
+                    div.products__abv= item.abv + locals.translations.abv
 
 
         .col-12.col-md-6
@@ -26,25 +26,25 @@ mixin products(data)
             each item, index in data.list
               if !item.featured && !item.isPlaceholder && index < 5
                 article.col-6.products__article
-                  a(href=item.img + '.html').products__item
-                    +responsive-img(item.img)(class='img--full')
+                  a(href=item.url + '.html').products__item
+                    +responsive-img(item.url)(class='img--full')
                     .products__details
                       div
                         h1.products__title= item.title
                         h3.products__style= item.style
-                        div.products__abv= item.abv + locals.abv
+                        div.products__abv= item.abv + locals.translations.abv
 
       .row
         each item, index in data.list
           if !item.featured && !item.isPlaceholder && index > 4
             article.col-6.col-md-3.products__article
-              a(href=item.img + '.html').products__item
-                +responsive-img(item.img)(class='img--full')
+              a(href=item.url + '.html').products__item
+                +responsive-img(item.url)(class='img--full')
                 .products__details
                   div
                     h1.products__title= item.title
                     h3.products__style= item.style
-                    div.products__abv= item.abv + locals.abv
+                    div.products__abv= item.abv + locals.translations.abv
 
         each item in data.list
           if item.isPlaceholder

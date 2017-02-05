@@ -84,45 +84,56 @@ products:
   list:
     - title: Crowd Control
       style: India Pale Ale
-      img: product-crowd-control
+      bg: '#65b3d7'
+      url: product-crowd-control
       abv: 6
+      og: '1.060'
+      fg: '1.012'
       featured: true
+      description:
+        - You probably felt the undercurrent.
+        - The timid, squeamish whisper of something new, slowly but surely coming your way. It will not bring you false promises, like short-term bursts of delight and brief moments of pause from you daily toils. It will creep into your brain, hijack your senses, turn you into an addict and ultimately ruin you.
+        - In time, it will roar and thunder, and the cold, lifeless broadcast of the daily routine will be forever silenced. Not the usual type of cheap manipulation, but rather something that earns your appreciation.
+        - The best kind of Crowd Control.
+        - Achieve hop bliss.
     - title: Dumpster Bear
       style: Blueberry Milk Stout
-      img: product-dumpster-bear
+      url: product-dumpster-bear
+      bg: '#b388ca'
       abv: 7
     - title: Emperor
       style: Mango Wheat Ale
-      img: product-emperor
+      url: product-emperor
       abv: 6,5
     - title: Melting Pot
       style: English Barleywine
-      img: product-melting-pot
+      url: product-melting-pot
       abv: 11,5
     - title: Shock Therapy
       style: India Pale Ale
-      img: product-shock-therapy
+      url: product-shock-therapy
       abv: 6,5
     - title: Cannon Fire
       style: Coconut Porter
-      img: product-cannon-fire
+      url: product-cannon-fire
       abv: 6
     - title: Chupacabra
       style: Spiced Stout
-      img: product-chupacabra
+      url: product-chupacabra
       abv: 7,5
+      bg: '#e2bc4a'
     - title: Night Lights
       style: Black India Pale Ale
-      img: product-night-lights
+      url: product-night-lights
       abv: 6,5
     - title: Royal Execution
       style: ESB
       abv: 6,5
-      img: product-royal-execution
+      url: product-royal-execution
     - title: Summer Punch
       style: American Pale Ale
       abv: 5
-      img: product-summer-punch
+      url: product-summer-punch
     - title: Coming soon
       isPlaceholder: true
     - title: Coming soon
@@ -130,4 +141,7 @@ products:
     - title: Coming soon
       isPlaceholder: true
 
-abv: '% ABV'
+translations:
+  abv: '% ABV'
+  og: 'OG'
+  fg: 'FG'

@@ -1,0 +1,47 @@
+extends ../layouts/default
+
+block content
+
+  include ../mixins/_hashtag
+  include ../mixins/_the-end
+  include ../mixins/_footer
+
+  section.section.text-center(style='background:' + locals.currentBeer.bg)
+
+    .container.product__container
+      .row.hidden-md-up
+        .col-12
+          header.product__header
+            h1.product__title= locals.currentBeer.title
+            p.product__style= locals.currentBeer.style
+      .row
+        .col-12.col-md-6
+          +responsive-img(locals.currentBeer.url)(class='img--full product__image')
+
+        article.product.col-12.col-md-6
+          header.product__header.hidden-sm-down
+            h1.product__title= locals.currentBeer.title
+            p.product__style= locals.currentBeer.style
+
+          ul.product__descriptors
+            if locals.currentBeer.abv
+              li
+                span.product__descriptors__attribute= locals.currentBeer.abv
+                span.product__descriptors__definition= locals.translations.abv
+            if locals.currentBeer.og
+              li
+                span.product__descriptors__attribute= locals.currentBeer.og
+                span.product__descriptors__definition= locals.translations.og
+            if locals.currentBeer.fg
+              li
+                span.product__descriptors__attribute= locals.currentBeer.fg
+                span.product__descriptors__definition= locals.translations.fg
+
+          if locals.currentBeer.description
+            .product__description.text-left
+              each item in locals.currentBeer.description
+                p= item
+
+  +hashtag(locals.hashtag)
+  +the-end(locals.theEnd)
+  +footer(locals.nav)

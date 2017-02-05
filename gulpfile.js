@@ -98,32 +98,49 @@ gulp.task('templates', function() {
   });
 
   var d = $.data(function (file) {
-    var pages = fs.readdirSync('src/templates/pages').map(buildFileList),
-      styleguidePages = fs.readdirSync('src/templates/styleguide').map(buildFileList);
+    // var pages = fs.readdirSync('src/templates/pages').map(buildFileList);
 
     console.log('building template ' + file.relative);
 
     config.page = file.relative.replace('.pug', '');
-    config.nav = {
-      pages: pages.filter(function(page){
-        return page.url.indexOf('[archived]') === -1;
-      }),
-      styleguide: styleguidePages.filter(function(page){
-        return page.url.indexOf('[archived]') === -1;
-      })
-    };
     return objectMerge(config, data);
   });
 
   config.templatesCompilationNo++;
 
-  return gulp.src(['src/templates/pages/*.pug', 'src/templates/mixins/*.pug', 'src/templates/styleguide/*.pug'])
+  return gulp.src(['src/templates/pages/*.pug', 'src/templates/mixins/*.pug'])
     .pipe($.plumber({errorHandler: $.notify.onError('Error: <%= error.message %>')}))
     .pipe($.if(config.isWatching && config.templatesCompilationNo > 0, $.pugInheritance({basedir: 'src/templates'})))
+    .pipe(f)
     .pipe(d)
     .pipe($.pug({ pretty: true}))
-    .pipe(f)
     .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('products', function () {
+  var data = readYamlFile('/data.yaml');
+
+  console.log('products');
+
+  data.products.list.forEach(function(beer) {
+    config.page = 'product';
+    data = objectMerge(config, data);
+
+    data.currentBeer = beer;
+
+    return gulp.src(['src/templates/pages/_product.pug'])
+      .pipe($.plumber({errorHandler: $.notify.onError('Error: <%= error.message %>')}))
+      .pipe($.if(config.isWatching && config.templatesCompilationNo > 0, $.pugInheritance({basedir: 'src/templates'})))
+      .pipe($.pug({
+        pretty: true,
+        data: data
+      }))
+      .pipe($.rename(function (path) {
+        console.log('generating ' + beer.url);
+        path.basename = beer.url;
+      }))
+      .pipe(gulp.dest('./dist'));
+  });
 });
 
 gulp.task('resize', function () {
@@ -216,8 +233,8 @@ gulp.task('dev', ['default', 'setWatch'], function() {
   gulp.watch(['src/images/**/*'], ['images', reload]);
   gulp.watch(['src/svg/*.svg'], ['svg', reload]);
   gulp.watch(['src/scripts/**/*.js'], ['scripts', reload]);
-  gulp.watch(['src/templates/layouts/default.pug', 'src/templates/pages/*.pug', 'src/templates/mixins/*.pug', 'src/templates/styleguide/*.pug'], ['templates', reload]);
-  gulp.watch(['src/data/**/*.yaml'], ['templates', reload]);
+  gulp.watch(['src/templates/layouts/default.pug', 'src/templates/pages/*.pug', 'src/templates/mixins/*.pug', 'src/templates/styleguide/*.pug'], ['templates', 'products', reload]);
+  gulp.watch(['src/data/**/*.yaml'], ['templates', 'products', reload]);
   gulp.watch(['src/video/**/**'], ['video', reload]);
 });
 
@@ -234,6 +251,7 @@ gulp.task('default', ['clean'], function (cb) {
   runSequence([
     'sass',
     'templates',
+    'products',
     'scripts',
     'images',
     'resize',
