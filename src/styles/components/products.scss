@@ -8,6 +8,10 @@
 
   &:hover {
     text-decoration: none;
+
+    .products__details__wrapper {
+      transform: translateY(0);
+    }
   }
 }
 
@@ -37,8 +41,12 @@
   }
 }
 
-.products__image__container {
+.products__details__wrapper {
+  transition: transform 300ms ease-out;
 
+  @include media-breakpoint-up(md) {
+    transform: translateY(5px);
+  }
 }
 
 .products__image {
@@ -57,7 +65,10 @@
   line-height: 1;
   margin-bottom: 6px;
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
+    font-size: 28px;
+  }
+  @include media-breakpoint-down(xs) {
     font-size: 20px;
   }
   @include media-breakpoint-up(md) {

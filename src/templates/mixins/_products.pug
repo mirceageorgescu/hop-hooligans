@@ -16,7 +16,7 @@ mixin products(data)
                 div(style='background: ' + item.bg)
                   +responsive-background(item.url)(class='products__image')
                 .products__details
-                  div
+                  .products__details__wrapper
                     h1.products__title= item.title
                     h3.products__style= item.style
                     div.products__abv= item.abv + locals.translations.abv
@@ -31,7 +31,7 @@ mixin products(data)
                     div(style='background: ' + item.bg)
                       +responsive-background(item.url)(class='products__image')
                     .products__details
-                      div
+                      .products__details__wrapper
                         h1.products__title= item.title
                         h3.products__style= item.style
                         div.products__abv= item.abv + locals.translations.abv
@@ -44,7 +44,7 @@ mixin products(data)
                 div(style='background: ' + item.bg)
                   +responsive-background(item.url)(class='products__image')
                 .products__details
-                  div
+                  .products__details__wrapper
                     h1.products__title= item.title
                     h3.products__style= item.style
                     div.products__abv= item.abv + locals.translations.abv
