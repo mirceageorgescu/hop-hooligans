@@ -47,7 +47,7 @@ home:
       copy: Explore our beers
   brewery:
     title: Our brewery
-    subtitle: Took about a year to build it and we’re damn proud of it.
+    subtitle: Explore our brewery. In 3D using your favorite device.
     gallery:
       - img: brewery-fermentors
         featured: true
@@ -64,7 +64,7 @@ home:
 
 brewery:
   title: Our brewery
-  subtitle: Take a 3d tour of our brewery
+  subtitle: Explore our brewery. In 3D using your favorite device.
   scenes:
     - copy: Brewery
       img: http://i.imgur.com/R26YDTr.jpg
@@ -78,12 +78,12 @@ brewery:
 
 beerMap:
   title: Beer Map
-  subtitle: Cozy places that we know of to be selling our beer.
+  subtitle: Cool places that we know of to be selling our beer.
   iframe: https://www.google.com/maps/d/u/0/embed?mid=1q4wGm78jotpdx7ssEhOQbYiwGgk&ll=44.42846336965222%2C26.116044878417938&z=12&sw=false
 
 products:
   title: Our beers
-  subtitle: Much stuff happening here
+  subtitle: Things we brew using our blood, sweat and tears.
   list:
     - title: Crowd Control
       style: India Pale Ale
