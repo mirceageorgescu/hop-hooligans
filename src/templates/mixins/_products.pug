@@ -13,7 +13,8 @@ mixin products(data)
           if item.featured
             article.col-12.col-md-6.products__article.products__article--featured
               a(href=item.url + '.html').products__item
-                +responsive-img(item.url)(class='img--full')
+                div(style='background: ' + item.bg)
+                  +responsive-background(item.url)(class='products__image')
                 .products__details
                   div
                     h1.products__title= item.title
@@ -27,7 +28,8 @@ mixin products(data)
               if !item.featured && !item.isPlaceholder && index < 5
                 article.col-6.products__article
                   a(href=item.url + '.html').products__item
-                    +responsive-img(item.url)(class='img--full')
+                    div(style='background: ' + item.bg)
+                      +responsive-background(item.url)(class='products__image')
                     .products__details
                       div
                         h1.products__title= item.title
@@ -39,7 +41,8 @@ mixin products(data)
           if !item.featured && !item.isPlaceholder && index > 4
             article.col-6.col-md-3.products__article
               a(href=item.url + '.html').products__item
-                +responsive-img(item.url)(class='img--full')
+                div(style='background: ' + item.bg)
+                  +responsive-background(item.url)(class='products__image')
                 .products__details
                   div
                     h1.products__title= item.title

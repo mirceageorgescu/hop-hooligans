@@ -108,18 +108,22 @@ products:
       style: Mango Wheat Ale
       url: product-emperor
       abv: 6,5
+      bg: '#e1b548'
     - title: Melting Pot
       style: English Barleywine
       url: product-melting-pot
       abv: 11,5
+      bg: '#8a8a8a'
     - title: Shock Therapy
       style: India Pale Ale
       url: product-shock-therapy
       abv: 6,5
+      bg: '#df4b4b'
     - title: Cannon Fire
       style: Coconut Porter
       url: product-cannon-fire
       abv: 6
+      bg: '#9f80df'
     - title: Chupacabra
       style: Spiced Stout
       url: product-chupacabra
@@ -129,14 +133,17 @@ products:
       style: Black India Pale Ale
       url: product-night-lights
       abv: 6,5
+      bg: '#75afa0'
     - title: Royal Execution
       style: ESB
       abv: 6,5
       url: product-royal-execution
+      bg: '#5b9bc4'
     - title: Summer Punch
       style: American Pale Ale
       abv: 5
       url: product-summer-punch
+      bg: '#a1b641'
     - title: Coming soon
       isPlaceholder: true
     - title: Coming soon
