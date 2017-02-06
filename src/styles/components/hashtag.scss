@@ -3,6 +3,23 @@
   padding-left: 0;
   text-align: center;
   color: white;
+  margin-bottom: 0;
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 32px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    > li:nth-child(n+5) {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    > li:nth-child(n+9) {
+      display: none;
+    }
+  }
 }
 
 .hashtag__link {
