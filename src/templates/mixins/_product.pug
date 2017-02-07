@@ -10,10 +10,10 @@ mixin product(data)
             p.product__style= data.style
 
       .row
-        .col-12.col-md-6.offset-lg-1.col-lg-5
+        .col-12.col-md-6.col-lg-6.col-xxl-4.offset-xxl-2
           +responsive-img(data.url)(class='img--full product__image')
 
-        .product.col-12.col-md-6.col-lg-5
+        .product.col-12.col-md-6.col-lg-6.col-xxl-4
           header.product__header.hidden-sm-down
             h1.product__title= data.title
             p.product__style= data.style

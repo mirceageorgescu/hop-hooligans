@@ -2,7 +2,7 @@ sizes: [320, 640, 720, 1024, 1504, 2048]
 
 header:
   logo:
-    href: /
+    href: index.html
     copy: Hop Hooligans
 
 social:
@@ -15,7 +15,7 @@ social:
 
 nav:
   - copy: Home
-    href: '/'
+    href: 'index.html'
   - copy: Our Beers
     href: 'beers.html'
   - copy: Our Brewery
@@ -93,6 +93,7 @@ products:
       og: '1.061'
       fg: '1.012'
       featured: true
+      untappdId: 1833392
       description:
         - You probably felt the undercurrent.
         - The timid, squeamish whisper of something new, slowly but surely coming your way. It will not bring you false promises, like short-term bursts of delight and brief moments of pause from you daily toils. It will creep into your brain, hijack your senses, turn you into an addict and ultimately ruin you.
@@ -106,6 +107,14 @@ products:
       abv: 7
       og: '1.078'
       fg: '1.024'
+      untappdId: 1924677
+      description:
+        - Forget global warming, CO2 emissions, deforestations, fracking, or other atrocities that humans bring upon the environment!
+        - 'It seems there’s an even more despicable action that’s directly targeting bears, of all animals: hundreds of bearded, burly brewers invading forests and picking them clean of all their precious berries!'
+        - Because what’s more important than a bit of forest berry fragrance in a creamy milk stout, right?
+        - But not for long! No longer will bears be just fat and lazy, eating grass and tree bark.
+        - If the next time you take out the trash you find yourself on the receiving end of a claw to the face, rejoice! You have just been visited by the newly evolved Dumpster Bear.
+        - And now you know who to thank to.
     - title: Emperor
       style: Mango Wheat Ale
       url: product-emperor
@@ -113,6 +122,14 @@ products:
       bg: '#e1b548'
       og: '1.058'
       fg: '1.006'
+      description:
+        - Lately, there’s been talk of a rather peculiar affair happening at the palace.
+        - Each day, His Royal Highness dresses up in the fanciest robes and runs straight to the huge treasure room, where he locks himself up for almost half the day.
+        - He always comes out to resume his official business with a huge smile on his face. So whatever artefact is in there, certainly must be precious.
+        - 'One morning, the treasury is rocked by a terrible event: robbery!'
+        - From that day on, the king falls into a hopeless apathy. He can’t even describe his most beloved idol to his loyal subjects, in order for it to be recovered.
+        - And, on top of that, the Royal Brewmaster seems to have disappeared from Court.
+        - Sad times for the Emperor...
     - title: Melting Pot
       style: English Barleywine
       url: product-melting-pot
@@ -120,13 +137,14 @@ products:
       bg: '#8a8a8a'
       og: '1.099'
       fg: '1.011'
-    - title: Shock Therapy
+    - title: Shock Therapy V1
       style: India Pale Ale
       url: product-shock-therapy
       abv: 6,5
       bg: '#df4b4b'
       og: '1.062'
       fg: '1.012'
+      untappdId: 1868130
       description:
         - 'WTF?! Another IPA?!'
         - 'Of course! Some people don’t know what’s good for them! So we will take it upon ourselves to educate. By force. We’ll strap you down to your bar stool, glue your eyelids open, accessorize you with a nice “harmless” metal hat and force feed you our own brand of medicine: hops!'
@@ -141,6 +159,7 @@ products:
       bg: '#9f80df'
       og: '1.059'
       fg: '1.014'
+      untappdId: 1841181
       description:
         - Coconuts are weird. And not just because they look like huge mammoth balls.
         - In some countries like the Philippines, the coconut tree is called "tree of life", because its fruit can be used for a huge variety of things. But in some other tropical spots, it's pretty much a serial killer. Death by coconut, they call it.
@@ -153,6 +172,7 @@ products:
       bg: '#e2bc4a'
       og: '1.074'
       fg: '1.020'
+      untappdId: 1542767
       description:
         - Everybody knows of the vicious, terrible, goat-sucking creature that strikes fear into the hearts of every poblano down in Mexico.
         - It might be an ugly midget-bear, it might be a hairless mutt, or even some kind of alien, but no footage was ever clear. And it’s been like this for decades. Maybe it got bored of goats?
@@ -166,6 +186,7 @@ products:
       bg: '#75afa0'
       og: '1.062'
       fg: '1.012'
+      untappdId: 1843779
       description:
         - You might be able to carelessly tuck yourself in and sleep soundly after a long stressful day. But right outside your window the city continues to suffer on its own.
         - Car alarms, music, laughter, sirens, stray dogs, broken glass, drunkards singing, bums fighting it out in the alleys and maybe some people even start redecorating their homes at these late hours.
@@ -179,6 +200,7 @@ products:
       bg: '#5b9bc4'
       og: '1.061'
       fg: '1.010'
+      untappdId: 1841140
       description:
         - It’s a well known fact that the British people are not to be joked with, especially when it comes to their precious, warm, bland ales.
         - 'There’s a hidden chapter in their history that has lately resurfaced: For a short period of time, taverns served a tastier bitter ale, the rare English Very Special Bitter. It was brewed in accordance with the king’s secret recipe.'
@@ -191,6 +213,7 @@ products:
       bg: '#a1b641'
       og: '1.046'
       fg: '1.008'
+      untappdId: 1841150
       description:
         - We can't really control hops. If they want to be super fruity, well, you can't exactly stop them. And why would you?
         - Some may bring out zesty citrus, some juicy tropical fruit, some overripe orchard fruit, and some cheeky ones tend to bring out all of those at once.
@@ -211,7 +234,10 @@ translations:
 
 reviews:
   title: Reviews
-  subtitle: Much shit people say
+  subtitle: Shit people say
+  api:
+    client_id: C12E8A838E6229F7CA618BFC7A5616793E818785
+    client_secret: E139EFFBD6E5A61BE9E0DC88CC5907B6FA847468
 
 contact:
   title: Contact us

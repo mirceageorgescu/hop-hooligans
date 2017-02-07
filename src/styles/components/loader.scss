@@ -8,6 +8,11 @@
   animation: spin 1s infinite linear;
 }
 
+.loader--dark {
+  border: 3px solid black;
+  border-top: 3px solid transparent;
+}
+
 .loader__container {
   padding: 32px;
   text-align: center;

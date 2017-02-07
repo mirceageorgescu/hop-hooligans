@@ -1,0 +1,6 @@
+.reviews {
+  padding-bottom: 30px;
+  .card-deck > .card:nth-child(n+4) {
+    display: none;
+  }
+}

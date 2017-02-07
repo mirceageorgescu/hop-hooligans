@@ -6,10 +6,10 @@ mixin responsive-img(url, sizes, alt, extension)
     - sizes = locals.sizes
 
   - var srcset = ''
-  - var lowRes = '/images/' + url + '-320.' + extension
+  - var lowRes = 'images/' + url + '-320.' + extension
 
   each width, index in sizes
-    - srcset += '/images/' + url + '-' + width + '.' + extension + ' ' + width + 'w'
+    - srcset += 'images/' + url + '-' + width + '.' + extension + ' ' + width + 'w'
     if(index + 1 < sizes.length)
       - srcset += ', '
 

@@ -6,3 +6,7 @@ mixin product-reviews(data)
           header.section__header
             h1.section__title=  data.title + ' ' + locals.reviews.title
             p.section__subtitle= locals.reviews.subtitle
+
+          .js-reviews.reviews('data-untappd-id'= data.untappdId)
+            .loader__container
+              .loader.loader--dark
