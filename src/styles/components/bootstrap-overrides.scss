@@ -22,9 +22,40 @@
   }
 }
 
+.btn-sm-block {
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
+}
+
+.btn-more {
+  margin-top: 20px;
+}
+
 .container {
   @include media-breakpoint-down(sm) {
     padding-right: 20px;
     padding-left: 20px;
+  }
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-text {
+  .card-inverse & {
+    color: white;
+  }
+}
+
+.card-footer {
+  .card-inverse & {
+    border: none;
+  }
+  > a {
+    .card-inverse & {
+      color: white;
+    }
   }
 }

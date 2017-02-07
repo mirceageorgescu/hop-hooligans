@@ -12,9 +12,9 @@ mixin products(data)
         each item in data.list
           if item.featured
             article.col-12.col-md-6.products__article.products__article--featured
-              a(href=item.url + '.html').products__item
+              a(href= 'beers/' + item.url + '.html').products__item
                 div(style='background: ' + item.bg)
-                  +responsive-background(item.url)(class='products__image')
+                  +responsive-background('beers/' + item.url)(class='products__image')
                 .products__details
                   .products__details__wrapper
                     h1.products__title= item.title
@@ -27,9 +27,9 @@ mixin products(data)
             each item, index in data.list
               if !item.featured && !item.isPlaceholder && index < 5
                 article.col-6.products__article
-                  a(href=item.url + '.html').products__item
+                  a(href= 'beers/' + item.url + '.html').products__item
                     div(style='background: ' + item.bg)
-                      +responsive-background(item.url)(class='products__image')
+                      +responsive-background('beers/' + item.url)(class='products__image')
                     .products__details
                       .products__details__wrapper
                         h1.products__title= item.title
@@ -40,9 +40,9 @@ mixin products(data)
         each item, index in data.list
           if !item.featured && !item.isPlaceholder && index > 4
             article.col-6.col-md-3.products__article
-              a(href=item.url + '.html').products__item
+              a(href= 'beers/' + item.url + '.html').products__item
                 div(style='background: ' + item.bg)
-                  +responsive-background(item.url)(class='products__image')
+                  +responsive-background('beers/' + item.url)(class='products__image')
                 .products__details
                   .products__details__wrapper
                     h1.products__title= item.title

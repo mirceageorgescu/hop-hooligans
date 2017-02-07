@@ -156,7 +156,7 @@ gulp.task('products', function () {
         console.log('generating ' + beer.url);
         path.basename = beer.url;
       }))
-      .pipe(gulp.dest('./dist'));
+      .pipe(gulp.dest('./dist/beers'));
   });
 });
 

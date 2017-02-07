@@ -2,7 +2,7 @@ sizes: [320, 640, 720, 1024, 1504, 2048]
 
 header:
   logo:
-    href: index.html
+    href: /
     copy: Hop Hooligans
 
 social:
@@ -15,15 +15,15 @@ social:
 
 nav:
   - copy: Home
-    href: 'index.html'
+    href: '/'
   - copy: Our Beers
-    href: 'beers.html'
+    href: '/beers.html'
   - copy: Our Brewery
-    href: 'our-brewery.html'
+    href: '/our-brewery.html'
   - copy: Beer Map
-    href: 'beer-map.html'
+    href: '/beer-map.html'
   - copy: Contact
-    href: 'contact.html'
+    href: '/contact.html'
 
 hashtag:
   title: '#hophooligans'
@@ -49,12 +49,12 @@ home:
     title: Our brewery
     subtitle: Explore our brewery. In 3D using your favorite device.
     gallery:
-      - img: brewery-fermentors
+      - img: brewery/fermentors
         featured: true
-      - img: brewery-boil-kettle
-      - img: brewery-electrical-panel
-      - img: brewery-fermentor-door
-      - img: brewery-electrical-panel-front
+      - img: brewery/boil-kettle
+      - img: brewery/electrical-panel
+      - img: brewery/fermentor-door
+      - img: brewery/electrical-panel-front
     cta:
       href: our-brewery.html
       copy: Take a 3d tour
@@ -88,7 +88,7 @@ products:
     - title: Crowd Control
       style: India Pale Ale
       bg: '#65b3d7'
-      url: product-crowd-control
+      url: crowd-control
       abv: 6
       og: '1.061'
       fg: '1.012'
@@ -102,7 +102,7 @@ products:
         - Achieve hop bliss.
     - title: Dumpster Bear
       style: Blueberry Milk Stout
-      url: product-dumpster-bear
+      url: dumpster-bear
       bg: '#b388ca'
       abv: 7
       og: '1.078'
@@ -117,7 +117,7 @@ products:
         - And now you know who to thank to.
     - title: Emperor
       style: Mango Wheat Ale
-      url: product-emperor
+      url: emperor
       abv: 6,5
       bg: '#e1b548'
       og: '1.058'
@@ -132,14 +132,14 @@ products:
         - Sad times for the Emperor...
     - title: Melting Pot
       style: English Barleywine
-      url: product-melting-pot
+      url: melting-pot
       abv: 11,5
       bg: '#8a8a8a'
       og: '1.099'
       fg: '1.011'
     - title: Shock Therapy V1
       style: India Pale Ale
-      url: product-shock-therapy
+      url: shock-therapy
       abv: 6,5
       bg: '#df4b4b'
       og: '1.062'
@@ -154,7 +154,7 @@ products:
         - Shock Therapy.
     - title: Cannon Fire
       style: Coconut Porter
-      url: product-cannon-fire
+      url: cannon-fire
       abv: 6
       bg: '#9f80df'
       og: '1.059'
@@ -167,7 +167,7 @@ products:
         - And you'll love it.
     - title: Chupacabra
       style: Spiced Stout
-      url: product-chupacabra
+      url: chupacabra
       abv: 7,5
       bg: '#e2bc4a'
       og: '1.074'
@@ -181,7 +181,7 @@ products:
         - We know you do, but beware, so does the Chupacabra!
     - title: Night Lights
       style: Black India Pale Ale
-      url: product-night-lights
+      url: night-lights
       abv: 6,5
       bg: '#75afa0'
       og: '1.062'
@@ -196,7 +196,7 @@ products:
     - title: Royal Execution
       style: ESB
       abv: 6,5
-      url: product-royal-execution
+      url: royal-execution
       bg: '#5b9bc4'
       og: '1.061'
       fg: '1.010'
@@ -209,7 +209,7 @@ products:
     - title: Summer Punch
       style: American Pale Ale
       abv: 5
-      url: product-summer-punch
+      url: summer-punch
       bg: '#a1b641'
       og: '1.046'
       fg: '1.008'
