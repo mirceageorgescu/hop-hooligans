@@ -56,14 +56,26 @@ var buildFileList = function(filename){
 // Clean site directory
 gulp.task('clean', del.bind(null, ['dist'], {dot: true}));
 
+var cssFinish = lazypipe()
+  .pipe(gulp.dest, 'dist/styles')
+  .pipe(function () {
+    return $.if(config.minify, $.minifyCss());
+  })
+  .pipe(function () {
+    return $.if(config.minify, $.rename({suffix: '.min'}));
+  })
+  .pipe(function () {
+    return $.if(config.minify, gulp.dest('dist/styles'));
+  });
+
 gulp.task('sass', function () {
   return gulp.src(['src/styles/main.scss'])
     .pipe($.sass())
     .pipe($.autoprefixer({browsers: config.supportedBrowsers}))
     .pipe($.concat('styles-' + config.version + '.css'))
-    .pipe($.cleanCss())
     .pipe(gulp.dest('dist/styles'))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream())
+    .pipe(cssFinish());
 });
 
 var scriptsFinish = lazypipe()
