@@ -25,6 +25,12 @@
 
 .product__image {
   margin-bottom: 24px;
+
+  position: relative;
+  height: 0;
+  padding-top: 100%;
+  background-size: cover;
+  background-position: center center;
 }
 
 .product__header {

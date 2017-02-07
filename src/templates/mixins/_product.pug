@@ -11,7 +11,7 @@ mixin product(data)
 
       .row
         .col-12.col-md-6.col-lg-6.col-xxl-4.offset-xxl-2
-          +responsive-img('beers/' + data.url)(class='img--full product__image')
+          +responsive-background('beers/' + data.url)(class='product__image')
 
         .product.col-12.col-md-6.col-lg-6.col-xxl-4
           header.product__header.hidden-sm-down
