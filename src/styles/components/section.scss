@@ -39,10 +39,10 @@
 }
 
 .section__subtitle {
-  font-size: 14px;
+  font-size: 16px;
 
   @include media-breakpoint-up(sm) {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
