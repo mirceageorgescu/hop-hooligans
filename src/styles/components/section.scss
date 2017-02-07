@@ -49,19 +49,47 @@
 //modifiers
 
 .section--alpha {
-  background: #ebebeb url(../images/weird-pattern.png);
+  background: #ebebeb url(../images/backgrounds/weird-pattern.png);
 }
 
 .section--beta {
-  background: #212121 url(../images/cartographer.png);
+  background-color: #212121;
+  @include img-retina(
+    '../images/backgrounds/cartographer.png',
+    '../images/backgrounds/cartographer@2x.png',
+    500px,
+    499px
+  )
 }
 
 .section--gamma {
-  background: #212121 url(../images/dark-wall.png);
+  background-color: #212121;
+  @include img-retina(
+    '../images/backgrounds/dark-wall.png',
+    '../images/backgrounds/dark-wall@2x.png',
+    300px,
+    300px
+  )
 }
 
 .section--delta {
-  background: #040404 url(../images/binding-dark.png);
+  background-color: #040404;
+  @include img-retina(
+    '../images/backgrounds/binding-dark.png',
+    '../images/backgrounds/binding-dark@2x.png',
+    180px,
+    180px
+  )
+}
+
+.section--epsilon {
+  background-color: #ebebeb;
+  @include img-retina(
+    '../images/backgrounds/brickwall.png',
+    '../images/backgrounds/brickwall@2x.png',
+    110px,
+    110px
+  )
 }
 
 .section--b-0 {

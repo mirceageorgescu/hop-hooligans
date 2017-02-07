@@ -17,5 +17,5 @@ mixin hero(data)
             a.btn.btn-warning.btn-lg.btn-uppercase(href=data.cta.href)= data.cta.copy
 
     if data.img
-      +responsive-background(data.img)(class='hero__bg lazyload--zoom')
+      +responsive-background(data.img, 'jpg', [1024, 1504, 2048])(class='hero__bg lazyload--zoom')
 

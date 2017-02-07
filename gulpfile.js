@@ -12,6 +12,7 @@ var lazypipe     = require('lazypipe');
 var browserify   = require('browserify');
 var babelify     = require('babelify');
 var source       = require('vinyl-source-stream');
+var buffer = require('vinyl-buffer');
 
 function endsWith(str, suffix) {
   return str.indexOf(suffix, str.length - suffix.length) !== -1;
@@ -60,12 +61,16 @@ gulp.task('sass', function () {
     .pipe($.sass())
     .pipe($.autoprefixer({browsers: config.supportedBrowsers}))
     .pipe($.concat('styles-' + config.version + '.css'))
+    .pipe($.cleanCss())
     .pipe(gulp.dest('dist/styles'))
     .pipe(browserSync.stream());
 });
 
 var scriptsFinish = lazypipe()
   .pipe(gulp.dest, 'dist/scripts')
+  .pipe(function () {
+    return $.if(config.minify, buffer());
+  })
   .pipe(function () {
     return $.if(config.minify, $.uglify());
   })
@@ -159,11 +164,11 @@ gulp.task('resize', function () {
         console.log('resizing and optimizing ' + path.basename + '-' + size + path.extname);
         path.basename += '-' + size;
       }))
-      .pipe($.if(config.minify, $.cache($.imageOptimization({
-        optimizationLevel: 5,
-        progressive: true,
-        interlaced: true
-      }))))
+      // .pipe($.if(config.minify, $.cache($.imageOptimization({
+      //   optimizationLevel: 5,
+      //   progressive: true,
+      //   interlaced: true
+      // }))))
       .pipe(gulp.dest('dist/images'));
   });
 });
@@ -174,11 +179,11 @@ gulp.task('images', function () {
   return gulp.src(['src/images/**/**', '!src/images/resize/**/**'])
     .pipe($.plumber({errorHandler: $.notify.onError('Error: <%= error.message %>')}))
     .pipe($.if(config.isWatching, $.cached('images')))
-    .pipe($.if(config.minify, $.cache($.imageOptimization({
-      optimizationLevel: 5,
-      progressive: true,
-      interlaced: true
-    }))))
+    // .pipe($.if(config.minify, $.cache($.imageOptimization({
+    //   optimizationLevel: 5,
+    //   progressive: true,
+    //   interlaced: true
+    // }))))
     .pipe(gulp.dest('dist/images'));
 });
 

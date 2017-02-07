@@ -29,6 +29,7 @@
     "gulp-autoprefixer": "^3.1.1",
     "gulp-cache": "^0.2.10",
     "gulp-cached": "^1.1.0",
+    "gulp-clean-css": "^3.0.0",
     "gulp-concat": "^2.6.0",
     "gulp-data": "^1.2.1",
     "gulp-each": "^0.2.0",
@@ -54,8 +55,10 @@
     "lazypipe": "^0.2.4",
     "node-sass": "^3.10.1",
     "object-merge": "^2.5.1",
+    "optipng-bin": "^3.1.2",
     "run-sequence": "^1.1.4",
     "vinyl": "^0.4.6",
+    "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "yargs": "^3.27.0"
   },

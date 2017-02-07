@@ -2,7 +2,7 @@
 import lazySizesBg from 'lazysizes/plugins/bgset/ls.bgset.min';
 import lazySizes from 'lazysizes';
 import picturefill from 'picturefill';
-import 'bootstrap';
+// import 'bootstrap';
 import ejs from 'ejs';
 
 //custom modules
