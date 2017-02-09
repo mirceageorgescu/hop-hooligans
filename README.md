@@ -2,6 +2,8 @@
 
 - Clone the repo
 - `npm install`
+- `brew install imagemagick`
+- `brew install graphicsmagick`
 - `gulp dev` to start the server. It will open the web page for you and do live reload and other fancy stuff.
 - `gulp` to create the build.
 
