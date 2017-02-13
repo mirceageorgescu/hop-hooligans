@@ -1,0 +1,7 @@
+<% data.data.forEach(function(item){ %>
+  <li class="col-6 col-sm-3 col-md-2 grid-b-m">
+    <a href="<%=item.link %>" target="_blank" title="<%=item.caption.text %>" class="hashtag__link">
+      <img data-src="<%=item.images.thumbnail.url %>" class="lazyload img--full">
+    </a>
+  </li>
+<% }) %>

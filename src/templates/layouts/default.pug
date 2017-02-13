@@ -40,11 +40,7 @@ html
 
       block content
 
-    //- script.
-    //-   //config lazysizes
-    //-   window.lazySizesConfig = window.lazySizesConfig || {};
-    //-   lazySizesConfig.loadMode = 1;
-
     +debug()
 
+    script(type='text/javascript', src='/scripts/jst-' + locals.version + (locals.minify ? '.min' : '') + '.js')
     script(type='text/javascript', src='/scripts/app-' + locals.version + (locals.minify ? '.min' : '') + '.js')

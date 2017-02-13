@@ -234,8 +234,13 @@ translations:
 
 reviews:
   title: Reviews
-  subtitle: Shit people say
+  subtitle: Shit people say on untappd
+  cta:
+    copy: Read more reviews
+  noReviews: This is so fucking new it has no reviews. Or it has bad reviews and we're not stupid to show them.
+  noRating: No rating
   api:
+    limit: 50
     client_id: 918F01B53FDAC49A915124127738378DE45E9682
     client_secret: 3A59FA4FDB2B0776A23B7ED7196B1A6920FDB923
 

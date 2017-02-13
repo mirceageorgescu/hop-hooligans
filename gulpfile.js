@@ -229,6 +229,15 @@ gulp.task('svg', function() {
     .pipe(gulp.dest('dist/svg'));
 });
 
+// Build JST templates
+gulp.task('jst', function() {
+  return gulp.src(['src/jst/**/*.html'])
+    .pipe($.templateCompile())
+    .pipe($.concat('jst-' + config.version + '.js'))
+    .pipe(gulp.dest('dist/' + argv.site + '/scripts'))
+    .pipe(scriptsFinish());
+});
+
 // Development task
 gulp.task('dev', ['default', 'setWatch'], function() {
   browserSync.init({
@@ -247,6 +256,7 @@ gulp.task('dev', ['default', 'setWatch'], function() {
   gulp.watch(['src/images/**/*', '!src/images/resize/**/**'], ['images', reload]);
   gulp.watch(['src/images/resize/**/*'], ['resize', reload]);
   gulp.watch(['src/fonts/**/*'], ['fonts', reload]);
+  gulp.watch(['src/jst/**/*'], ['jst', reload]);
   gulp.watch(['src/images/**/*'], ['images', reload]);
   gulp.watch(['src/svg/*.svg'], ['svg', reload]);
   gulp.watch(['src/scripts/**/*.js'], ['scripts', reload]);
@@ -269,6 +279,7 @@ gulp.task('default', ['clean'], function (cb) {
     'sass',
     'templates',
     'products',
+    'jst',
     'scripts',
     'images',
     'resize',

@@ -17,9 +17,15 @@ class Hashtag {
       success: function(data){
 
         if(data.meta.code === 200){
-          $el.html(ejs.render('<% data.forEach(function(item){ %><li class="col-6 col-sm-3 col-md-2 grid-b-m"><a href="<%=item.link %>" target="_blank" title="<%=item.caption.text %>" class="hashtag__link"><img data-src="<%=item.images.thumbnail.url %>" class="lazyload img--full"></a></li><% }) %>', data));
+          $el.html(window.JST['hashtag.html']({
+            data: data,
+            locals: locals
+          }));
         } else {
-          $el.html(ejs.render('<li class="col-12"><%= meta.error_message %></li>', data));
+          $el.html(window.JST['hashtag.html']({
+            locals: locals,
+            error: meta.error_message
+          }));
         }
 
       }
