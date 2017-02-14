@@ -12,6 +12,9 @@ social:
   - copy: Follow us on Instagram
     href: https://www.instagram.com/hophooligans/
     icon: instagram
+  - copy: Checkin on Untappd
+    href: https://untappd.com/HopHooligans
+    icon: untappd
 
 nav:
   - copy: Home
