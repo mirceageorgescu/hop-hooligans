@@ -7,4 +7,10 @@ mixin beer-map(data)
             h1.section__title= data.title
             p.section__subtitle= data.subtitle
 
-    iframe.beer-map(src=data.iframe, allowfullscreen)
+    .js-cities-list
+      each item in data.cities
+        a.btn.btn-md.js-cities-item.vrview__btn(href='#', class= item.active ? 'btn-warning' : 'btn-primary', data-lat=item.lat, data-lng=item.lng)= item.copy
+
+    .js-beermap.beer-map
+
+    script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDjqI3vXRv94I6NegKjbaLLqiFuQz5gjqY')

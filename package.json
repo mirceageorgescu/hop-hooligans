@@ -15,7 +15,8 @@
     "jquery": "^3.1.1",
     "lazysizes": "^2.0.4",
     "picturefill": "^3.0.2",
-    "tether": "^1.3.7"
+    "tether": "^1.3.7",
+    "timeago": "^1.5.4"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.16.0",

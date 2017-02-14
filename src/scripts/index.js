@@ -11,3 +11,4 @@ import Touch from './touch';
 import VrView from './vr-view';
 import Hashtag from './hashtag';
 import Reviews from './reviews';
+import Beermap from './beermap';

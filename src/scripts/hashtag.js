@@ -2,6 +2,7 @@
 
 import $ from 'jquery';
 import ejs from 'ejs';
+import timeago from 'timeago';
 
 class Hashtag {
   constructor($el) {
@@ -10,10 +11,14 @@ class Hashtag {
     }
 
     $.ajax({
-      url: 'https://api.instagram.com/v1/tags/' + window.locals.hashtag.hashtag + '/media/recent',
-      dataType: 'jsonp',
+      url: 'https://api.untappd.com/v4/brewery/checkins/268580',
+      dataType: 'json',
       type: 'GET',
-      data: {access_token: window.locals.hashtag.token, count: window.locals.hashtag.limit},
+      data: {
+        client_id: window.locals.reviews.api.client_id,
+        client_secret: window.locals.reviews.api.client_secret,
+        limit: window.locals.reviews.api.limit
+      },
       success: function(data){
 
         if(data.meta.code === 200){
@@ -21,6 +26,10 @@ class Hashtag {
             data: data,
             locals: locals
           }));
+
+
+          //init timeago
+          $("time.timeago").timeago();
         } else {
           $el.html(window.JST['hashtag.html']({
             locals: locals,

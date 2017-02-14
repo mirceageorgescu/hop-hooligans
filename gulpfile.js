@@ -71,6 +71,7 @@ var cssFinish = lazypipe()
 gulp.task('sass', function () {
   return gulp.src(['src/styles/main.scss'])
     .pipe($.sass())
+    .pipe($.plumber({errorHandler: $.notify.onError('Error: <%= error.message %>')}))
     .pipe($.autoprefixer({browsers: config.supportedBrowsers}))
     .pipe($.concat('styles-' + config.version + '.css'))
     .pipe(gulp.dest('dist/styles'))

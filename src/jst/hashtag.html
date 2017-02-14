@@ -1,7 +1,23 @@
-<% data.data.forEach(function(item){ %>
-  <li class="col-6 col-sm-3 col-md-2 grid-b-m">
-    <a href="<%=item.link %>" target="_blank" title="<%=item.caption.text %>" class="hashtag__link">
-      <img data-src="<%=item.images.thumbnail.url %>" class="lazyload img--full">
-    </a>
-  </li>
+<% data.response.checkins.items.forEach(function(item){ %>
+  <% if(item.media.count) { %>
+    <li class="col-6 col-md-4 col-lg-3 grid-b-m">
+      <a href="https://untappd.com/user/<%=item.user.user_name %>/checkin/<%=item.checkin_id %>" target="_blank" title="<%=item.user.first_name %> <%=item.user.last_name %> is drinking a <%=item.beer.beer_name %>" class="hashtag__link">
+        <div
+          class="hashtag__bg lazyload"
+          data-bgset="
+            <%= item.media.items[0].photo.photo_img_sm %> 100w,
+            <%= item.media.items[0].photo.photo_img_md %> 320w,
+            <%= item.media.items[0].photo.photo_img_lg %> 640w"
+        >
+          <noscript>
+            <div class="lazyloaded img-full" data-sizes="auto" style="background-image:url(/images/beers/dumpster-bear-320.jpg);"></div>
+          </noscript>
+        </div>
+        <div class="hashtag__copy">
+          <h2 class="hashtag__title"><%=item.user.first_name %> <%=item.user.last_name %></h2>
+          <time class="timeago hashtag__date" datetime="<%= item.created_at %>"><%= item.created_at %></time>
+        </div>
+      </a>
+    </li>
+  <% } %>
 <% }) %>
