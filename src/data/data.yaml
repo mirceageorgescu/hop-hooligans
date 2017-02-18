@@ -81,6 +81,8 @@ brewery:
 beerMap:
   title: Beer Map
   subtitle: Cool places that we know of to be selling our beer.
+  apiKey: AIzaSyDjqI3vXRv94I6NegKjbaLLqiFuQz5gjqY
+  mapId: 1UnTzluVN3kl4AA2prcQp8vWxjdc
   cities:
     - copy: Bucharest
       active: true
@@ -95,7 +97,6 @@ beerMap:
     - copy: Iasi
       lat: 47.170688674739594
       lng: 27.57522701888388
-
 
 products:
   title: Our beers
@@ -262,4 +263,32 @@ reviews:
 
 contact:
   title: Contact us
-  subtitle: Nice title
+  subtitle: Want our beer or just wanna say hi? Don't be shy!
+  details:
+    title: HH BREWERY SRL
+    items:
+      - type: phone
+        title: Phone
+        value: 0040722644821
+      - type: email
+        title: E-mail
+        value: office@hophooligans.ro
+      - title: Address
+        value: Soseaua Giurgiului nr. 33A <br> Comuna Jilava, jud. Ilfov, 077120
+      - title: CUI
+        value: 35603101
+      - title: Registry Number
+        value: J23/477/0502216
+      - title: LEI Account
+        value: RO69UGBI0000792004182RON
+      - title: EUR Account
+        value: RO62UGBI0000792004183EUR
+  map:
+    apiKey: AIzaSyDjqI3vXRv94I6NegKjbaLLqiFuQz5gjqY
+    placeId: ChIJj10aJZEBrkAR3pIhWHdixTo
+    lat: 44.34732
+    lng: 26.08775
+    zoom: 14
+  thanks:
+    title: Your message was sent
+    subtitle: We'll get back to you as soon as we finish filling this fermentor...

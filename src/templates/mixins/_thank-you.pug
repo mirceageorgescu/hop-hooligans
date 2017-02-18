@@ -1,0 +1,15 @@
+mixin thank-you(data)
+
+  include _contact-details
+  include _contact-map
+
+  header.section.section--alpha.section--light.section--b-0
+    .container
+      .row
+        .col-sm-12
+          header.section__header.text-center
+            h1.section__title= data.thanks.title
+            p.section__subtitle= data.thanks.subtitle
+
+  +contact-details(data)
+  +contact-map(data)

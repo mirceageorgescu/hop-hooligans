@@ -1,0 +1,17 @@
+mixin contact(data)
+
+  include _contact-form
+  include _contact-details
+  include _contact-map
+
+  header.section.section--alpha.section--light.section--b-0
+    .container
+      .row
+        .col-sm-12
+          header.section__header.text-center
+            h1.section__title= data.title
+            p.section__subtitle= data.subtitle
+
+  +contact-form(data)
+  +contact-details(data)
+  +contact-map(data)

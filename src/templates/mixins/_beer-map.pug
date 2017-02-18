@@ -1,16 +1,16 @@
 mixin beer-map(data)
-  section.section.section--alpha.section--light.text-center.section--b-0
+  section.section.section--alpha.section--light.section--b-0
     .container
       .row
         .col-sm-12
-          header.section__header
+          header.section__header.text-center
             h1.section__title= data.title
             p.section__subtitle= data.subtitle
 
-    .js-cities-list
+    .js-cities-list.text-center
       each item in data.cities
         a.btn.btn-md.js-cities-item.vrview__btn(href='#', class= item.active ? 'btn-warning' : 'btn-primary', data-lat=item.lat, data-lng=item.lng)= item.copy
 
-    .js-beermap.beer-map
+    .js-beermap.beer-map(data-map-id=data.mapId)
 
-    script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDjqI3vXRv94I6NegKjbaLLqiFuQz5gjqY')
+    script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=' + data.apiKey)

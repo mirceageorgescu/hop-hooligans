@@ -1,0 +1,17 @@
+mixin contact-details(data)
+  section.contact.section.section--gamma.text-white
+    .container
+      .row
+        .col-12
+          h2.text-center= data.details.title
+
+          dl.text-center.contact__details
+            each item in data.details.items
+              dt= item.title
+              dd
+                if (item.type == 'phone')
+                  a.text-white(href='tel:' + item.value)= item.value
+                else if (item.type == 'email')
+                  a.text-white(href='mailto:' + item.value)= item.value
+                else
+                  div !{item.value}

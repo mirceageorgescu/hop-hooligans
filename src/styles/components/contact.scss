@@ -1,0 +1,29 @@
+.contact {
+  // background: white;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.contact__details {
+  margin: 0;
+  > dd {
+    margin-bottom: 26px;
+  }
+}
+
+.contact__map {
+  width: 100%;
+  height: 100vh;
+  border: 0;
+  text-align: center;
+}
+
+.contact--alpha {
+  background: #eee;
+}

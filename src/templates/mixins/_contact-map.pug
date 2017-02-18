@@ -1,0 +1,3 @@
+mixin contact-map(data)
+  .js-contact-map.contact__map(data-place-id=data.map.placeId, data-lat=data.map.lat, data-lng=data.map.lng, data-zoom=data.map.zoom)
+  script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?&libraries=places&key=' + data.map.apiKey)

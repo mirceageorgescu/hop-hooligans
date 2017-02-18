@@ -1,0 +1,35 @@
+mixin contact-form(data)
+  section.contact
+    .container
+      .row
+        .col-12.col-md-8.offset-md-2.col-xl-6.offset-xl-3
+          h2.text-center Send a message
+          form(name="contact" action="thank-you.html" netlify-honeypot="last-name" netlify)
+            div
+              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                input.mdl-textfield__input#name(type="text", name="name")
+                label.mdl-textfield__label(for="name") Name
+
+            div.hidden-xs-up
+              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                input.mdl-textfield__input#last-name(type="text", name="last-name")
+                label.mdl-textfield__label(for="last-name") Last name
+
+            div
+              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                input.mdl-textfield__input#email(type="email", name="email")
+                label.mdl-textfield__label(for="email") Email
+                span.mdl-textfield__error Invalid email
+
+            div
+              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                input.mdl-textfield__input#phone(type="tel", name="phone")
+                label.mdl-textfield__label(for="phone") Phone
+
+            div
+              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                textarea#message.mdl-textfield__input(type='text', rows='5', maxrows='12', name="message")
+                label.mdl-textfield__label(for='message') Hear me out
+
+            div.text-center.mt-2
+              button.btn.btn-primary.btn-lg.btn-uppercase Send message

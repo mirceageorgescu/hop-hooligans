@@ -23,9 +23,26 @@ h1 {
 }
 
 h2 {
+  font-family: $font-primary;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 1.5;
+  line-height: 1;
+  margin-bottom: 24px;
+
+  font-size: 18px;
+
+  @include media-breakpoint-up(xs) {
+    font-size: 24px;
+  }
+
+  @include media-breakpoint-up(sm) {
+    font-size: 32px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 48px;
+  }
+
 }
 
 .small {
