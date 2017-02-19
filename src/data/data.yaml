@@ -289,6 +289,30 @@ contact:
     lat: 44.34732
     lng: 26.08775
     zoom: 14
+  form:
+    title: Send a message
+    action: thank-you
+    fields:
+      - title: Name
+        name: name
+        type: text
+      - title: Last name
+        name: last-name
+        type: text
+        class: hidden-xs-up #this is used for the honneypot
+      - title: Email
+        name: email
+        type: email
+      - title: Phone
+        name: phone
+        type: tel
+      - isTextarea: true
+        title: Hear me out
+        name: message
+        rows: 5
+    submit:
+      copy: Send message
+
   thanks:
     title: Your message was sent
     subtitle: We'll get back to you as soon as we finish filling this fermentor...

@@ -3,33 +3,18 @@ mixin contact-form(data)
     .container
       .row
         .col-12.col-md-8.offset-md-2.col-xl-6.offset-xl-3
-          h2.text-center Send a message
-          form(name="contact" action="thank-you.html" netlify-honeypot="last-name" netlify)
-            div
-              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
-                input.mdl-textfield__input#name(type="text", name="name")
-                label.mdl-textfield__label(for="name") Name
+          h2.text-center= data.form.title
+          form(name="contact" action=data.form.action netlify-honeypot="last-name" netlify)
 
-            div.hidden-xs-up
-              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
-                input.mdl-textfield__input#last-name(type="text", name="last-name")
-                label.mdl-textfield__label(for="last-name") Last name
+            each field in data.form.fields
+              div(class=field.class)
+                .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                  if field.isTextarea == true
+                    textarea.mdl-textfield__input(id=field.name, type='text', rows=field.rows, name=field.name)
+                  else
+                    input.mdl-textfield__input(type=field.type, name=field.name, id=field.name)
 
-            div
-              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
-                input.mdl-textfield__input#email(type="email", name="email")
-                label.mdl-textfield__label(for="email") Email
-                span.mdl-textfield__error Invalid email
-
-            div
-              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
-                input.mdl-textfield__input#phone(type="tel", name="phone")
-                label.mdl-textfield__label(for="phone") Phone
-
-            div
-              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
-                textarea#message.mdl-textfield__input(type='text', rows='5', maxrows='12', name="message")
-                label.mdl-textfield__label(for='message') Hear me out
+                  label.mdl-textfield__label(for=field.name)= field.title
 
             div.text-center.mt-2
-              button.btn.btn-primary.btn-lg.btn-uppercase Send message
+              button.btn.btn-primary.btn-lg.btn-uppercase= data.form.submit.copy
