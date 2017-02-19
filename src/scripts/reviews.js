@@ -22,7 +22,7 @@ class Reviews {
       },
       success: function(data){
 
-        console.log(data.response.beer.checkins.items);
+        // console.log(data.response.beer.checkins.items);
 
         if(data.meta.code === 200){
           $el.html(window.JST['review.html']({
@@ -30,6 +30,9 @@ class Reviews {
             bg: bg,
             locals: locals
           }));
+
+          //init timeago
+          $("time.timeago").timeago();
         } else {
           $el.html(window.JST['review-error.html']({
             bg: bg,

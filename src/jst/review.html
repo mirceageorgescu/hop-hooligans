@@ -4,7 +4,7 @@
 
     <% if(item.checkin_comment && item.rating_score > 3.5) { %>
       <% comments = comments + 1; %>
-      <div class="card card-inverse" style="background-color: <%= bg %>; border-color: <%= bg %>;">
+      <a href="https://untappd.com/user/<%= item.user.user_name %>/checkin/<%= item.checkin_id %>" target="_blank" class="card card-inverse" style="background-color: <%= bg %>; border-color: <%= bg %>;">
         <div class="card-block">
           <% if (item.rating_score >= 1) { %>
             <h1 class="card-title"><%= item.rating_score %> / 5</h1>
@@ -15,12 +15,13 @@
             <em><%=item.checkin_comment %></em>
           </p>
         </div>
-        <div class="card-footer">
-          <a href="https://untappd.com/user/<%= item.user.user_name %>/checkin/<%= item.checkin_id %>" target="_blank">
+        <div class="card-footer clearfix">
+          <span class="float-left">
             <%=item.user.first_name %> <%=item.user.last_name %>
-          </a>
+          </span>
+          <time class="timeago float-right" datetime="<%= item.created_at %>"><%= item.created_at %></time>
         </div>
-      </div>
+      </a>
     <% } %>
 
   <% }) %>

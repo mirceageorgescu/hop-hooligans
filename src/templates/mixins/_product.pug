@@ -6,8 +6,15 @@ mixin product(data)
       .row.hidden-md-up
         .col-12
           header.product__header
-            h1.product__title= data.title
-            p.product__style= data.style
+            if data.title
+              h1.product__title= data.title
+
+            if data.subtitle
+              h2.product__subtitle= data.subtitle
+
+            if data.style
+              p.product__style= data.style
+
 
       .row
         .col-12.col-md-6.col-lg-6.col-xxl-4.offset-xxl-2
@@ -15,8 +22,14 @@ mixin product(data)
 
         .product.col-12.col-md-6.col-lg-6.col-xxl-4
           header.product__header.hidden-sm-down
-            h1.product__title= data.title
-            p.product__style= data.style
+            if data.title
+              h1.product__title= data.title
+
+            if data.subtitle
+              h2.product__subtitle= data.subtitle
+
+            if data.style
+              p.product__style= data.style
 
           ul.product__descriptors
             if data.abv
@@ -37,5 +50,7 @@ mixin product(data)
               each item in data.description
                 p= item
 
-          if data.available
-            a.btn.btn-primary.btn-lg.btn-uppercase.btn-block.mt-3(href=locals.products.cta.href)= locals.products.cta.copy
+          a.btn.btn-primary.btn-lg.btn-uppercase.btn-block.mt-3(
+            href=locals.products.cta.href,
+            class=data.available ? '' : 'disabled'
+          )= data.available ? locals.products.cta.copy : locals.products.unavailable

@@ -43,6 +43,17 @@
   margin-bottom: 20px;
 }
 
+a.card {
+  transition: background 300ms ease-out, border-color 300ms ease-out;
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    background: #333!important;
+    border-color: #333!important;
+  }
+}
+
 .card-text {
   .card-inverse & {
     color: white;
