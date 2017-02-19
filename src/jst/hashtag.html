@@ -1,7 +1,7 @@
 <% data.response.checkins.items.forEach(function(item){ %>
   <% if(item.media.count) { %>
     <li class="col-6 col-md-4 col-lg-3 grid-b-m">
-      <a href="https://untappd.com/user/<%=item.user.user_name %>/checkin/<%=item.checkin_id %>" target="_blank" title="<%=item.user.first_name %> <%=item.user.last_name %> is drinking a <%=item.beer.beer_name %>" class="hashtag__link">
+      <a href="https://untappd.com/user/<%=item.user.user_name %>/checkin/<%=item.checkin_id %>" target="_blank" title="<%=item.user.first_name %> <%=item.user.last_name %> <%= locals.translations.wasDrinking %> <%=item.beer.beer_name %>" class="hashtag__link">
         <div
           class="hashtag__bg lazyload"
           data-bgset="

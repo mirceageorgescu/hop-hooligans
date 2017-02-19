@@ -141,6 +141,10 @@ gulp.task('products', function () {
   console.log('products');
 
   data.products.list.forEach(function(beer) {
+    if(beer.isPlaceholder) {
+      return;
+    }
+
     config.page = 'product';
     data = objectMerge(config, data);
 
@@ -161,11 +165,12 @@ gulp.task('products', function () {
   });
 });
 
+// Resize images
 gulp.task('resize', function () {
-  var src = gulp.src(['src/images/resize/**/*.{jpg,png}']),
-    sizes = [320, 640, 720, 1024, 1504, 2048];
+  var data = readYamlFile('/data.yaml');
+  var src = gulp.src(['src/images/resize/**/*.{jpg,png}']);
 
-  sizes.forEach(function(size){
+  data.sizes.forEach(function(size){
     src
       .pipe($.plumber({errorHandler: $.notify.onError('Error: <%= error.message %>')}))
       .pipe($.imageResize({
@@ -177,26 +182,15 @@ gulp.task('resize', function () {
         console.log('resizing and optimizing ' + path.basename + '-' + size + path.extname);
         path.basename += '-' + size;
       }))
-      // .pipe($.if(config.minify, $.cache($.imageOptimization({
-      //   optimizationLevel: 5,
-      //   progressive: true,
-      //   interlaced: true
-      // }))))
       .pipe(gulp.dest('dist/images'));
   });
 });
 
-// Optimize images and copy that version to dist
-// if the script is run with the --minify flag
+// Copy images to dist
 gulp.task('images', function () {
   return gulp.src(['src/images/**/**', '!src/images/resize/**/**'])
     .pipe($.plumber({errorHandler: $.notify.onError('Error: <%= error.message %>')}))
     .pipe($.if(config.isWatching, $.cached('images')))
-    // .pipe($.if(config.minify, $.cache($.imageOptimization({
-    //   optimizationLevel: 5,
-    //   progressive: true,
-    //   interlaced: true
-    // }))))
     .pipe(gulp.dest('dist/images'));
 });
 

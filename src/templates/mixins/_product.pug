@@ -36,3 +36,6 @@ mixin product(data)
             .product__description.text-left
               each item in data.description
                 p= item
+
+          if data.available
+            a.btn.btn-primary.btn-lg.btn-uppercase.btn-block.mt-3(href=locals.products.cta.href)= locals.products.cta.copy
