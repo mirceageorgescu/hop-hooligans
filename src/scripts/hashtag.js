@@ -37,6 +37,12 @@ class Hashtag {
           }));
         }
 
+      },
+      error: function(data) {
+        $el.html(window.JST['hashtag-error.html']({
+          locals: locals,
+          error: JSON.parse(data.responseText).meta.error_detail
+        }));
       }
     });
   }
