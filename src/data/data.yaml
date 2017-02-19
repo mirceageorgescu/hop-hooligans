@@ -103,7 +103,7 @@ products:
   subtitle: Things we brew using our blood, sweat and tears.
   cta:
     copy: Buy now
-    href: contact
+    href: /contact
   unavailable: Out of stock
   list:
     - title: Crowd Control
