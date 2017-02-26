@@ -97,6 +97,9 @@ beerMap:
     - copy: Iasi
       lat: 47.170688674739594
       lng: 27.57522701888388
+    - copy: Arad
+      lat: 46.16979026798762
+      lng: 21.316728466992117
 
 products:
   title: Our beers
