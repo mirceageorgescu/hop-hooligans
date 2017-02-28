@@ -9,7 +9,12 @@
 }
 
 .vrview__btn {
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(xs) {
     padding: 10px 10px;
+    display: block;
+    border-bottom: 1px solid #333;
+    &:hover {
+      border-bottom: 1px solid #333;
+    }
   }
 }

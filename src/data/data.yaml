@@ -126,18 +126,27 @@ beerMap:
       active: true
       lat: 44.439668270655226
       lng: 26.102045110680933
+      zoom: 13
     - copy: Cluj
       lat: 46.77171916352077
       lng: 23.578405597814708
+      zoom: 14
     - copy: Timisoara
-      lat: 45.74957230288305
-      lng: 21.215627524059755
+      lat: 45.755276644419126
+      lng: 21.22457210402831
+      zoom: 14
     - copy: Iasi
       lat: 47.170688674739594
       lng: 27.57522701888388
+      zoom: 12
     - copy: Arad
       lat: 46.16979026798762
       lng: 21.316728466992117
+      zoom: 14
+    - copy: Sibiu
+      lat: 45.80024868949094
+      lng: 24.1580168064811
+      zoom: 14
 
 products:
   title: Our beers
