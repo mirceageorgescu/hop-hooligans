@@ -71,8 +71,46 @@ brewery:
     - copy: Brewery
       img: http://i.imgur.com/R26YDTr.jpg
       active: true
+      hotspots:
+        - id: fermentors
+          location:
+            pitch: 5
+            yaw: -5
+            radius: 0.1
+            distance: 2
+          content:
+            title: Fermentation Vessels
+            copy: This is where the sweet wort is turned into beer.
+        - id: bottling
+          location:
+            pitch: -10
+            yaw: -75
+            radius: 0.1
+            distance: 1.5
+          content:
+            title: Bottling machine
+            copy: We manually bottle our beers using this machine here.
     - copy: Office
       img: https://i.imgur.com/LQuYyIM.jpg
+      hotspots:
+        - id: fermentors
+          location:
+            pitch: 30
+            yaw: 20
+            radius: 0.05
+            distance: 2
+          content:
+            title: fermentors
+            copy: nice fermentors
+        - id: bottling
+          location:
+            pitch: 0
+            yaw: 20
+            radius: 0.05
+            distance: 2
+          content:
+            title: bottling
+            copy: nice bottling
     - copy: Ingredients
       img: https://i.imgur.com/ZSJtIrH.jpg
     - copy: Storage

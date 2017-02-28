@@ -9,9 +9,10 @@ mixin brewery(data)
 
 
     .vrview__list.js-vrview-list
-      each item in data.scenes
-        a.btn.btn-md.js-vrview-item.vrview__btn(href=item.img, class= item.active ? 'btn-warning' : 'btn-primary')= item.copy
+      each item, index in data.scenes
+        a.btn.btn-md.js-vrview-item.vrview__btn(href=item.img, class= item.active ? 'btn-warning' : 'btn-primary', data-index=index)= item.copy
 
     .vrview.js-vrview
+      .js-hotspot
 
   script(src='//storage.googleapis.com/vrview/2.0/build/vrview.min.js')
