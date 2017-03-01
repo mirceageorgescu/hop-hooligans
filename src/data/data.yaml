@@ -188,6 +188,23 @@ products:
         - But not for long! No longer will bears be just fat and lazy, eating grass and tree bark.
         - If the next time you take out the trash you find yourself on the receiving end of a claw to the face, rejoice! You have just been visited by the newly evolved Dumpster Bear.
         - And now you know who to thank to.
+    - title: Tonka Rush
+      style: Coffee Stout
+      url: tonka-rush
+      bg: '#b75b5d'
+      abv: 9
+      og: '1.081'
+      fg: '1.013'
+      untappdId: null
+      available: true
+      description:
+        - Joe is a pretty regular guy. Wakes up early, works his ass off all day long, and then gets back to bed late in the night.
+        - Obviously, he goes through quite a few cups of java to maintain this fancy lifestyle.
+        - You’d think nothing could surprise him anymore, after all the overpriced mocha frappuccinos, hazelnut ristrettos, gingerbread lattes and exotic Kopi Luwak cold brews.
+        - But we got him hooked now! He can’t wrap his head around all the subtle almond, marzipan, cinnamon and vanilla hints in our coffee stout.
+        - All of that from a simple bean?
+        - This feeling of anxiety and burning thirst for another bottle?
+        - That’s just Tonka Rush, Joe!
     - title: Emperor
       style: Mango Wheat Ale
       url: emperor
@@ -319,8 +336,6 @@ products:
         - It's up to you to name them all. Think of it as a game. A tasty, refreshing game that you don't ever want to end.
         - So grab a huge glass, or a salad bowl, or a fancy vase, fill it up with a few of these, and have a party with our Summer Punch.
         - Oh, and we have it on good authority that it's good for every season.
-    - title: Coming soon
-      isPlaceholder: true
     - title: Coming soon
       isPlaceholder: true
     - title: Coming soon
