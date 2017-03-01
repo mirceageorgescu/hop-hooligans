@@ -172,6 +172,13 @@ products:
         - In time, it will roar and thunder, and the cold, lifeless broadcast of the daily routine will be forever silenced. Not the usual type of cheap manipulation, but rather something that earns your appreciation.
         - The best kind of Crowd Control.
         - Achieve hop bliss.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Oats
+        - Hops
+        - Yeast
     - title: Dumpster Bear
       style: Blueberry Milk Stout
       url: dumpster-bear
@@ -188,6 +195,13 @@ products:
         - But not for long! No longer will bears be just fat and lazy, eating grass and tree bark.
         - If the next time you take out the trash you find yourself on the receiving end of a claw to the face, rejoice! You have just been visited by the newly evolved Dumpster Bear.
         - And now you know who to thank to.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Lactose
+        - Hops
+        - Blueberries
+        - Yeast
     - title: Tonka Rush
       style: Coffee Stout
       url: tonka-rush
@@ -205,6 +219,15 @@ products:
         - All of that from a simple bean?
         - This feeling of anxiety and burning thirst for another bottle?
         - That’s just Tonka Rush, Joe!
+      ingredients:
+        - Water
+        - Malted Barley
+        - Oats
+        - Demerara Sugar
+        - Hops
+        - Tonka Beans
+        - Coffee
+        - Yeast
     - title: Emperor
       style: Mango Wheat Ale
       url: emperor
@@ -222,6 +245,13 @@ products:
         - From that day on, the king falls into a hopeless apathy. He can’t even describe his most beloved idol to his loyal subjects, in order for it to be recovered.
         - And, on top of that, the Royal Brewmaster seems to have disappeared from Court.
         - Sad times for the Emperor...
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Hops
+        - Mango
+        - Yeast
     # - title: Melting Pot
     #   style: English Barleywine
     #   url: melting-pot
@@ -246,6 +276,13 @@ products:
         - If it’s not stated on the bottle, ask the closest nurse from this respectable medical institution about the exact version of the medicine.
         - We keep changing the recipe. Just to make sure you get the best out of our
         - Shock Therapy.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Oats
+        - Hops
+        - Yeast
     - title: Shock Therapy V2
       subtitle: 'Hallertau Blanc & Hüll Melon'
       style: India Pale Ale
@@ -263,6 +300,13 @@ products:
         - If it’s not stated on the bottle, ask the closest nurse from this respectable medical institution about the exact version of the medicine.
         - We keep changing the recipe. Just to make sure you get the best out of our
         - Shock Therapy.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Oats
+        - Hops
+        - Yeast
     - title: Cannon Fire
       style: Coconut Porter
       url: cannon-fire
@@ -277,6 +321,13 @@ products:
         - In some countries like the Philippines, the coconut tree is called "tree of life", because its fruit can be used for a huge variety of things. But in some other tropical spots, it's pretty much a serial killer. Death by coconut, they call it.
         - Nevertheless, be careful with what you hold now in your hands. There's so much coconut jammed into this bottle that it's actually a safety hazard. Don't take your eyes off it or you might end up getting blown away by a fiery volley of Cannon Fire.
         - And you'll love it.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Oats
+        - Hops
+        - Coconut
+        - Yeast
     - title: Chupacabra
       style: Spiced Stout
       url: chupacabra
@@ -292,6 +343,19 @@ products:
         - Or maybe it needs just a bit of an incentive. This is where we come in. Get a good camera, get a live goat, feed it a few bottles of the potion that you now hold in your hands and hope for the best.
         - Who doesn’t like creamy chocolate, strong coffee, fragrant spices and a bit of chilli pepper heat?
         - We know you do, but beware, so does the Chupacabra!
+      ingredients:
+        - Water
+        - Malted Barley
+        - Oats
+        - Lactose
+        - Hops
+        - Cocoa nibs
+        - Coffee
+        - Cinnamon
+        - Vanilla Beans
+        - Nutmeg
+        - Habanero Peppers
+        - Yeast
     - title: Night Lights
       style: Black India Pale Ale
       url: night-lights
@@ -307,6 +371,12 @@ products:
         - As much as Lady Night tries to dampen all this ruckus with its pitch black shroud, there will always be spikes and flashes here and there.
         - 'But only a few lucky restless souls get to catch a glimpse of the real deal. Way high on top of the old buildings. It all changes into a truly beautiful scene: a glimmering contrast of darkness and bright, shiny colours.'
         - Get a break from the mundane, stay up late, find a spot, sip some of this beer and admire the Night Lights.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Oats
+        - Hops
+        - Yeast
     - title: Royal Execution
       style: ESB
       abv: 6,5
@@ -321,6 +391,11 @@ products:
         - 'There’s a hidden chapter in their history that has lately resurfaced: For a short period of time, taverns served a tastier bitter ale, the rare English Very Special Bitter. It was brewed in accordance with the king’s secret recipe.'
         - The Court found out in the end that the “Very Special” component was, in fact, a Japanese hop. The forbidden Sorachi Ace. Naturally, his head had to be immediately removed, chop chop!
         - His name was lost throughout history. But we honor and respect such crazyness and we hope it was, at least, a Royal Execution.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Hops
+        - Yeast
     - title: Summer Punch
       style: American Pale Ale
       abv: 5
@@ -336,6 +411,13 @@ products:
         - It's up to you to name them all. Think of it as a game. A tasty, refreshing game that you don't ever want to end.
         - So grab a huge glass, or a salad bowl, or a fancy vase, fill it up with a few of these, and have a party with our Summer Punch.
         - Oh, and we have it on good authority that it's good for every season.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Oats
+        - Hops
+        - Yeast
     - title: Coming soon
       isPlaceholder: true
     - title: Coming soon
@@ -346,6 +428,7 @@ translations:
   og: 'OG'
   fg: 'FG'
   wasDrinking: was drinking a
+  ingredients: Ingredients
 
 reviews:
   title: Reviews

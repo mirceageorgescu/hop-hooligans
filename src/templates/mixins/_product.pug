@@ -50,7 +50,16 @@ mixin product(data)
               each item in data.description
                 p= item
 
+          if data.ingredients
+            .product__ingredients
+              section.product__ingredisnts__section
+                h3.product__ingredients__subtitle= locals.translations.ingredients
+                ul.products__ingredients__list
+                  each item in data.ingredients
+                    li= item
+
           a.btn.btn-primary.btn-lg.btn-uppercase.btn-block.mt-3(
             href=locals.products.cta.href,
             class=data.available ? '' : 'disabled'
           )= data.available ? locals.products.cta.copy : locals.products.unavailable
+
