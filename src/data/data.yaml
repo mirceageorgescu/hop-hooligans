@@ -209,7 +209,7 @@ products:
       abv: 9
       og: '1.081'
       fg: '1.013'
-      untappdId: null
+      untappdId: 1977257
       available: true
       description:
         - Joe is a pretty regular guy. Wakes up early, works his ass off all day long, and then gets back to bed late in the night.
