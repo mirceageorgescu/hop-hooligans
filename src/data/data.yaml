@@ -30,7 +30,7 @@ nav:
 
 hashtag:
   title: 'Fan pictures'
-  subtitle: Fans drinking our beer and posting cute photos. Awww.
+  subtitle: Folks drinking our beer and posting cute photos. Awww.
   token: 4573439601.ba4c844.0a00a3eb713046f29c2d0529eda23152
   hashtag: hophooligans
 
@@ -60,9 +60,6 @@ home:
     cta:
       href: our-brewery.html
       copy: Take a 3d tour
-  find:
-    title: Find our beer
-    subtitle: Cool places that we know of to be selling our beer.
 
 brewery:
   title: Our brewery
@@ -118,7 +115,7 @@ brewery:
 
 beerMap:
   title: Beer Map
-  subtitle: Cool places that we know of to be selling our beer.
+  subtitle: Taking over the world one pint at a time. Just pick a place and have a blast!
   apiKey: AIzaSyDjqI3vXRv94I6NegKjbaLLqiFuQz5gjqY
   mapId: 1UnTzluVN3kl4AA2prcQp8vWxjdc
   cities:
