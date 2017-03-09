@@ -30,7 +30,7 @@ nav:
 
 hashtag:
   title: 'Fan pictures'
-  subtitle: Folks drinking our beer and posting cute photos. Awww.
+  subtitle: Folks drinking our beer and posting photos. Awww.
   token: 4573439601.ba4c844.0a00a3eb713046f29c2d0529eda23152
   hashtag: hophooligans
 
@@ -49,7 +49,7 @@ home:
       copy: Explore our beers
   brewery:
     title: Our brewery
-    subtitle: Explore our brewery. In 3D using your favorite device.
+    subtitle: Explore our brewery in 3D virtual reality shit.
     gallery:
       - img: brewery/fermentors
         featured: true
@@ -63,7 +63,7 @@ home:
 
 brewery:
   title: Our brewery
-  subtitle: Explore our brewery. In 3D using your favorite device.
+  subtitle: Explore our brewery and learn more about the brewing process.
   scenes:
     - copy: Brewery
       img: http://i.imgur.com/R26YDTr.jpg
