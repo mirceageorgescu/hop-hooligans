@@ -15,6 +15,8 @@ mixin products(data)
               a(href= 'beers/' + item.url + '.html').products__item
                 div(style='background: ' + item.bg)
                   +responsive-background('beers/' + item.url)(class='products__image')
+                if item.new
+                  span.products__new= locals.translations.new
                 .products__details
                   .products__details__wrapper
                     h1.products__title= item.title
@@ -30,6 +32,8 @@ mixin products(data)
                   a(href= 'beers/' + item.url + '.html').products__item
                     div(style='background: ' + item.bg)
                       +responsive-background('beers/' + item.url)(class='products__image')
+                    if item.new
+                      span.products__new= locals.translations.new
                     .products__details
                       .products__details__wrapper
                         h1.products__title= item.title
@@ -43,6 +47,8 @@ mixin products(data)
               a(href= 'beers/' + item.url + '.html').products__item
                 div(style='background: ' + item.bg)
                   +responsive-background('beers/' + item.url)(class='products__image')
+                if item.new
+                  span.products__new= locals.translations.new
                 .products__details
                   .products__details__wrapper
                     h1.products__title= item.title
