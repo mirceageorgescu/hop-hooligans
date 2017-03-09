@@ -4,10 +4,20 @@
 
     <% if(item.checkin_comment && item.rating_score > 3.5) { %>
       <% comments = comments + 1; %>
-      <a href="https://untappd.com/user/<%= item.user.user_name %>/checkin/<%= item.checkin_id %>" target="_blank" class="card card-inverse" style="background-color: <%= bg %>; border-color: <%= bg %>;">
+      <a href="https://untappd.com/user/<%= item.user.user_name %>/checkin/<%= item.checkin_id %>" target="_blank" class="card card-inverse" title="<%= locals.translations.rating %>: <%= item.rating_score %> / 5" style="background-color: <%= bg %>; border-color: <%= bg %>;">
         <div class="card-block">
           <% if (item.rating_score >= 1) { %>
-            <h1 class="card-title"><%= item.rating_score %> / 5</h1>
+            <ul class="rating" data-value="<%= Math.round(item.rating_score*2)/2 %>" data-real-value="<%= item.rating_score %> / 5">
+              <%
+                for (i=0; i<5; i++) { %>
+                  <li class="rating__item">
+                    <svg class="rating__star rating__star--<%= i+1 %>">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg/symbol/sprite.symbol.svg#star"></use>
+                    </svg>
+                  </li>
+                <% }
+              %>
+            </ul>
           <% } else { %>
             <h1 class="card-title"><%= locals.reviews.noRating %></h1>
           <% } %>

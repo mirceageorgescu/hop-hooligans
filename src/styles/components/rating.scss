@@ -1,0 +1,83 @@
+.rating {
+  display: block;
+  margin: 18px 0 32px 0;
+  padding: 0;
+  font-size: 0;
+  height: 24px;
+  line-height: 1;
+  // &:before {
+  //   content: attr(data-real-value);
+  //   display: block;
+  //   font-size: 24px;
+  //   margin: 10px 0;
+  //   color: white;
+  //   font-family: $font-primary;
+  //   font-weight: bold;
+  // }
+}
+
+.rating__item {
+  margin: 0 4px 0 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.rating__star {
+  width: 24px;
+  height: 24px;
+  color: transparent;
+  fill: transparent;
+}
+
+.rating {
+  &[data-value='0.5'] {
+    .rating__star--1 { fill: white; }
+  }
+  &[data-value='1'] {
+    .rating__star--1 { fill: white; color: white; }
+  }
+  &[data-value='1.5'] {
+    .rating__star--1 { fill: white; color: white; }
+    .rating__star--2 { fill: white; }
+  }
+  &[data-value='2'] {
+    .rating__star--1 { fill: white; color: white; }
+    .rating__star--2 { fill: white; color: white; }
+  }
+  &[data-value='2.5'] {
+    .rating__star--1 { fill: white; color: white; }
+    .rating__star--2 { fill: white; color: white; }
+    .rating__star--3 { fill: white; }
+  }
+  &[data-value='3'] {
+    .rating__star--1 { fill: white; color: white; }
+    .rating__star--2 { fill: white; color: white; }
+    .rating__star--3 { fill: white; color: white; }
+  }
+  &[data-value='3.5'] {
+    .rating__star--1 { fill: white; color: white; }
+    .rating__star--2 { fill: white; color: white; }
+    .rating__star--3 { fill: white; color: white; }
+    .rating__star--4 { fill: white; }
+  }
+  &[data-value='4'] {
+    .rating__star--1 { fill: white; color: white; }
+    .rating__star--2 { fill: white; color: white; }
+    .rating__star--3 { fill: white; color: white; }
+    .rating__star--4 { fill: white; color: white; }
+  }
+  &[data-value='4.5'] {
+    .rating__star--1 { fill: white; color: white; }
+    .rating__star--2 { fill: white; color: white; }
+    .rating__star--3 { fill: white; color: white; }
+    .rating__star--4 { fill: white; color: white; }
+    .rating__star--5 { fill: white; }
+  }
+  &[data-value='5'] {
+    .rating__star--1 { fill: white; color: white; }
+    .rating__star--2 { fill: white; color: white; }
+    .rating__star--3 { fill: white; color: white; }
+    .rating__star--4 { fill: white; color: white; }
+    .rating__star--5 { fill: white; color: white; }
+  }
+}
