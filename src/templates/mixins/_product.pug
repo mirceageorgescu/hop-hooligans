@@ -45,11 +45,6 @@ mixin product(data)
                 span.product__descriptors__attribute= data.fg
                 span.product__descriptors__definition= locals.translations.fg
 
-          if data.description
-            .product__description.text-left
-              each item in data.description
-                p= item
-
           if data.ingredients
             .product__ingredients
               section.product__ingredisnts__section
@@ -57,6 +52,11 @@ mixin product(data)
                 ul.products__ingredients__list
                   each item in data.ingredients
                     li= item
+
+          if data.description
+            .product__description.text-left
+              each item in data.description
+                p= item
 
           a.btn.btn-primary.btn-lg.btn-uppercase.btn-block.mt-3(
             href=locals.products.cta.href,

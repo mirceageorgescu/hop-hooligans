@@ -704,7 +704,7 @@ products:
       og: '1.074'
       fg: '1.020'
       untappdId: 1542767
-      available: false
+      available: true
       description:
         - Everybody knows of the vicious, terrible, goat-sucking creature that strikes fear into the hearts of every poblano down in Mexico.
         - It might be an ugly midget-bear, it might be a hairless mutt, or even some kind of alien, but no footage was ever clear. And it’s been like this for decades. Maybe it got bored of goats?

@@ -81,7 +81,7 @@
   border-bottom: 1px solid white;
   display: flex;
   list-style: none;
-  margin: 0 0 24px 0;
+  margin: 0;
   padding: 16px;
   > li {
     flex: 1;
@@ -107,7 +107,9 @@
 
 .product__ingredients {
   text-align: left;
-  padding: 0;
+  padding: 16px 0;
+  border-bottom: 1px solid white;
+  margin-bottom: 24px;
 }
 
 .product__ingredients__subtitle {
