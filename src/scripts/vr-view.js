@@ -44,9 +44,9 @@ class VrView {
     });
 
     vrView.on('ready',function(){
-      setTimeout(function(){
+      // setTimeout(function(){
         self.addHotspots();
-      }, 3000);
+      // }, 3000);
     }, this);
 
     vrView.on('click', function(event) {

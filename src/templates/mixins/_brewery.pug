@@ -8,7 +8,7 @@ mixin brewery(data)
             p.section__subtitle= data.subtitle
 
 
-    .vrview__list.js-vrview-list
+    .vrview__list.js-vrview-list.hidden-xs-up
       each item, index in data.scenes
         a.btn.btn-md.js-vrview-item.vrview__btn(href=item.img, class= item.active ? 'btn-warning' : 'btn-primary', data-index=index, data-id=item.id)= item.copy
 

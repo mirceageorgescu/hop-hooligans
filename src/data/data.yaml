@@ -80,7 +80,8 @@ brewery:
             distance: 2
           content:
             title: Control cabinet
-            copy: 'The cabinet controlls everything in our wort production: temperatures, pumps and agitators.'
+            copy: |
+              The cabinet controls everything in the process of wort production: temperatures, pumps, rakes and agitators.
         - id: mash-tank
           location:
             pitch: -1
@@ -89,7 +90,11 @@ brewery:
             distance: 2
           content:
             title: Mashing tank
-            copy: Here is where the grains are mashed with hot water and starches converted to sugars.
+            copy: |
+              The grains are mixed with hot water in a process called mashing. During this process the starches found in
+              the grains are converted to fermentable sugars. It usually takes around one hour to fully convert all the starches.<br><br>
+              The wort is then slowly pumped to the boiling tank while more hot water is sprinkled above the grain bed in a process
+              called sparging. When most of the sweet wort has been collected the spent wort is removed and donated to farmers.
         - id: boiling-tank
           location:
             pitch: -1
@@ -97,8 +102,10 @@ brewery:
             radius: 0.1
             distance: 2
           content:
-            title: Boil tank
-            copy: This is where the beer is boiled with hops after the wort has been collected.
+            title: Boiling tank
+            copy: |
+              The collected wort needs to be boiled for about one hour. This is the step the hops are added.
+              At the beginning of the boil for bitterness and at the end for flavour.
         - id: hot-water
           location:
             pitch: -1
@@ -107,7 +114,10 @@ brewery:
             distance: 2
           content:
             title: Hot water tank
-            copy: This is the tank that provides the hot water during wort production.
+            copy: |
+              During the brewing process we need hot water to mix with the grains. The tank heats the water
+              to the required temperature and keeps it constant throughout the process. We also use the hot
+              water to rinse the grains in a process called sparging.
         - id: fermentation-cabinet
           location:
             pitch: -1
@@ -115,27 +125,22 @@ brewery:
             radius: 0.1
             distance: 2
           content:
+            title: Temperature control
+            copy: Find out why we need to keep the fermentation<br> temperature under control.
             cta:
-              copy: Go to the fermentation controller
-              id: fermentation
-        - id: fermentors
-          location:
-            pitch: 5
-            yaw: 0
-            radius: 0.1
-            distance: 2
-          content:
-            title: Fermentation Vessels
-            copy: This is where the beer ferments and sweet wort is turned into beer.
+              copy: Explore
+              id: temperature-control
         - id: bbt
           location:
-            pitch: 0
+            pitch: 5
             yaw: -12
             radius: 0.1
             distance: 2
           content:
             title: Maturation Vessel
-            copy: This is where we keep our stronger beers a while longer to mature. We usually mature them on wood chips.
+            copy: |
+              This is where we keep our stronger beers a while longer to mature. We usually mature them on wood chips or
+              who knows what other crazy stuff we can think of.
         - id: bottling
           location:
             pitch: -10
@@ -143,18 +148,22 @@ brewery:
             radius: 0.1
             distance: 1.5
           content:
-            title: Bottling machine
-            copy: We manually bottle our beers using this 4 bottle filler.
-        - id: hallway
+            title: Filling the bottles
+            copy: |
+              The bottles are first purged with CO2 to remove any oxygen. They are then filled under
+              CO2 pressure to avoid foaming. <br>Yes, it taks a while to bottle a batch.
+        - id: fermentation
           location:
             pitch: 0
             yaw: -40
             radius: 0.1
             distance: 3
           content:
+            title: Fermentation
+            copy: Find out more about the beer fermentation process.
             cta:
-              copy: Go to the hallway
-              id: hallway
+              copy: Explore
+              id: fermentation
         - id: capping
           location:
             pitch: -20
@@ -162,8 +171,8 @@ brewery:
             radius: 0.1
             distance: 1.5
           content:
-            title: Capper
-            copy: This pneumatic machine caps the bottles.
+            title: Capping the bottles
+            copy: The caps are first sanitized and then capped firmly.
         - id: bottles
           location:
             pitch: -120
@@ -172,7 +181,7 @@ brewery:
             distance: 1.5
           content:
             title: Filled Bottles
-            copy: The bottles were just filled and waiting to get their labels on.
+            copy: The bottles were just filled, washed and waiting to dry.
         - id: label
           location:
             pitch: 200
@@ -180,10 +189,10 @@ brewery:
             radius: 0.1
             distance: 1.5
           content:
-            title: Labeler
-            copy: The machine we use to label our bottles.
-    - copy: Hallway
-      id: hallway
+            title: Labeling
+            copy: The bottles get their labels on and transported to the cold room.
+    - copy: Fermentation
+      id: fermentation
       img: https://i.imgur.com/w0lhW4B.jpg
       hotspots:
         - id: brewery
@@ -193,19 +202,23 @@ brewery:
             radius: 0.1
             distance: 2
           content:
+            title: The brewery
+            copy: This is where all the magic happens. Malted cereals are converted to sweet wort and violently boiled with hops.
             cta:
-              copy: Go to the brewery
+              copy: Explore
               id: brewery
-        - id: fermentation-controller
+        - id: temperature-control
           location:
             pitch: 0
             yaw: 95
             radius: 0.1
             distance: 2
           content:
+            title: Temperature control
+            copy: Find out why we need to keep the fermentation<br> temperature under control.
             cta:
-              copy: Go to the fermentation controller
-              id: fermentation
+              copy: Explore
+              id: temperature-control
         - id: notes
           location:
             pitch: -10
@@ -213,8 +226,14 @@ brewery:
             radius: 0.1
             distance: 1
           content:
-            title: Fermentation notes
-            copy: 'Every day we record fermentation activity: temperature, gravity and pressure'
+            title: Fermentation
+            copy: |
+              Fermentation is the process where the yeast indulges on sweet sugars, poops alcohol and burps CO2.
+              Every day we measure and record fermentation activity. We monitor this process closely to make sure
+              the yeast is happy. If the yeast ain't happy, ain't nobody happy.<br><br>
+
+              After fermentation is done we harvest the yeast and usually add more hops. Adding hops post fermentation
+              is called dry-hopping. This adds aroma and flavour to the beer without adding more bitterness.
         - id: office
           location:
             pitch: 0
@@ -223,7 +242,9 @@ brewery:
             distance: 2
           content:
             title: Office
-            copy: Insert paperwork here.
+            copy: |
+              Brewing isn't all fun and games. There is also the serious part where we need to file papers,
+              send invoices, pay bills and taxes, order ingredients, and all that shit.
         - id: gf
           location:
             pitch: -20
@@ -240,8 +261,10 @@ brewery:
             radius: 0.1
             distance: 2
           content:
-            title: Yeast storage fridge
-            copy: After fermentation is done we harvest the yeast and store it here for later reuse.
+            title: Yeast storage
+            copy: |
+              After fermentation is done we harvest the yeast and store it for later reuse. The yeast is kept in a dormant
+              state at almost freazing temperatura until needed in a new brew.
         - id: storage
           location:
             pitch: 0
@@ -249,8 +272,12 @@ brewery:
             radius: 0.1
             distance: 1
           content:
+            title: Storage room
+            copy: |
+              This is where we store the raw materials before converting them in delicious beer. Besides the usual
+              malted barley and hops we like to experiment with a bunch of other exotic ingredients.
             cta:
-              copy: Enter the storage room
+              copy: Explore
               id: storage
         - id: co2
           location:
@@ -260,21 +287,25 @@ brewery:
             distance: 2
           content:
             title: CO2 tanks
-            copy: We use a lot of CO2. To carbonate beer, to purge tanks, to remove oxygen from the bottle and the list goes on.
+            copy: |
+              We use a lot of CO2 around the brewery. We use it to carbonate beer, to purge tanks,
+              to remove oxygen from the bottles before filling them and the list goes on and on.
     - copy: Storage
       id: storage
       img: https://i.imgur.com/fmPo1uy.jpg
       hotspots:
-        - id: hallway
+        - id: fermentation
           location:
             pitch: -20
             yaw: 0
             radius: 0.1
             distance: 1
           content:
+            title: Fermentation
+            copy: Find out more about the beer fermentation process.
             cta:
-              copy: Get out
-              id: hallway
+              copy: Explore
+              id: fermentation
         - id: hops
           location:
             pitch: -20
@@ -282,19 +313,65 @@ brewery:
             radius: 0.1
             distance: 1.5
           content:
-            title: The hop fridge
-            copy: We keep our hops refrigerated until use.
-        - id: malt
+            title: In hops we trust
+            copy: |
+              We use a lot of hops so we need a big fridge to store them. Hops need to be kept as cold as possible until
+              they are used to maintain their fresh, vibrant characteristics.
+        - id: base-malt
           location:
             pitch: -70
             yaw: 50
             radius: 0.1
-            distance: 1
+            distance: 1.5
           content:
-            title: Malts
-            copy: We use the best malts we can find.
-    - copy: Fermentation
-      id: fermentation
+            title: Base Malt
+            copy: |
+              The sweet wort is obtained mostly from malted barley. The grain bill is usually made of (70%-95%) base malt.
+              We mostly use UK Pale Ale malt for the base malt.
+        - id: oats
+          location:
+            pitch: -125
+            yaw: 20
+            radius: 0.1
+            distance: 1.5
+          content:
+            title: Oat flakes
+            copy: |
+              We use oat flakes when we want to achieve a more creamy, silky mouthfeel.
+        - id: wheat
+          location:
+            pitch: -140
+            yaw: 25
+            radius: 0.1
+            distance: 1.5
+          content:
+            title: Wheat
+            copy: |
+              We use wheat malt and torrefied wheat in some of our beers to create a smooth silky head.
+        - id: speciality-malt
+          location:
+            pitch: -120
+            yaw: -30
+            radius: 0.1
+            distance: 1.5
+          content:
+            title: Speciality Malt
+            copy: |
+              Speciality malts are created by using different temperatures and techniques. They add color and flavour to
+              a beer. From orange hues to pitch black, biscuit, coffee and roasted notes, all of them are provided by special malts.
+        - id: microscope
+          location:
+            pitch: -35
+            yaw: -18
+            radius: 0.1
+            distance: 1.5
+          content:
+            title: Microscope
+            copy: |
+              We use the microscope to determine the viability of the yeast after storage. Knowing how many
+              yeast cells are alive we can calculate how much yeast to add for optimal fermentation conditions.
+    - copy: Temperature control
+      id: temperature-control
       img: https://i.imgur.com/jpW4nMP.jpg
       hotspots:
         - id: cold-room
@@ -304,8 +381,10 @@ brewery:
             radius: 0.1
             distance: 1.5
           content:
+            title: Cold Room
+            copy: Because our beer is not pasteurized it needs to be kept cold until it finally gets in your fancy glass.
             cta:
-              copy: Enter the cold room
+              copy: Explore
               id: cold-room
         - id: bottles
           location:
@@ -315,7 +394,7 @@ brewery:
             distance: 2
           content:
             title: Bottles storage room
-            copy: Here we keep our empty bottles and kegs
+            copy: Empty bottles and kegs are kept here.
         - id: brewery
           location:
             pitch: 0
@@ -323,19 +402,23 @@ brewery:
             radius: 0.1
             distance: 2
           content:
+            title: The brewery
+            copy: This is where all the magic happens. Malted cereals are converted to sweet wort and violently boiled with hops.
             cta:
-              copy: Go to the brewery
+              copy: Explore
               id: brewery
-        - id: hallway
+        - id: fermentation
           location:
             pitch: 0
             yaw: 175
             radius: 0.1
             distance: 3
           content:
+            title: Fermentation
+            copy: Find out more about the beer fermentation process.
             cta:
-              copy: Go to the hallway
-              id: hallway
+              copy: Explore
+              id: fermentation
         - id: empty-bottles
           location:
             pitch: 5
@@ -344,7 +427,7 @@ brewery:
             distance: 3
           content:
             title: Empty bottles
-            copy: Ready to be filled
+            copy: Ready to be filled. Nobody likes empty bottles.
         - id: cold-water
           location:
             pitch: 5
@@ -353,16 +436,19 @@ brewery:
             distance: 1
           content:
             title: Cold water tank
-            copy: The cold water here is recirculated through the fermentation vessels jackets and keeps the temperature under control.
-        - id: whiteboard
+            copy: |
+              The tank holds water at a constant temperature around -2&deg;.
+              The cold water is used to chill the beer to the required temperature during the fermentation phase. It's also
+              used to chill the beer to around 0&deg; prior to carbonation and bottling.
+        - id: beerboard
           location:
             pitch: -3
             yaw: 0
             radius: 0.1
             distance: 2
           content:
-            title: Fermentation whiteboard
-            copy: Keeping track of our beers.
+            title: Beerboard
+            copy: We're using this to keep track of our beers and their progress.
         - id: fermentation-cabinet
           location:
             pitch: -3
@@ -370,8 +456,14 @@ brewery:
             radius: 0.1
             distance: 2
           content:
-            title: Fermentation cabinet
-            copy: Controlling beer temperature.
+            title: Temperature control cabinet
+            copy: |
+              Temperature is a crucial factor of the fermentation process. The yeast will produce different flavours
+              based on temperature. The warmer it gets, the more esters are produced. You get too hot and you
+              start to get solvent-like flavours. Too cold and you could get a sluggish or incomplete fermentation.
+              And each yeast strain behaves differently.<br><br>
+              Every fermentation vessel is conected to the panel and the temperature is constantly adjusted to
+              match the requirements of each phase of the fermentation process.
     - copy: Cold Room
       id: cold-room
       img: https://i.imgur.com/dfVas1W.jpg
@@ -383,11 +475,11 @@ brewery:
             radius: 0.1
             distance: 1
           content:
-            title: What are you doing here?
+            title: What the hell are you doing here?
             copy: It's cold as fuck.
             cta:
               copy: Get out
-              id: fermentation
+              id: temperature-control
 
 beerMap:
   title: Beer Map
