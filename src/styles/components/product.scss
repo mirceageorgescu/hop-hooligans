@@ -14,12 +14,12 @@
 
   @include media-breakpoint-up(sm) {
     padding-top: 48px;
-    padding-bottom: 48px;
+    // padding-bottom: 48px;
   }
 
   @include media-breakpoint-up(lg) {
     padding-top: 72px;
-    padding-bottom: 72px;
+    // padding-bottom: 72px;
   }
 }
 
