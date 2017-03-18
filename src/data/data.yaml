@@ -70,7 +70,7 @@ brewery:
     - copy: Brewery
       id: brewery
       active: true
-      img: http://i.imgur.com/tCzDYk6.jpg
+      img: http://i.imgur.com/1ZhPM6a.jpg
       hotspots:
         - id: control-cabinet
           location:
@@ -184,7 +184,7 @@ brewery:
             copy: The machine we use to label our bottles.
     - copy: Hallway
       id: hallway
-      img: https://i.imgur.com/ZiuSQOY.jpg
+      img: https://i.imgur.com/w0lhW4B.jpg
       hotspots:
         - id: brewery
           location:
@@ -263,7 +263,7 @@ brewery:
             copy: We use a lot of CO2. To carbonate beer, to purge tanks, to remove oxygen from the bottle and the list goes on.
     - copy: Storage
       id: storage
-      img: https://i.imgur.com/wH1q9sF.jpg
+      img: https://i.imgur.com/fmPo1uy.jpg
       hotspots:
         - id: hallway
           location:
@@ -295,7 +295,7 @@ brewery:
             copy: We use the best malts we can find.
     - copy: Fermentation
       id: fermentation
-      img: https://i.imgur.com/Enl04l1.jpg
+      img: https://i.imgur.com/jpW4nMP.jpg
       hotspots:
         - id: cold-room
           location:

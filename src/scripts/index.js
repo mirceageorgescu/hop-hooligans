@@ -14,6 +14,4 @@ import Reviews from './reviews';
 import Beermap from './beermap';
 import ContactMap from './contact-map';
 
-require('material-design-lite');
-
 import * as mdl from './mdl';
