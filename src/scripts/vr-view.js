@@ -39,14 +39,14 @@ class VrView {
 
     vrView = new VRView.Player('.js-vrview', {
       image: this.scene.img,
-      is_debug: true,
-      is_autopan_off: true
+      // is_debug: true,
+      // is_autopan_off: true
     });
 
     vrView.on('ready',function(){
-      // setTimeout(function(){
+      setTimeout(function(){
         self.addHotspots();
-      // }, 2000);
+      }, 3000);
     }, this);
 
     vrView.on('click', function(event) {
