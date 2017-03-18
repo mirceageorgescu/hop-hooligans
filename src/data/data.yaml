@@ -799,6 +799,7 @@ translations:
   ingredients: Ingredients
   new: New
   rating: Rating
+  minimum: 20 bottles minimum
 
 reviews:
   title: Reviews

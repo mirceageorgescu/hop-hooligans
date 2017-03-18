@@ -63,3 +63,5 @@ mixin product(data)
             class=data.available ? '' : 'disabled'
           )= data.available ? locals.products.cta.copy : locals.products.unavailable
 
+          .text-center.product__minimum= locals.translations.minimum
+
