@@ -1,3 +1,11 @@
+include ../mixins/_header
+include ../mixins/_icon
+include ../mixins/_responsive-img
+include ../mixins/_responsive-background
+include ../mixins/_debug
+include ../mixins/_nav
+include ../mixins/_favicon
+
 doctype html
 html
   head
@@ -8,7 +16,8 @@ html
     meta(name='msapplication-tap-highlight', content='no')
 
     link(rel='stylesheet', href='/styles/styles-' + locals.version + (locals.minify ? '.min' : '') + '.css')
-    link(type='image/x-icon', rel='shortcut icon', href='images/favicons/favicon.ico')
+
+    +favicon()
 
     link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400', rel='stylesheet')
 
@@ -19,13 +28,6 @@ html
     .wrapper
 
       script(type='text/javascript') window.locals = !{JSON.stringify(locals, null, 2)}
-
-      include ../mixins/_header
-      include ../mixins/_icon
-      include ../mixins/_responsive-img
-      include ../mixins/_responsive-background
-      include ../mixins/_debug
-      include ../mixins/_nav
 
       input(type='checkbox')#hamburger-trigger.hamburger__trigger
       label(for='hamburger-trigger').hamburger__btn.hidden-md-up
