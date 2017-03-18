@@ -253,7 +253,7 @@ brewery:
             distance: 2
           content:
             title: Awesome girlfriend
-            copy: Waiting for me to finish with all this nonsense.
+            copy: Waiting for all this photo nonsense to be over.
         - id: yeast
           location:
             pitch: 0
