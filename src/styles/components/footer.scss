@@ -52,7 +52,10 @@
     padding: 20px 45px;
   }
 
-  &:hover {
+  &:hover,
+  &:visited,
+  &:focus,
+  &:active {
     color: white;
     text-decoration: none;
   }

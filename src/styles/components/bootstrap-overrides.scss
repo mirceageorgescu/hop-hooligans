@@ -4,6 +4,24 @@
   transition: background 200ms ease-out, color 200ms ease-out;
 }
 
+.btn-primary {
+  &:active,
+  &:visited,
+  &:focus {
+    color: white;
+    box-shadow: none;
+  }
+}
+
+.btn-warning {
+  &:active,
+  &:visited,
+  &:focus {
+    color: black;
+    box-shadow: none;
+  }
+}
+
 .btn-lg {
   font-size: 36px;
 
