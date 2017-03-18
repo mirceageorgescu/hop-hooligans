@@ -21,7 +21,7 @@ html
 
     link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400', rel='stylesheet')
 
-    //- title= locals.pages[locals.page].title
+    title= locals.title + (locals.currentBeer ? ' - ' + locals.currentBeer.title : '')
 
   body(class= 'page-' + locals.page)
 
