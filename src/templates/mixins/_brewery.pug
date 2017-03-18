@@ -10,7 +10,7 @@ mixin brewery(data)
 
     .vrview__list.js-vrview-list
       each item, index in data.scenes
-        a.btn.btn-md.js-vrview-item.vrview__btn(href=item.img, class= item.active ? 'btn-warning' : 'btn-primary', data-index=index)= item.copy
+        a.btn.btn-md.js-vrview-item.vrview__btn(href=item.img, class= item.active ? 'btn-warning' : 'btn-primary', data-index=index, data-id=item.id)= item.copy
 
     .vrview.js-vrview
       .js-hotspot

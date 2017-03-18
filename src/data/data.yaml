@@ -66,52 +66,326 @@ brewery:
   subtitle: Explore our brewery and learn more about the brewing process.
   scenes:
     - copy: Brewery
-      img: http://i.imgur.com/R26YDTr.jpg
+      id: brewery
       active: true
+      img: http://i.imgur.com/tCzDYk6.jpg
       hotspots:
+        - id: control-cabinet
+          location:
+            pitch: -67
+            yaw: 117
+            radius: 0.1
+            distance: 2
+          content:
+            title: Control cabinet
+            copy: 'The cabinet controlls everything in our wort production: temperatures, pumps and agitators.'
+        - id: mash-tank
+          location:
+            pitch: -1
+            yaw: 125
+            radius: 0.1
+            distance: 2
+          content:
+            title: Mashing tank
+            copy: Here is where the grains are mashed with hot water and starches converted to sugars.
+        - id: boiling-tank
+          location:
+            pitch: -1
+            yaw: 86
+            radius: 0.1
+            distance: 2
+          content:
+            title: Boil tank
+            copy: This is where the beer is boiled with hops after the wort has been collected.
+        - id: hot-water
+          location:
+            pitch: -1
+            yaw: 58
+            radius: 0.1
+            distance: 2
+          content:
+            title: Hot water tank
+            copy: This is the tank that provides the hot water during wort production.
+        - id: fermentation-cabinet
+          location:
+            pitch: -1
+            yaw: 48
+            radius: 0.1
+            distance: 2
+          content:
+            cta:
+              copy: Go to the fermentation controller
+              id: fermentation
         - id: fermentors
           location:
             pitch: 5
-            yaw: -5
+            yaw: 0
             radius: 0.1
             distance: 2
           content:
             title: Fermentation Vessels
-            copy: This is where the sweet wort is turned into beer.
+            copy: This is where the beer ferments and sweet wort is turned into beer.
+        - id: bbt
+          location:
+            pitch: 0
+            yaw: -12
+            radius: 0.1
+            distance: 2
+          content:
+            title: Maturation Vessel
+            copy: This is where we keep our stronger beers a while longer to mature. We usually mature them on wood chips.
         - id: bottling
           location:
             pitch: -10
-            yaw: -75
+            yaw: -50
             radius: 0.1
             distance: 1.5
           content:
             title: Bottling machine
-            copy: We manually bottle our beers using this machine here.
-    - copy: Office
-      img: https://i.imgur.com/LQuYyIM.jpg
-      hotspots:
-        - id: fermentors
-          location:
-            pitch: 30
-            yaw: 20
-            radius: 0.05
-            distance: 2
-          content:
-            title: fermentors
-            copy: nice fermentors
-        - id: bottling
+            copy: We manually bottle our beers using this 4 bottle filler.
+        - id: hallway
           location:
             pitch: 0
-            yaw: 20
-            radius: 0.05
+            yaw: -40
+            radius: 0.1
+            distance: 3
+          content:
+            cta:
+              copy: Go to the hallway
+              id: hallway
+        - id: capping
+          location:
+            pitch: -20
+            yaw: -65
+            radius: 0.1
+            distance: 1.5
+          content:
+            title: Capper
+            copy: This pneumatic machine caps the bottles.
+        - id: bottles
+          location:
+            pitch: -120
+            yaw: -50
+            radius: 0.1
+            distance: 1.5
+          content:
+            title: Filled Bottles
+            copy: The bottles were just filled and waiting to get their labels on.
+        - id: label
+          location:
+            pitch: 200
+            yaw: -20
+            radius: 0.1
+            distance: 1.5
+          content:
+            title: Labeler
+            copy: The machine we use to label our bottles.
+    - copy: Hallway
+      id: hallway
+      img: https://i.imgur.com/ZiuSQOY.jpg
+      hotspots:
+        - id: brewery
+          location:
+            pitch: 0
+            yaw: 120
+            radius: 0.1
             distance: 2
           content:
-            title: bottling
-            copy: nice bottling
-    - copy: Ingredients
-      img: https://i.imgur.com/ZSJtIrH.jpg
+            cta:
+              copy: Go to the brewery
+              id: brewery
+        - id: fermentation-controller
+          location:
+            pitch: 0
+            yaw: 95
+            radius: 0.1
+            distance: 2
+          content:
+            cta:
+              copy: Go to the fermentation controller
+              id: fermentation
+        - id: notes
+          location:
+            pitch: -10
+            yaw: 0
+            radius: 0.1
+            distance: 1
+          content:
+            title: Fermentation notes
+            copy: 'Every day we record fermentation activity: temperature, gravity and pressure'
+        - id: office
+          location:
+            pitch: 0
+            yaw: -70
+            radius: 0.1
+            distance: 2
+          content:
+            title: Office
+            copy: Insert paperwork here.
+        - id: gf
+          location:
+            pitch: -20
+            yaw: -60
+            radius: 0.1
+            distance: 2
+          content:
+            title: Awesome girlfriend
+            copy: Waiting for me to finish with all this nonsense.
+        - id: yeast
+          location:
+            pitch: 0
+            yaw: -93
+            radius: 0.1
+            distance: 2
+          content:
+            title: Yeast storage fridge
+            copy: After fermentation is done we harvest the yeast and store it here for later reuse.
+        - id: storage
+          location:
+            pitch: 0
+            yaw: -165
+            radius: 0.1
+            distance: 1
+          content:
+            cta:
+              copy: Enter the storage room
+              id: storage
+        - id: co2
+          location:
+            pitch: -50
+            yaw: 70
+            radius: 0.1
+            distance: 2
+          content:
+            title: CO2 tanks
+            copy: We use a lot of CO2. To carbonate beer, to purge tanks, to remove oxygen from the bottle and the list goes on.
     - copy: Storage
-      img: https://i.imgur.com/cHyOzcr.jpg
+      id: storage
+      img: https://i.imgur.com/wH1q9sF.jpg
+      hotspots:
+        - id: hallway
+          location:
+            pitch: -20
+            yaw: 0
+            radius: 0.1
+            distance: 1
+          content:
+            cta:
+              copy: Get out
+              id: hallway
+        - id: hops
+          location:
+            pitch: -20
+            yaw: 20
+            radius: 0.1
+            distance: 1.5
+          content:
+            title: The hop fridge
+            copy: We keep our hops refrigerated until use.
+        - id: malt
+          location:
+            pitch: -70
+            yaw: 50
+            radius: 0.1
+            distance: 1
+          content:
+            title: Malts
+            copy: We use the best malts we can find.
+    - copy: Fermentation
+      id: fermentation
+      img: https://i.imgur.com/Enl04l1.jpg
+      hotspots:
+        - id: cold-room
+          location:
+            pitch: -50
+            yaw: -75
+            radius: 0.1
+            distance: 1.5
+          content:
+            cta:
+              copy: Enter the cold room
+              id: cold-room
+        - id: bottles
+          location:
+            pitch: 20
+            yaw: 120
+            radius: 0.1
+            distance: 2
+          content:
+            title: Bottles storage room
+            copy: Here we keep our empty bottles and kegs
+        - id: brewery
+          location:
+            pitch: 0
+            yaw: 155
+            radius: 0.1
+            distance: 2
+          content:
+            cta:
+              copy: Go to the brewery
+              id: brewery
+        - id: hallway
+          location:
+            pitch: 0
+            yaw: 175
+            radius: 0.1
+            distance: 3
+          content:
+            cta:
+              copy: Go to the hallway
+              id: hallway
+        - id: empty-bottles
+          location:
+            pitch: 5
+            yaw: 165
+            radius: 0.1
+            distance: 3
+          content:
+            title: Empty bottles
+            copy: Ready to be filled
+        - id: cold-water
+          location:
+            pitch: 5
+            yaw: 210
+            radius: 0.1
+            distance: 1
+          content:
+            title: Cold water tank
+            copy: The cold water here is recirculated through the fermentation vessels jackets and keeps the temperature under control.
+        - id: whiteboard
+          location:
+            pitch: -3
+            yaw: 0
+            radius: 0.1
+            distance: 2
+          content:
+            title: Fermentation whiteboard
+            copy: Keeping track of our beers.
+        - id: fermentation-cabinet
+          location:
+            pitch: -3
+            yaw: -30
+            radius: 0.1
+            distance: 2
+          content:
+            title: Fermentation cabinet
+            copy: Controlling beer temperature.
+    - copy: Cold Room
+      id: cold-room
+      img: https://i.imgur.com/dfVas1W.jpg
+      hotspots:
+        - id: get-out
+          location:
+            pitch: -15
+            yaw: -10
+            radius: 0.1
+            distance: 1
+          content:
+            title: What are you doing here?
+            copy: It's cold as fuck.
+            cta:
+              copy: Get out
+              id: fermentation
 
 beerMap:
   title: Beer Map

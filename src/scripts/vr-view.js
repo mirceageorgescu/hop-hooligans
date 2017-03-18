@@ -39,35 +39,38 @@ class VrView {
 
     vrView = new VRView.Player('.js-vrview', {
       image: this.scene.img,
-      // is_debug: true
+      is_debug: true,
+      is_autopan_off: true
     });
 
     vrView.on('ready',function(){
-      setTimeout(function(){
+      // setTimeout(function(){
         self.addHotspots();
-      }, 2000);
+      // }, 2000);
     }, this);
 
     vrView.on('click', function(event) {
-      this.showHotspot(event.id)
+      this.showHotspot(event.id);
     }, this);
   }
 
   selectScene (e) {
-    var index = $(e.currentTarget).attr('data-index');
+    var id = $(e.currentTarget).attr('data-id');
     e.preventDefault();
 
     $('.js-vrview-item').removeClass('btn-warning').addClass('btn-primary');
-    $(e.currentTarget).addClass('btn-warning');
+    $('.js-vrview-item[data-id=' + id + ']').addClass('btn-warning');
 
     this.closeHotspot(e);
-    this.updateScene(index);
+    this.updateScene(id);
   }
 
-  updateScene (sceneIndex) {
+  updateScene (id) {
     var self = this;
 
-    this.scene = window.locals.brewery.scenes[sceneIndex];
+    this.scene = window.locals.brewery.scenes.find(function(val){
+      return val.id === id;
+    });
 
     vrView.setContent({
       image: this.scene.img,
@@ -97,6 +100,7 @@ class VrView {
       if(hotspot) {
         this.ui.hotspot.html(window.JST['hotspot.html'](hotspot.content));
         this.ui.hotspot.find('.js-hotspot-close').on('click', this.closeHotspot);
+        this.ui.hotspot.find('.js-hotspot-navigate').on('click', this.selectScene);
       }
     }
   }

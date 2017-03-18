@@ -1,7 +1,17 @@
 <div class="hotspot">
   <div class="hotspot__content">
-    <h1><%= title %></h1>
-    <p><%= copy %></p>
+
+    <% if(typeof(title) !== "undefined") { %>
+      <h1><%= title %></h1>
+    <% } %>
+
+    <% if(typeof(copy) !== "undefined") { %>
+      <p><%= copy %></p>
+    <% } %>
+
+    <% if(typeof(cta) !== "undefined") { %>
+      <a href="#" class="btn btn-md btn-warning js-hotspot-navigate" data-id="<%= cta.id %>"><%= cta.copy %></a>
+    <% } %>
   </div>
   <a href="#" class="hotspot__close js-hotspot-close">+</a>
 </div>
