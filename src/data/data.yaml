@@ -755,6 +755,7 @@ contact:
       - title: Name
         name: name
         type: text
+        required: true
       - title: Last name
         name: last-name
         type: text
@@ -762,6 +763,7 @@ contact:
       - title: Email
         name: email
         type: email
+        required: true
       - title: Phone
         name: phone
         type: tel
@@ -769,6 +771,7 @@ contact:
         title: Hear me out
         name: message
         rows: 5
+        required: true
     submit:
       copy: Send message
 
