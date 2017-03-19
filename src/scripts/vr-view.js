@@ -99,7 +99,7 @@ class VrView {
 
       if(hotspot) {
         this.ui.hotspot.html(window.JST['hotspot.html'](hotspot.content));
-        this.ui.hotspot.find('.js-hotspot-close').on('click', this.closeHotspot);
+        this.ui.hotspot.find('.js-hotspot-container').on('click', this.closeHotspot);
         this.ui.hotspot.find('.js-hotspot-navigate').on('click', this.selectScene);
       }
     }
