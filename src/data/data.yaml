@@ -544,30 +544,51 @@ products:
         - Oats
         - Hops
         - Yeast
-    - title: Dumpster Bear
-      style: Blueberry Milk Stout
+    - title: Fist Fight
+      style: Session IPA
       new: true
-      url: dumpster-bear
-      bg: '#b388ca'
-      abv: 7
-      og: '1.078'
-      fg: '1.024'
-      untappdId: 1924677
+      url: fist-fight
+      bg: '#7989ff'
+      abv: 4.5
+      og: '1.042'
+      fg: '1.004'
+      untappdId: 2006973
       available: true
       description:
-        - Forget global warming, CO2 emissions, deforestations, fracking, or other atrocities that humans bring upon the environment!
-        - 'It seems there’s an even more despicable action that’s directly targeting bears, of all animals: hundreds of bearded, burly brewers invading forests and picking them clean of all their precious berries!'
-        - Because what’s more important than a bit of forest berry fragrance in a creamy milk stout, right?
-        - But not for long! No longer will bears be just fat and lazy, eating grass and tree bark.
-        - If the next time you take out the trash you find yourself on the receiving end of a claw to the face, rejoice! You have just been visited by the newly evolved Dumpster Bear.
-        - And now you know who to thank to.
+        - We tried to create a perfect session IPA, one that you could drink tons of. At the beach, at a barbecue, or hey, even at work. So we tested it out at first on a few dozen people.
+        - Shockingly, after just a few pints, they started shouting nonsense and punching each other senseless. And still drinking beer at the same time!
+        - Hard to figure out why that happened, but it might be because of the New Zealand hops. That’s pretty much their national sport, right?!
+        - So if you’re planning on having a “session”, be sure to have some bandages handy. Not just for the day after, mind you!
       ingredients:
         - Water
         - Malted Barley
-        - Lactose
+        - Malted Wheat
         - Hops
-        - Blueberries
         - Yeast
+    - title: Melting pot
+      style: English Barleywine
+      new: true
+      url: melting-pot
+      bg: '#8a8a8a'
+      abv: 12.5
+      og: '1.105'
+      fg: '1.012'
+      untappdId: 2006982
+      available: true
+      description:
+        - Will it all fit in? What if it gets stuck? Will we have enough wood? How much longer will it take?
+        - Nope, nothing dirty here, just a few things to consider when brewing a solid barleywine. But be sure you do it with the windows closed anyway.
+        - It’s gonna be sticky, messy and tiring, you might even get a splinter or two, but after a few months, it will certainly be worth it.
+        - But take your time with this elixir, sip by delicious sip. If you just gulp it down recklessly, you might just fall into our Melting Pot.
+        - Still, it’s alright, there’s enough room for everyone.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Oats
+        - Demerara sugar
+        - Hops
+        - Yeast
+        - Matured on bourbon wood
     - title: Tonka Rush
       style: Coffee Stout
       new: true
@@ -594,38 +615,30 @@ products:
         - Tonka Beans
         - Coffee
         - Yeast
-    - title: Emperor
-      style: Mango Wheat Ale
-      new: true
-      url: emperor
-      abv: 6,5
-      bg: '#e1b548'
-      og: '1.058'
-      fg: '1.006'
-      untappdId: 1951899
+    - title: Dumpster Bear
+      style: Blueberry Milk Stout
+      new: false
+      url: dumpster-bear
+      bg: '#b388ca'
+      abv: 7
+      og: '1.078'
+      fg: '1.024'
+      untappdId: 1924677
       available: true
       description:
-        - Lately, there’s been talk of a rather peculiar affair happening at the palace.
-        - Each day, His Royal Highness dresses up in the fanciest robes and runs straight to the huge treasure room, where he locks himself up for almost half the day.
-        - He always comes out to resume his official business with a huge smile on his face. So whatever artefact is in there, certainly must be precious.
-        - 'One morning, the treasury is rocked by a terrible event: robbery!'
-        - From that day on, the king falls into a hopeless apathy. He can’t even describe his most beloved idol to his loyal subjects, in order for it to be recovered.
-        - And, on top of that, the Royal Brewmaster seems to have disappeared from Court.
-        - Sad times for the Emperor...
+        - Forget global warming, CO2 emissions, deforestations, fracking, or other atrocities that humans bring upon the environment!
+        - 'It seems there’s an even more despicable action that’s directly targeting bears, of all animals: hundreds of bearded, burly brewers invading forests and picking them clean of all their precious berries!'
+        - Because what’s more important than a bit of forest berry fragrance in a creamy milk stout, right?
+        - But not for long! No longer will bears be just fat and lazy, eating grass and tree bark.
+        - If the next time you take out the trash you find yourself on the receiving end of a claw to the face, rejoice! You have just been visited by the newly evolved Dumpster Bear.
+        - And now you know who to thank to.
       ingredients:
         - Water
         - Malted Barley
-        - Malted Wheat
+        - Lactose
         - Hops
-        - Mango
+        - Blueberries
         - Yeast
-    # - title: Melting Pot
-    #   style: English Barleywine
-    #   url: melting-pot
-    #   abv: 11,5
-    #   bg: '#8a8a8a'
-    #   og: '1.099'
-    #   fg: '1.011'
     - title: Shock Therapy V2
       subtitle: 'Hallertau Blanc & Hüll Melon'
       new: true
@@ -650,6 +663,31 @@ products:
         - Malted Wheat
         - Oats
         - Hops
+        - Yeast
+    - title: Emperor
+      style: Mango Wheat Ale
+      new: false
+      url: emperor
+      abv: 6,5
+      bg: '#e1b548'
+      og: '1.058'
+      fg: '1.006'
+      untappdId: 1951899
+      available: true
+      description:
+        - Lately, there’s been talk of a rather peculiar affair happening at the palace.
+        - Each day, His Royal Highness dresses up in the fanciest robes and runs straight to the huge treasure room, where he locks himself up for almost half the day.
+        - He always comes out to resume his official business with a huge smile on his face. So whatever artefact is in there, certainly must be precious.
+        - 'One morning, the treasury is rocked by a terrible event: robbery!'
+        - From that day on, the king falls into a hopeless apathy. He can’t even describe his most beloved idol to his loyal subjects, in order for it to be recovered.
+        - And, on top of that, the Royal Brewmaster seems to have disappeared from Court.
+        - Sad times for the Emperor...
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Hops
+        - Mango
         - Yeast
     - title: Shock Therapy V1
       subtitle: 'Rakau & Waimea'
@@ -786,10 +824,10 @@ products:
         - Oats
         - Hops
         - Yeast
-    - title: Coming soon
-      isPlaceholder: true
-    - title: Coming soon
-      isPlaceholder: true
+    # - title: Coming soon
+    #   isPlaceholder: true
+    # - title: Coming soon
+    #   isPlaceholder: true
 
 translations:
   abv: '% ABV'
