@@ -544,16 +544,86 @@ products:
         - Oats
         - Hops
         - Yeast
+    - title: Shock Therapy V3
+      subtitle: 'Simcoe & Azacca'
+      style: India Pale Ale
+      new: true
+      url: shock-therapy-v3
+      bg: '#df4b4b'
+      abv: 6.5
+      og: '1.062'
+      fg: '1.012'
+      untappdId: 2096445
+      available: true
+      description:
+        - 'WTF?! Another IPA?!'
+        - 'Of course! Some people don’t know what’s good for them! So we will take it upon ourselves to educate. By force. We’ll strap you down to your bar stool, glue your eyelids open, accessorize you with a nice “harmless” metal hat and force feed you our own brand of medicine: hops!'
+        - Nevermind those zapping wires in the background... You’ll forget about them soon enough. If one form of treatment doesn’t work, there’s still time, we have a lot more lined up for you, it’s quite a busy schedule.
+        - If it’s not stated on the bottle, ask the closest nurse from this respectable medical institution about the exact version of the medicine.
+        - We keep changing the recipe. Just to make sure you get the best out of our
+        - Shock Therapy.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Oats
+        - Hops
+        - Yeast
+    - title: Lederhosen
+      style: Hefeweizen
+      new: true
+      url: lederhosen
+      bg: '#cf3d40'
+      abv: 6.5
+      og: '1.055'
+      fg: '1.006'
+      untappdId: 2071027
+      available: true
+      description:
+        - Brewing a traditional german style hefeweizen is serious business. A thorough process riddled with terms like triple decoction, ferulic acid rest and incredibly exact mash and fermentation temperatures.
+        - All of that just to get a perfect balance of banana and clove in the aroma, with just the right amount of German hops.
+        - Can’t mess with their means because the Reinheitsgebot police will get you...
+        - That’s why we tried to get as much banana character as possible, a quaffable body and even a slightly higher alcohol content than usual.
+        - But we can guarantee you, we were wearing lederhosen during each step of the process!
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Hops
+        - Yeast
+    # - title: Koschei
+    #   style: Russian Imperial Stout
+    #   soon: true
+    #   url: koschei
+    #   bg: '#e6c337'
+    #   abv: 11
+    #   og: '1.110'
+    #   fg: '1.034'
+    #   untappdId: 2071031
+    #   available: false
+    #   description:
+    #     - Tremble and despair, mortals! An ageless demon, an infernal force of nature has broken its shackles and is now hacking and slashing his way throughout the land. He's munching on little children, stealing future wives and setting your homes ablaze. Your pain is his life force!
+    #     - Any valiant knight trying to stop him in his murderous tracks meets his doom or gets turned into a frog, a dog, or even more appropiately, a matryoshka doll.
+    #     - Ancient scrolls say that the means to ending this plague is finding his soul, which is hidden in a needle, which is in an egg, which is in a duck, which is in a hare, buried under an oak tree on a desolate island in an iron chest.
+    #     - It's up to you to embrace your inner slav and rid the world of Koschei the Deathless!
+    #     - One glass at a time.
+    #   ingredients:
+    #     - Water
+    #     - Malted Barley
+    #     - Oats
+    #     - Hops
+    #     - Yeast
+    #     - Matured on cherry barrel wood
     - title: Fist Fight
       style: Session IPA
-      new: true
+      new: false
       url: fist-fight
       bg: '#7989ff'
       abv: 4.5
       og: '1.042'
       fg: '1.004'
       untappdId: 2006973
-      available: true
+      available: false
       description:
         - We tried to create a perfect session IPA, one that you could drink tons of. At the beach, at a barbecue, or hey, even at work. So we tested it out at first on a few dozen people.
         - Shockingly, after just a few pints, they started shouting nonsense and punching each other senseless. And still drinking beer at the same time!
@@ -567,7 +637,7 @@ products:
         - Yeast
     - title: Melting pot
       style: English Barleywine
-      new: true
+      new: false
       url: melting-pot
       bg: '#8a8a8a'
       abv: 12.5
@@ -591,7 +661,7 @@ products:
         - Matured on bourbon wood
     - title: Tonka Rush
       style: Coffee Stout
-      new: true
+      new: false
       url: tonka-rush
       bg: '#b75b5d'
       abv: 9
@@ -641,7 +711,7 @@ products:
         - Yeast
     - title: Shock Therapy V2
       subtitle: 'Hallertau Blanc & Hüll Melon'
-      new: true
+      new: false
       style: India Pale Ale
       url: shock-therapy-v2
       abv: 6,5
@@ -649,7 +719,7 @@ products:
       og: '1.062'
       fg: '1.012'
       untappdId: 1952916
-      available: true
+      available: false
       description:
         - 'WTF?! Another IPA?!'
         - 'Of course! Some people don’t know what’s good for them! So we will take it upon ourselves to educate. By force. We’ll strap you down to your bar stool, glue your eyelids open, accessorize you with a nice “harmless” metal hat and force feed you our own brand of medicine: hops!'
@@ -770,7 +840,7 @@ products:
       og: '1.062'
       fg: '1.012'
       untappdId: 1843779
-      available: true
+      available: false
       description:
         - You might be able to carelessly tuck yourself in and sleep soundly after a long stressful day. But right outside your window the city continues to suffer on its own.
         - Car alarms, music, laughter, sirens, stray dogs, broken glass, drunkards singing, bums fighting it out in the alleys and maybe some people even start redecorating their homes at these late hours.
@@ -824,10 +894,10 @@ products:
         - Oats
         - Hops
         - Yeast
-    # - title: Coming soon
-    #   isPlaceholder: true
-    # - title: Coming soon
-    #   isPlaceholder: true
+    - title: Coming soon
+      isPlaceholder: true
+    - title: Coming soon
+      isPlaceholder: true
 
 translations:
   abv: '% ABV'
