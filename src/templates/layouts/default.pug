@@ -41,8 +41,6 @@ html
 
     .wrapper
 
-      script(type='text/javascript') window.locals = !{JSON.stringify(locals, null, 2)}
-
       input(type='checkbox')#hamburger-trigger.hamburger__trigger
       label(for='hamburger-trigger').hamburger__btn.hidden-md-up
         .hamburger__icon
@@ -57,6 +55,8 @@ html
       block content
 
     +debug()
+
+    script(type='text/javascript') window.locals = !{JSON.stringify(locals, null, 2)}
 
     script(type='text/javascript', src='/scripts/jst-' + locals.version + (locals.minify ? '.min' : '') + '.js')
     script(type='text/javascript', src='/scripts/app-' + locals.version + (locals.minify ? '.min' : '') + '.js')
