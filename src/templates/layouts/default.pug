@@ -21,7 +21,21 @@ html
 
     link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400', rel='stylesheet')
 
-    title= locals.title + (locals.currentBeer ? ' - ' + locals.currentBeer.title : '')
+    - var title = locals.meta.title + (locals.currentBeer ? ' - ' + locals.currentBeer.title : '');
+    - var description = locals.currentBeer ? locals.currentBeer.description.join(' ') : locals.meta.description;
+    - var image = locals.currentBeer ? 'images/beers/' + locals.currentBeer.url + '-1280.jpg' : locals.meta.image;
+
+    title= title
+    meta(name='description', content=description)
+
+    meta(property="og:title", content=title)
+    meta(property="og:description", content=description)
+    meta(property="og:image", content=image)
+
+    meta(property="twitter:card", content="summary_large_image")
+    meta(property="twitter:title", content=title)
+    meta(property="twitter:description", content=description)
+    meta(property="twitter:image", content=image)
 
   body(class= 'page-' + locals.page)
 

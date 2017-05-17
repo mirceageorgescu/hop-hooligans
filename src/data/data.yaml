@@ -1,6 +1,9 @@
 sizes: [320, 640, 720, 1024, 1280, 1600, 1920, 2048]
 
-title: Hop Hooligans
+meta:
+  image: /images/og/og.jpg
+  title: Hop Hooligans
+  description: We only brew the beers we want to drink. And we like powerful, flavorful crazy shit.
 
 header:
   logo:
@@ -44,7 +47,7 @@ home:
   hero:
     img: hero
     modifier: hero--full hero--dark
-    title: We only brew the beers<br>we want to drink. Period.
+    title: We only brew the beers<br>we want to drink.
     subtitle: And we like powerful, flavorful crazy shit.
     cta:
       href: beers.html
