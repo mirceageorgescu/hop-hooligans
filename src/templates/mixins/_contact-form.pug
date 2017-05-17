@@ -10,7 +10,7 @@ mixin contact-form(data)
               div(class=field.class)
                 .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
                   if field.isTextarea == true
-                    textarea.mdl-textfield__input(id=field.name, type='text', rows=field.rows, name=field.name, required=field.required)
+                    textarea.mdl-textfield__input(id=field.name, rows=field.rows, name=field.name, required=field.required)
                   else
                     input.mdl-textfield__input(type=field.type, name=field.name, id=field.name, required=field.required)
 

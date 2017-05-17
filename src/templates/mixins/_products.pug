@@ -18,7 +18,7 @@ mixin products(data)
                   span.products__new= locals.translations.new
                 .products__details
                   .products__details__wrapper
-                    h1.products__title= item.title
+                    h2.products__title= item.title
                     h3.products__style= item.style
                     div.products__abv= item.abv + locals.translations.abv
 
@@ -35,7 +35,7 @@ mixin products(data)
                       span.products__new= locals.translations.new
                     .products__details
                       .products__details__wrapper
-                        h1.products__title= item.title
+                        h2.products__title= item.title
                         h3.products__style= item.style
                         div.products__abv= item.abv + locals.translations.abv
 
@@ -50,7 +50,7 @@ mixin products(data)
                   span.products__new= locals.translations.new
                 .products__details
                   .products__details__wrapper
-                    h1.products__title= item.title
+                    h2.products__title= item.title
                     h3.products__style= item.style
                     div.products__abv= item.abv + locals.translations.abv
 
@@ -58,4 +58,4 @@ mixin products(data)
           if item.isPlaceholder
             article.col-6.col-md-3.products__article
               .products__item.products__item__placeholder
-                h1.products__title.products__item__placeholder__title= item.title
+                h2.products__title.products__item__placeholder__title= item.title
