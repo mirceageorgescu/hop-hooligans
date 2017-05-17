@@ -70,7 +70,7 @@ brewery:
     - copy: Brewery
       id: brewery
       active: true
-      img: http://i.imgur.com/1ZhPM6a.jpg
+      img: //i.imgur.com/1ZhPM6a.jpg
       hotspots:
         - id: control-cabinet
           location:
@@ -193,7 +193,7 @@ brewery:
             copy: The bottles get their labels on and transported to the cold room.
     - copy: Fermentation
       id: fermentation
-      img: https://i.imgur.com/w0lhW4B.jpg
+      img: //i.imgur.com/w0lhW4B.jpg
       hotspots:
         - id: brewery
           location:
@@ -292,7 +292,7 @@ brewery:
               to remove oxygen from the bottles before filling them and the list goes on and on.
     - copy: Storage
       id: storage
-      img: https://i.imgur.com/fmPo1uy.jpg
+      img: //i.imgur.com/fmPo1uy.jpg
       hotspots:
         - id: fermentation
           location:
@@ -372,7 +372,7 @@ brewery:
               yeast cells are alive we can calculate how much yeast to add for optimal fermentation conditions.
     - copy: Temperature control
       id: temperature-control
-      img: https://i.imgur.com/jpW4nMP.jpg
+      img: //i.imgur.com/jpW4nMP.jpg
       hotspots:
         - id: cold-room
           location:
@@ -466,7 +466,7 @@ brewery:
               match the requirements of each phase of the fermentation process.
     - copy: Cold Room
       id: cold-room
-      img: https://i.imgur.com/dfVas1W.jpg
+      img: //i.imgur.com/dfVas1W.jpg
       hotspots:
         - id: get-out
           location:
@@ -929,7 +929,7 @@ contact:
     items:
       - type: phone
         title: Phone
-        value: 0040722644821
+        value: 0040799340209
       - type: email
         title: E-mail
         value: office@hophooligans.ro
@@ -938,7 +938,7 @@ contact:
       - title: CUI
         value: 35603101
       - title: Registry Number
-        value: J23/477/0502216
+        value: J23/477/05022016
       - title: LEI Account
         value: RO69UGBI0000792004182RON
       - title: EUR Account
