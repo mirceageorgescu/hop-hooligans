@@ -1,9 +1,9 @@
 sizes: [320, 640, 720, 1024, 1280, 1600, 1920, 2048]
 
 meta:
-  domain: //hophooligans.ro
+  domain: https://www.hophooligans.ro
   image: /images/og/og.jpg
-  title: Hop Hooligans
+  title: Hop Hooligans Brewery
   description: We only brew the beers we want to drink. And we like powerful, flavorful crazy shit.
 
 header:
