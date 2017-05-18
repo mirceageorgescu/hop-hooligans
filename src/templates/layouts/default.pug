@@ -23,7 +23,7 @@ html
 
     - var title = locals.meta.title + (locals.currentBeer ? ' - ' + locals.currentBeer.title : '');
     - var description = locals.currentBeer ? locals.currentBeer.description.join(' ') : locals.meta.description;
-    - var image = locals.meta.domain + (locals.currentBeer ? '/images/beers/' + locals.currentBeer.url + '-1280.jpg' : locals.meta.image);
+    - var image = locals.meta.domain + (locals.currentBeer ? '/images/resize-dist/beers/' + locals.currentBeer.url + '-1280.jpg' : locals.meta.image);
 
     title= title
     meta(name='description', content=description)
