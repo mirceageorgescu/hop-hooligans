@@ -296,6 +296,7 @@ gulp.task('default', ['clean'], function (cb) {
     'sass',
     'templates',
     'products',
+    'cache-api',
     'jst',
     'scripts',
     'images',
