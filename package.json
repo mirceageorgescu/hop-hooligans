@@ -34,6 +34,7 @@
     "gulp-clean-css": "^3.0.0",
     "gulp-concat": "^2.6.0",
     "gulp-data": "^1.2.1",
+    "gulp-download": "0.0.1",
     "gulp-each": "^0.2.0",
     "gulp-filter": "^4.0.0",
     "gulp-if": "^1.2.5",

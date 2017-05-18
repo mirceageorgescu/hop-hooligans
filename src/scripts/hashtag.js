@@ -10,8 +10,18 @@ class Hashtag {
       return;
     }
 
+    this.$el = $el;
+
+    this.getPhotos = this.getPhotos.bind(this);
+
+    this.getPhotos('https://api.untappd.com/v4/brewery/checkins/268580');
+  }
+
+  getPhotos (url) {
+    var self = this;
+
     $.ajax({
-      url: 'https://api.untappd.com/v4/brewery/checkins/268580',
+      url: url,
       dataType: 'json',
       type: 'GET',
       data: {
@@ -22,27 +32,22 @@ class Hashtag {
       success: function(data){
 
         if(data.meta.code === 200){
-          $el.html(window.JST['hashtag.html']({
+          self.$el.html(window.JST['hashtag.html']({
             data: data,
             locals: locals
           }));
 
-
           //init timeago
           $("time.timeago").timeago();
         } else {
-          $el.html(window.JST['hashtag.html']({
+          self.$el.html(window.JST['hashtag.html']({
             locals: locals,
             error: meta.error_message
           }));
         }
-
       },
       error: function(data) {
-        $el.html(window.JST['hashtag-error.html']({
-          locals: locals,
-          error: JSON.parse(data.responseText).meta.error_detail
-        }));
+        self.getPhotos('/api/268580.json');
       }
     });
   }

@@ -12,7 +12,9 @@ var lazypipe     = require('lazypipe');
 var browserify   = require('browserify');
 var babelify     = require('babelify');
 var source       = require('vinyl-source-stream');
-var buffer = require('vinyl-buffer');
+var buffer       = require('vinyl-buffer');
+var download     = require("gulp-download");
+
 
 function endsWith(str, suffix) {
   return str.indexOf(suffix, str.length - suffix.length) !== -1;
@@ -265,6 +267,26 @@ gulp.task('fonts', function () {
   return gulp.src(['src/fonts/**/*'])
     .pipe($.plumber({errorHandler: $.notify.onError('Error: <%= error.message %>')}))
     .pipe(gulp.dest('dist/fonts'));
+});
+
+// Download API jsons to use for fallback
+gulp.task('cache-api', function () {
+
+  //download latest checkins
+  download('https://api.untappd.com/v4/brewery/checkins/268580?client_id=918F01B53FDAC49A915124127738378DE45E9682&client_secret=3A59FA4FDB2B0776A23B7ED7196B1A6920FDB923&limit=50')
+    .pipe($.rename('268580.json'))
+    .pipe(gulp.dest("dist/api/"));
+
+  //download beer reviews
+  var data = readYamlFile('/data.yaml');
+  data.products.list.forEach(function(beer) {
+    //we need a beer id
+    if(!beer.untappdId) { return; }
+
+    download('https://api.untappd.com/v4/beer/info/' + beer.untappdId + '/media/recent?client_id=918F01B53FDAC49A915124127738378DE45E9682&client_secret=3A59FA4FDB2B0776A23B7ED7196B1A6920FDB923&limit=50')
+      .pipe($.rename(beer.untappdId + '.json'))
+      .pipe(gulp.dest("dist/api/"));
+  });
 });
 
 // Build production files, the default task

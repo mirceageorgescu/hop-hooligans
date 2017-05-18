@@ -9,10 +9,20 @@ class Reviews {
       return;
     }
 
-    const bg = $el.attr('data-bg');
+    this.$el = $el;
+
+    this.getReviews = this.getReviews.bind(this);
+    this.beerId = $el.attr('data-untappd-id');
+
+    this.getReviews('https://api.untappd.com/v4/beer/info/' + this.beerId + '/media/recent');
+  }
+
+  getReviews (url) {
+    var bg = this.$el.attr('data-bg');
+    var self = this;
 
     $.ajax({
-      url: 'https://api.untappd.com/v4/beer/info/' + $el.attr('data-untappd-id') + '/media/recent',
+      url: url,
       dataType: 'json',
       type: 'GET',
       data: {
@@ -25,7 +35,7 @@ class Reviews {
         // console.log(data.response.beer.checkins.items);
 
         if(data.meta.code === 200){
-          $el.html(window.JST['review.html']({
+          self.$el.html(window.JST['review.html']({
             data: data,
             bg: bg,
             locals: locals
@@ -34,17 +44,14 @@ class Reviews {
           //init timeago
           $("time.timeago").timeago();
         } else {
-          $el.html(window.JST['review-error.html']({
+          self.$el.html(window.JST['review-error.html']({
             bg: bg,
             error: data.meta.error_detail
           }));
         }
       },
       error: function(data) {
-        $el.html(window.JST['review-error.html']({
-          bg: bg,
-          error: JSON.parse(data.responseText).meta.error_detail
-        }));
+        self.getReviews('/api/' + self.beerId + '.json');
       }
 
     });
