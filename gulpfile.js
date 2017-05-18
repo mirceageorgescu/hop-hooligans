@@ -170,7 +170,7 @@ gulp.task('products', function () {
 // Resize images
 gulp.task('resize', function () {
   var data = readYamlFile('/data.yaml');
-  var src = gulp.src(['src/images/resize/**/*.{jpg,png}']);
+  var src = gulp.src(['src/images/resize-src/**/*.{jpg,png}']);
 
   data.sizes.forEach(function(size){
     src
@@ -184,7 +184,7 @@ gulp.task('resize', function () {
         console.log('resizing and optimizing ' + path.basename + '-' + size + path.extname);
         path.basename += '-' + size;
       }))
-      .pipe(gulp.dest('dist/images'));
+      .pipe(gulp.dest('src/images/resize-dist'));
   });
 });
 
@@ -251,7 +251,7 @@ gulp.task('dev', ['default', 'setWatch'], function() {
 
   gulp.watch(['src/styles/**/*.scss'], ['sass']);
   gulp.watch(['src/images/**/*', '!src/images/resize/**/**'], ['images', reload]);
-  gulp.watch(['src/images/resize/**/*'], ['resize', reload]);
+  gulp.watch(['src/images/resize-src/**/*'], ['resize', reload]);
   gulp.watch(['src/fonts/**/*'], ['fonts', reload]);
   gulp.watch(['src/jst/**/*'], ['jst', reload]);
   gulp.watch(['src/images/**/*'], ['images', reload]);
@@ -270,12 +270,12 @@ gulp.task('fonts', function () {
 });
 
 // Download API jsons to use for fallback
-gulp.task('cache-api', function () {
+gulp.task('fallback-api', function () {
 
   //download latest checkins
   download('https://api.untappd.com/v4/brewery/checkins/268580?client_id=918F01B53FDAC49A915124127738378DE45E9682&client_secret=3A59FA4FDB2B0776A23B7ED7196B1A6920FDB923&limit=50')
     .pipe($.rename('268580.json'))
-    .pipe(gulp.dest("dist/api/"));
+    .pipe(gulp.dest("src/fallback-api/"));
 
   //download beer reviews
   var data = readYamlFile('/data.yaml');
@@ -285,8 +285,15 @@ gulp.task('cache-api', function () {
 
     download('https://api.untappd.com/v4/beer/info/' + beer.untappdId + '/media/recent?client_id=918F01B53FDAC49A915124127738378DE45E9682&client_secret=3A59FA4FDB2B0776A23B7ED7196B1A6920FDB923&limit=50')
       .pipe($.rename(beer.untappdId + '.json'))
-      .pipe(gulp.dest("dist/api/"));
+      .pipe(gulp.dest("src/fallback-api/"));
   });
+});
+
+// Copy fallback-api json files
+gulp.task('copy-fallback-api', function () {
+  return gulp.src(['src/fallback-api/**/*'])
+    .pipe($.plumber({errorHandler: $.notify.onError('Error: <%= error.message %>')}))
+    .pipe(gulp.dest('dist/fallback-api'));
 });
 
 // Build production files, the default task
@@ -296,11 +303,11 @@ gulp.task('default', ['clean'], function (cb) {
     'sass',
     'templates',
     'products',
-    'cache-api',
+    'copy-fallback-api',
     'jst',
     'scripts',
     'images',
-    'resize',
+    // 'resize',
     'svg',
     'video',
     'fonts'

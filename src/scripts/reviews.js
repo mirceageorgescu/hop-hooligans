@@ -51,7 +51,7 @@ class Reviews {
         }
       },
       error: function(data) {
-        self.getReviews('/api/' + self.beerId + '.json');
+        self.getReviews('/fallback-api/' + self.beerId + '.json');
       }
 
     });

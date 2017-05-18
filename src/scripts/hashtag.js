@@ -47,7 +47,7 @@ class Hashtag {
         }
       },
       error: function(data) {
-        self.getPhotos('/api/268580.json');
+        self.getPhotos('/fallback-api/268580.json');
       }
     });
   }
