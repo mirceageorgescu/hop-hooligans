@@ -58,5 +58,5 @@ html
 
     script(type='text/javascript') window.locals = !{JSON.stringify(locals, null, 2)}
 
-    script(type='text/javascript', src='/scripts/jst-' + locals.version + (locals.minify ? '.min' : '') + '.js')
-    script(type='text/javascript', src='/scripts/app-' + locals.version + (locals.minify ? '.min' : '') + '.js')
+    script(type='text/javascript', src='/scripts/jst-' + locals.version + (locals.minify ? '.min' : '') + '.js', async)
+    script(type='text/javascript', src='/scripts/app-' + locals.version + (locals.minify ? '.min' : '') + '.js', async)
