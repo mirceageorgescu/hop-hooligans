@@ -178,7 +178,8 @@ gulp.task('resize', function () {
       .pipe($.imageResize({
         width: size,
         upscale: false,
-        quality: 0.6,
+        quality: 0.7,
+        interlace: true
       }))
       .pipe($.rename(function (path) {
         console.log('resizing and optimizing ' + path.basename + '-' + size + path.extname);
