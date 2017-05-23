@@ -1,7 +1,7 @@
 .nav {
   line-height: 1;
   z-index: 10;
-  background: white;
+  background: #000;
   font-size: 0;
   @include media-breakpoint-down(sm) {
     transform: translateY(-100%);
@@ -12,6 +12,7 @@
     transition: transform 400ms ease-out;
   }
   @include media-breakpoint-up(md) {
+    background: white;
     transform: translateY(0);
   }
 }
@@ -21,6 +22,9 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  @include media-breakpoint-down(sm) {
+    border-bottom: 1px solid #333;
+  }
 }
 
 .nav__item {
@@ -37,14 +41,27 @@
   font-family: $font-primary;
   font-weight: bold;
   font-size: 24px;
+  color: white;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+    background: #111;
+  }
 
   @include media-breakpoint-down(sm) {
-    border-bottom: 1px solid #000;
+    border-top: 1px solid #333;
   }
 
   @include media-breakpoint-up(md) {
     font-size: 24px;
     padding: 20px 20px;
+    color: black;
+    &:hover {
+      color: black;
+      text-decoration: underline;
+      background: transparent;
+    }
   }
 
   @include media-breakpoint-up(lg) {
