@@ -61,7 +61,14 @@ mixin product(data)
           a.btn.btn-primary.btn-lg.btn-uppercase.btn-block.mt-3(
             href=locals.products.cta.href,
             class=data.available ? '' : 'disabled'
-          )= data.available ? locals.products.cta.copy : locals.products.unavailable
+          )
+            if data.available
+              span= locals.products.cta.copy
+            else if data.soon
+              span= locals.translations.comingSoon
+            else
+              span= locals.products.unavailable
 
-          .text-center.product__minimum= locals.translations.minimum
+          if data.available
+            .text-center.product__minimum= locals.translations.minimum
 

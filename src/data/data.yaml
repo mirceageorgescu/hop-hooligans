@@ -548,6 +548,75 @@ products:
         - Oats
         - Hops
         - Yeast
+    - title: Koschei
+      style: Russian Imperial Stout
+      soon: true
+      url: koschei
+      bg: '#e6c337'
+      abv: 11
+      og: '1.110'
+      fg: '1.034'
+      untappdId: 2071031
+      available: false
+      description:
+        - Tremble and despair, mortals! An ageless demon, an infernal force of nature has broken its shackles and is now hacking and slashing his way throughout the land. He's munching on little children, stealing future wives and setting your homes ablaze. Your pain is his life force!
+        - Any valiant knight trying to stop him in his murderous tracks meets his doom or gets turned into a frog, a dog, or even more appropiately, a matryoshka doll.
+        - Ancient scrolls say that the means to ending this plague is finding his soul, which is hidden in a needle, which is in an egg, which is in a duck, which is in a hare, buried under an oak tree on a desolate island in an iron chest.
+        - It's up to you to embrace your inner slav and rid the world of Koschei the Deathless!
+        - One glass at a time.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Oats
+        - Hops
+        - Yeast
+        - Matured on cherry barrel wood
+    - title: Modern Mosaic
+      style: Imperial India Pale Ale
+      soon: true
+      url: modern-mosaic
+      bg: '#e49827'
+      abv: 9.1
+      og: '1.078'
+      fg: '1.014'
+      untappdId: 2100783
+      available: false
+      description:
+        - A few years ago a silent competition started between hop growers. No longer were the grassy, citrusy, spicy breeds enough for the fancy beer connoisseurs.
+        - The demands were high, but finally sated in 2012 when Mosaic brought juicy tropical notes to the IPA table.
+        - Sadly, trends always shift, and classics seem to become overrated in time, quickly discarded for the younger, sexier “hop of the year”.
+        - But damn them and their fancy pants, sipping glasses and high horses! We cracked our beloved Mosaic to bits, went deep into its core and brought it back to life, raging with juicy mango, jackfruit and maracuja.
+        - We rebuilt it into something that seems like a pretty picture. A work of art, if you will.
+        - Our very own Modern Mosaic.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Oats
+        - Lupulin Powder
+        - Yeast
+    # - title: Seven Years O'Clock
+    #   style: Imperial India Pale Ale
+    #   soon: true
+    #   url: modern-mosaic
+    #   bg: '#e6c337'
+    #   abv: 9.1
+    #   og: '1.078'
+    #   fg: '1.014'
+    #   untappdId: 2100783
+    #   available: false
+    #   description:
+    #     - A few years ago a silent competition started between hop growers. No longer were the grassy, citrusy, spicy breeds enough for the fancy beer connoisseurs.
+    #     - The demands were high, but finally sated in 2012 when Mosaic brought juicy tropical notes to the IPA table.
+    #     - Sadly, trends always shift, and classics seem to become overrated in time, quickly discarded for the younger, sexier “hop of the year”.
+    #     - But damn them and their fancy pants, sipping glasses and high horses! We cracked our beloved Mosaic to bits, went deep into its core and brought it back to life, raging with juicy mango, jackfruit and maracuja.
+    #     - We rebuilt it into something that seems like a pretty picture. A work of art, if you will.
+    #     - Our very own Modern Mosaic.
+    #   ingredients:
+    #     - Water
+    #     - Malted Barley
+    #     - Oats
+    #     - Lupulin Powder
+    #     - Yeast
     - title: Shock Therapy V3
       subtitle: 'Simcoe & Azacca'
       style: India Pale Ale
@@ -595,29 +664,6 @@ products:
         - Malted Wheat
         - Hops
         - Yeast
-    # - title: Koschei
-    #   style: Russian Imperial Stout
-    #   soon: true
-    #   url: koschei
-    #   bg: '#e6c337'
-    #   abv: 11
-    #   og: '1.110'
-    #   fg: '1.034'
-    #   untappdId: 2071031
-    #   available: false
-    #   description:
-    #     - Tremble and despair, mortals! An ageless demon, an infernal force of nature has broken its shackles and is now hacking and slashing his way throughout the land. He's munching on little children, stealing future wives and setting your homes ablaze. Your pain is his life force!
-    #     - Any valiant knight trying to stop him in his murderous tracks meets his doom or gets turned into a frog, a dog, or even more appropiately, a matryoshka doll.
-    #     - Ancient scrolls say that the means to ending this plague is finding his soul, which is hidden in a needle, which is in an egg, which is in a duck, which is in a hare, buried under an oak tree on a desolate island in an iron chest.
-    #     - It's up to you to embrace your inner slav and rid the world of Koschei the Deathless!
-    #     - One glass at a time.
-    #   ingredients:
-    #     - Water
-    #     - Malted Barley
-    #     - Oats
-    #     - Hops
-    #     - Yeast
-    #     - Matured on cherry barrel wood
     - title: Fist Fight
       style: Session IPA
       new: false
@@ -898,10 +944,10 @@ products:
         - Oats
         - Hops
         - Yeast
-    - title: Coming soon
-      isPlaceholder: true
-    - title: Coming soon
-      isPlaceholder: true
+    # - title: Coming soon
+    #   isPlaceholder: true
+    # - title: Coming soon
+    #   isPlaceholder: true
 
 translations:
   abv: '% ABV'
@@ -910,6 +956,8 @@ translations:
   wasDrinking: was drinking a
   ingredients: Ingredients
   new: New
+  soon: Soon
+  comingSoon: Coming Soon
   rating: Rating
   minimum: 20 bottles minimum
 

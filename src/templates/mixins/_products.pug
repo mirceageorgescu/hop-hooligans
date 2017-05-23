@@ -16,6 +16,8 @@ mixin products(data)
                   +responsive-background('beers/' + item.url)(class='products__image')
                 if item.new
                   span.products__new= locals.translations.new
+                if item.soon
+                  span.products__soon= locals.translations.soon
                 .products__details
                   .products__details__wrapper
                     h2.products__title= item.title
@@ -33,6 +35,8 @@ mixin products(data)
                       +responsive-background('beers/' + item.url)(class='products__image')
                     if item.new
                       span.products__new= locals.translations.new
+                    if item.soon
+                      span.products__soon= locals.translations.soon
                     .products__details
                       .products__details__wrapper
                         h2.products__title= item.title
@@ -48,6 +52,8 @@ mixin products(data)
                   +responsive-background('beers/' + item.url)(class='products__image')
                 if item.new
                   span.products__new= locals.translations.new
+                if item.soon
+                  span.products__soon= locals.translations.soon
                 .products__details
                   .products__details__wrapper
                     h2.products__title= item.title
