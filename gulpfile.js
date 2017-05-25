@@ -271,10 +271,10 @@ gulp.task('fonts', function () {
 });
 
 // Download API jsons to use for fallback
-gulp.task('fallback-api', function () {
+gulp.task('api', function () {
 
   //download latest checkins
-  download('https://api.untappd.com/v4/brewery/checkins/268580?client_id=918F01B53FDAC49A915124127738378DE45E9682&client_secret=3A59FA4FDB2B0776A23B7ED7196B1A6920FDB923&limit=50')
+  download('https://api.untappd.com/v4/brewery/checkins/268580?client_id=C12E8A838E6229F7CA618BFC7A5616793E818785&client_secret=E139EFFBD6E5A61BE9E0DC88CC5907B6FA847468&limit=50')
     .pipe($.rename('268580.json'))
     .pipe(gulp.dest("src/fallback-api/"));
 
@@ -284,7 +284,7 @@ gulp.task('fallback-api', function () {
     //we need a beer id
     if(!beer.untappdId) { return; }
 
-    download('https://api.untappd.com/v4/beer/info/' + beer.untappdId + '/media/recent?client_id=918F01B53FDAC49A915124127738378DE45E9682&client_secret=3A59FA4FDB2B0776A23B7ED7196B1A6920FDB923&limit=50')
+    download('https://api.untappd.com/v4/beer/info/' + beer.untappdId + '/media/recent?client_id=C12E8A838E6229F7CA618BFC7A5616793E818785&client_secret=E139EFFBD6E5A61BE9E0DC88CC5907B6FA847468&limit=50')
       .pipe($.rename(beer.untappdId + '.json'))
       .pipe(gulp.dest("src/fallback-api/"));
   });
