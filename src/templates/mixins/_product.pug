@@ -58,17 +58,18 @@ mixin product(data)
               each item in data.description
                 p= item
 
-          a.btn.btn-primary.btn-lg.btn-uppercase.btn-block.mt-3(
-            href=locals.products.cta.href,
-            class=data.available ? '' : 'disabled'
-          )
-            if data.available
-              span= locals.products.cta.copy
-            else if data.soon
-              span= locals.translations.comingSoon
-            else
-              span= locals.products.unavailable
+          if !data.hideBuy
+            a.btn.btn-primary.btn-lg.btn-uppercase.btn-block.mt-3(
+              href=locals.products.cta.href,
+              class=data.available ? '' : 'disabled'
+            )
+              if data.available
+                span= locals.products.cta.copy
+              else if data.soon
+                span= locals.translations.comingSoon
+              else
+                span= locals.products.unavailable
 
-          if data.available
-            .text-center.product__minimum= locals.translations.minimum
+            if data.available
+              .text-center.product__minimum= locals.translations.minimum
 

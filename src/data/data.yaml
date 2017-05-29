@@ -594,29 +594,24 @@ products:
         - Oats
         - Lupulin Powder
         - Yeast
-    # - title: Seven Years O'Clock
-    #   style: Imperial India Pale Ale
-    #   soon: true
-    #   url: modern-mosaic
-    #   bg: '#e6c337'
-    #   abv: 9.1
-    #   og: '1.078'
-    #   fg: '1.014'
-    #   untappdId: 2100783
-    #   available: false
-    #   description:
-    #     - A few years ago a silent competition started between hop growers. No longer were the grassy, citrusy, spicy breeds enough for the fancy beer connoisseurs.
-    #     - The demands were high, but finally sated in 2012 when Mosaic brought juicy tropical notes to the IPA table.
-    #     - Sadly, trends always shift, and classics seem to become overrated in time, quickly discarded for the younger, sexier “hop of the year”.
-    #     - But damn them and their fancy pants, sipping glasses and high horses! We cracked our beloved Mosaic to bits, went deep into its core and brought it back to life, raging with juicy mango, jackfruit and maracuja.
-    #     - We rebuilt it into something that seems like a pretty picture. A work of art, if you will.
-    #     - Our very own Modern Mosaic.
-    #   ingredients:
-    #     - Water
-    #     - Malted Barley
-    #     - Oats
-    #     - Lupulin Powder
-    #     - Yeast
+    - title: Seven Years O'Clock
+      style: India Pale Ale
+      url: seven-years-o-clock
+      bg: '#000000'
+      abv: 6
+      new: true
+      og: '1.056'
+      fg: '1.012'
+      untappdId: 2071006
+      available: false
+      hideBuy: true
+      description:
+        - Petre was a true hooligan. One of us. It's hard to describe how it's like to lose someone close. Words are worthless.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Hops
+        - Yeast
     - title: Shock Therapy V3
       subtitle: 'Simcoe & Azacca'
       style: India Pale Ale
@@ -944,10 +939,12 @@ products:
         - Oats
         - Hops
         - Yeast
-    # - title: Coming soon
-    #   isPlaceholder: true
-    # - title: Coming soon
-    #   isPlaceholder: true
+    - title: Coming soon
+      isPlaceholder: true
+    - title: Coming soon
+      isPlaceholder: true
+    - title: Coming soon
+      isPlaceholder: true
 
 translations:
   abv: '% ABV'
