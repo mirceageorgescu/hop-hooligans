@@ -548,16 +548,40 @@ products:
         - Oats
         - Hops
         - Yeast
+    - title: Nutbusters
+      style: Coconut Vanilla Smoothie IPA
+      url: nutbusters
+      bg: '#ef53a1'
+      abv: 6.7
+      og: '1.064'
+      fg: '1.014'
+      untappdId: 2134329
+      available: false
+      soon: true
+      description:
+        - What better way to unwind other than sipping a nice cold drink with your special pal, in front of a good movie.
+        - We made this beer just for such occassions. A nice double dry-hopped surprise with a chunky blast of coconut and a solid gloop of vanilla, with a dense, creamy body.
+        - You just have to sit back, turn the volume up, and unload. Your daily stress.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Oats
+        - Lactose
+        - Hops
+        - Coconut flakes
+        - Vanilla beans
+        - Yeast
     - title: Koschei
       style: Russian Imperial Stout
-      soon: true
       url: koschei
       bg: '#e6c337'
       abv: 11
       og: '1.110'
       fg: '1.034'
       untappdId: 2071031
-      available: false
+      available: true
+      new: true
       description:
         - Tremble and despair, mortals! An ageless demon, an infernal force of nature has broken its shackles and is now hacking and slashing his way throughout the land. He's munching on little children, stealing future wives and setting your homes ablaze. Your pain is his life force!
         - Any valiant knight trying to stop him in his murderous tracks meets his doom or gets turned into a frog, a dog, or even more appropiately, a matryoshka doll.
@@ -573,14 +597,14 @@ products:
         - Matured on cherry barrel wood
     - title: Modern Mosaic
       style: Imperial India Pale Ale
-      soon: true
       url: modern-mosaic
       bg: '#e49827'
       abv: 9.1
       og: '1.078'
       fg: '1.014'
       untappdId: 2100783
-      available: false
+      available: true
+      new: true
       description:
         - A few years ago a silent competition started between hop growers. No longer were the grassy, citrusy, spicy breeds enough for the fancy beer connoisseurs.
         - The demands were high, but finally sated in 2012 when Mosaic brought juicy tropical notes to the IPA table.
@@ -615,14 +639,13 @@ products:
     - title: Shock Therapy V3
       subtitle: 'Simcoe & Azacca'
       style: India Pale Ale
-      new: true
       url: shock-therapy-v3
       bg: '#df4b4b'
       abv: 6.5
       og: '1.062'
       fg: '1.012'
       untappdId: 2096445
-      available: true
+      available: false
       description:
         - 'WTF?! Another IPA?!'
         - 'Of course! Some people don’t know what’s good for them! So we will take it upon ourselves to educate. By force. We’ll strap you down to your bar stool, glue your eyelids open, accessorize you with a nice “harmless” metal hat and force feed you our own brand of medicine: hops!'
@@ -639,7 +662,6 @@ products:
         - Yeast
     - title: Lederhosen
       style: Hefeweizen
-      new: true
       url: lederhosen
       bg: '#cf3d40'
       abv: 6.5
@@ -668,7 +690,7 @@ products:
       og: '1.042'
       fg: '1.004'
       untappdId: 2006973
-      available: false
+      available: true
       description:
         - We tried to create a perfect session IPA, one that you could drink tons of. At the beach, at a barbecue, or hey, even at work. So we tested it out at first on a few dozen people.
         - Shockingly, after just a few pints, they started shouting nonsense and punching each other senseless. And still drinking beer at the same time!
@@ -885,7 +907,7 @@ products:
       og: '1.062'
       fg: '1.012'
       untappdId: 1843779
-      available: false
+      available: true
       description:
         - You might be able to carelessly tuck yourself in and sleep soundly after a long stressful day. But right outside your window the city continues to suffer on its own.
         - Car alarms, music, laughter, sirens, stray dogs, broken glass, drunkards singing, bums fighting it out in the alleys and maybe some people even start redecorating their homes at these late hours.
@@ -925,7 +947,7 @@ products:
       og: '1.046'
       fg: '1.008'
       untappdId: 1841150
-      available: true
+      available: false
       description:
         - We can't really control hops. If they want to be super fruity, well, you can't exactly stop them. And why would you?
         - Some may bring out zesty citrus, some juicy tropical fruit, some overripe orchard fruit, and some cheeky ones tend to bring out all of those at once.
@@ -939,8 +961,6 @@ products:
         - Oats
         - Hops
         - Yeast
-    - title: Coming soon
-      isPlaceholder: true
     - title: Coming soon
       isPlaceholder: true
     - title: Coming soon
