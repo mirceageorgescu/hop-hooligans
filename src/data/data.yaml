@@ -691,7 +691,7 @@ products:
       og: '1.042'
       fg: '1.004'
       untappdId: 2006973
-      available: true
+      available: false
       description:
         - We tried to create a perfect session IPA, one that you could drink tons of. At the beach, at a barbecue, or hey, even at work. So we tested it out at first on a few dozen people.
         - Shockingly, after just a few pints, they started shouting nonsense and punching each other senseless. And still drinking beer at the same time!
