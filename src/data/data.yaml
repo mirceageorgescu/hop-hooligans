@@ -516,6 +516,10 @@ beerMap:
       lat: 45.80024868949094
       lng: 24.1580168064811
       zoom: 14
+    - copy: Galati
+      lat: 45.433252748885195
+      lng: 28.04887860262454
+      zoom: 14
 
 products:
   title: Our beers
@@ -880,7 +884,7 @@ products:
       og: '1.074'
       fg: '1.020'
       untappdId: 1542767
-      available: true
+      available: false
       description:
         - Everybody knows of the vicious, terrible, goat-sucking creature that strikes fear into the hearts of every poblano down in Mexico.
         - It might be an ugly midget-bear, it might be a hairless mutt, or even some kind of alien, but no footage was ever clear. And it’s been like this for decades. Maybe it got bored of goats?
@@ -948,7 +952,7 @@ products:
       og: '1.046'
       fg: '1.008'
       untappdId: 1841150
-      available: false
+      available: true
       description:
         - We can't really control hops. If they want to be super fruity, well, you can't exactly stop them. And why would you?
         - Some may bring out zesty citrus, some juicy tropical fruit, some overripe orchard fruit, and some cheeky ones tend to bring out all of those at once.
