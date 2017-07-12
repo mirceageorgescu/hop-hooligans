@@ -552,6 +552,31 @@ products:
         - Oats
         - Hops
         - Yeast
+    - title: Shock Therapy V4
+      subtitle: 'Falconer’s flight & Waimea'
+      style: India Pale Ale
+      url: shock-therapy-v4
+      bg: '#df4b4b'
+      abv: 6.5
+      og: '1.062'
+      fg: '1.012'
+      untappdId: 2181591
+      available: true
+      new: true
+      description:
+        - 'WTF?! Another IPA?!'
+        - 'Of course! Some people don’t know what’s good for them! So we will take it upon ourselves to educate. By force. We’ll strap you down to your bar stool, glue your eyelids open, accessorize you with a nice “harmless” metal hat and force feed you our own brand of medicine: hops!'
+        - Nevermind those zapping wires in the background... You’ll forget about them soon enough. If one form of treatment doesn’t work, there’s still time, we have a lot more lined up for you, it’s quite a busy schedule.
+        - If it’s not stated on the bottle, ask the closest nurse from this respectable medical institution about the exact version of the medicine.
+        - We keep changing the recipe. Just to make sure you get the best out of our
+        - Shock Therapy.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Oats
+        - Hops
+        - Yeast
     - title: Nutbusters
       style: Coconut Vanilla Smoothie IPA
       subtitle: Hop Hooligans & Bereta Collaboration
@@ -561,8 +586,8 @@ products:
       og: '1.064'
       fg: '1.014'
       untappdId: 2134329
-      available: false
-      soon: true
+      available: true
+      new: true
       description:
         - What better way to unwind other than sipping a nice cold drink with your special pal, in front of a good movie.
         - We made this beer just for such occassions. A nice double dry-hopped surprise with a chunky blast of coconut and a solid gloop of vanilla, with a dense, creamy body.
@@ -586,7 +611,7 @@ products:
       fg: '1.034'
       untappdId: 2071031
       available: true
-      new: true
+      new: false
       description:
         - Tremble and despair, mortals! An ageless demon, an infernal force of nature has broken its shackles and is now hacking and slashing his way throughout the land. He's munching on little children, stealing future wives and setting your homes ablaze. Your pain is his life force!
         - Any valiant knight trying to stop him in his murderous tracks meets his doom or gets turned into a frog, a dog, or even more appropiately, a matryoshka doll.
@@ -609,7 +634,7 @@ products:
       fg: '1.014'
       untappdId: 2100783
       available: true
-      new: true
+      new: false
       description:
         - A few years ago a silent competition started between hop growers. No longer were the grassy, citrusy, spicy breeds enough for the fancy beer connoisseurs.
         - The demands were high, but finally sated in 2012 when Mosaic brought juicy tropical notes to the IPA table.
@@ -628,7 +653,7 @@ products:
       url: seven-years-o-clock
       bg: '#000000'
       abv: 6
-      new: true
+      new: false
       og: '1.056'
       fg: '1.012'
       untappdId: 2071006
@@ -968,8 +993,8 @@ products:
         - Yeast
     - title: Coming soon
       isPlaceholder: true
-    - title: Coming soon
-      isPlaceholder: true
+    # - title: Coming soon
+    #   isPlaceholder: true
 
 translations:
   abv: '% ABV'
