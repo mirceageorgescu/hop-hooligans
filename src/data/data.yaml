@@ -552,6 +552,29 @@ products:
         - Oats
         - Hops
         - Yeast
+    - title: Sencha
+      style: Japanese tea pale ale
+      url: sencha
+      bg: '#7cad43'
+      abv: 5
+      og: '1.044'
+      fg: '1.005'
+      untappdId: 2181592
+      available: true
+      new: true
+      description:
+        - Here at the Hop Hooligans Institute we take great pride on messing with other people’s cultures, especially the most taboo of their rituals.
+        - So we hope that Japanese tea masters will be able to manage with Earl Grey or chamomile during their fancy ceremonies, because we stole their precious whole leaf green tea for a special brew.
+        - Hops can take a break, but just for a second or so, because there’s a new fruity, aromatic botanical in the house.
+        - So take a deep bow and welcome Sencha into your lives.
+        - And into your gullets.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Hops
+        - Yeast
+        - Sencha tea leaves
     - title: Shock Therapy V4
       subtitle: 'Falconer’s flight & Waimea'
       style: India Pale Ale
@@ -587,7 +610,7 @@ products:
       fg: '1.014'
       untappdId: 2134329
       available: true
-      new: true
+      new: false
       description:
         - What better way to unwind other than sipping a nice cold drink with your special pal, in front of a good movie.
         - We made this beer just for such occassions. A nice double dry-hopped surprise with a chunky blast of coconut and a solid gloop of vanilla, with a dense, creamy body.
@@ -991,8 +1014,8 @@ products:
         - Oats
         - Hops
         - Yeast
-    - title: Coming soon
-      isPlaceholder: true
+    # - title: Coming soon
+    #   isPlaceholder: true
     # - title: Coming soon
     #   isPlaceholder: true
 
