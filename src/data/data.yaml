@@ -556,6 +556,81 @@ products:
         - Oats
         - Hops
         - Yeast
+    - title: "Sourpuss: Blackberry"
+      style: Berliner Weisse
+      url: sourpuss-blackberry
+      bg: '#9d6eca'
+      abv: 5
+      og: '1.042'
+      fg: '1.005'
+      untappdId: 2298502
+      available: false
+      soon: true
+      description:
+        - Be wary this season. There’s no telling what the night breeze might bring in through the window.
+        - If misfortune has you in its sights, you might be receiving a surprise visit from a rather grim, dark figure that you’ll find paws deep into your booze cellar.
+        - This dandy gourmand is looking to gulp down only all of the most sour, tart, refreshing of your stocked brews, planning to turn himself into a real grouchy behemoth.
+        - You spent the whole day getting cut and bruised through brambles to gather up a nice basket of fresh blackberries? Consider them gone also.
+        - Next time drink your Berliner Weisses fresh, and maybe you won’t attract bad company such as the Sourpuss.
+      ingredients:
+        - Water
+        - Blackberries
+        - Malted Barley
+        - Malted Wheat
+        - Hops
+        - Yeast
+        - Lactobacillus Helveticus
+    - title: Game Over
+      style: India Pale Ale
+      url: game-over
+      bg: '#7d5cab'
+      abv: 6
+      og: '1.061'
+      fg: '1.008'
+      untappdId: 2298504
+      available: false
+      soon: true
+      description:
+        - You might not be ready for this.
+        - We cleared out each and every bit of hop from our fridges and stuck it in this quadruple dry-hopped beast. That’s 4x, baby!
+        - We brushed up every tiny speck of lupulin powder, we hand-picked every stray hop pellet, we even squeezed the cleaning cloths.
+        - There’s no << retry >>. No << continue >>.
+        - No magic countdown to give you any chance of sticking in more coins for some extra lives.
+        - This is it.
+        - Game over.
+        - It’s been nice.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Oats
+        - Lots of hops
+        - Yeast
+    - title: Shock Therapy V5
+      subtitle: 'Ekuanot single hop'
+      style: India Pale Ale
+      url: shock-therapy-v5
+      bg: '#df4b4b'
+      abv: 6.5
+      og: '1.062'
+      fg: '1.012'
+      untappdId: 2268209
+      available: true
+      new: true
+      description:
+        - 'WTF?! Another IPA?!'
+        - 'Of course! Some people don’t know what’s good for them! So we will take it upon ourselves to educate. By force. We’ll strap you down to your bar stool, glue your eyelids open, accessorize you with a nice “harmless” metal hat and force feed you our own brand of medicine: hops!'
+        - Nevermind those zapping wires in the background... You’ll forget about them soon enough. If one form of treatment doesn’t work, there’s still time, we have a lot more lined up for you, it’s quite a busy schedule.
+        - If it’s not stated on the bottle, ask the closest nurse from this respectable medical institution about the exact version of the medicine.
+        - We keep changing the recipe. Just to make sure you get the best out of our
+        - Shock Therapy.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Oats
+        - Hops
+        - Yeast
     - title: Sencha
       style: Japanese tea pale ale
       url: sencha
@@ -565,7 +640,7 @@ products:
       fg: '1.005'
       untappdId: 2181592
       available: true
-      new: true
+      new: false
       description:
         - Here at the Hop Hooligans Institute we take great pride on messing with other people’s cultures, especially the most taboo of their rituals.
         - So we hope that Japanese tea masters will be able to manage with Earl Grey or chamomile during their fancy ceremonies, because we stole their precious whole leaf green tea for a special brew.
@@ -589,7 +664,7 @@ products:
       fg: '1.012'
       untappdId: 2181591
       available: true
-      new: true
+      new: false
       description:
         - 'WTF?! Another IPA?!'
         - 'Of course! Some people don’t know what’s good for them! So we will take it upon ourselves to educate. By force. We’ll strap you down to your bar stool, glue your eyelids open, accessorize you with a nice “harmless” metal hat and force feed you our own brand of medicine: hops!'
@@ -1018,8 +1093,8 @@ products:
         - Oats
         - Hops
         - Yeast
-    # - title: Coming soon
-    #   isPlaceholder: true
+    - title: Coming soon
+      isPlaceholder: true
     # - title: Coming soon
     #   isPlaceholder: true
 
