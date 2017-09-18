@@ -123,6 +123,7 @@ gulp.task('templates', function() {
     console.log('building template ' + file.relative);
 
     config.page = file.relative.replace('.pug', '');
+    config.pageClassName = '';
     return objectMerge(config, data);
   });
 
@@ -151,13 +152,14 @@ gulp.task('products', function () {
     data = objectMerge(config, data);
 
     data.currentBeer = beer;
+    data.pageClassName = 'product--' + beer.url;
 
     return gulp.src(['src/templates/pages/_product.pug'])
       .pipe($.plumber({errorHandler: $.notify.onError('Error: <%= error.message %>')}))
       .pipe($.if(config.isWatching && config.templatesCompilationNo > 0, $.pugInheritance({basedir: 'src/templates'})))
       .pipe($.pug({
         pretty: true,
-        data: data
+        data: objectMerge(data)
       }))
       .pipe($.rename(function (path) {
         console.log('generating ' + beer.url);

@@ -1,0 +1,46 @@
+.product--game-over {
+  font-family: $font-game-over-secondary;
+
+  h1, h2, .btn {
+    font-family: $font-game-over-primary;
+    font-weight: normal;
+  }
+
+  .footer__nav__link,
+  .nav__link {
+    font-weight: normal;
+    font-family: $font-game-over-secondary;
+    font-size: 15px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 12px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 15px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+    }
+
+    &:hover {
+      background: #ffcd02;
+      text-decoration: none;
+      cursor: pointer;
+      color: black;
+    }
+  }
+
+  .logo {
+    background-image: url(../images/logo-gameover.png);
+  }
+
+  .product__descriptors__definition,
+  .product__descriptors__attribute {
+    font-weight: normal;
+  }
+}
+
+
+
