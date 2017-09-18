@@ -663,7 +663,7 @@ products:
       og: '1.062'
       fg: '1.012'
       untappdId: 2181591
-      available: true
+      available: false
       new: false
       description:
         - 'WTF?! Another IPA?!'
@@ -688,7 +688,7 @@ products:
       og: '1.064'
       fg: '1.014'
       untappdId: 2134329
-      available: true
+      available: false
       new: false
       description:
         - What better way to unwind other than sipping a nice cold drink with your special pal, in front of a good movie.
@@ -800,7 +800,7 @@ products:
       og: '1.055'
       fg: '1.006'
       untappdId: 2071027
-      available: true
+      available: false
       description:
         - Brewing a traditional german style hefeweizen is serious business. A thorough process riddled with terms like triple decoction, ferulic acid rest and incredibly exact mash and fermentation temperatures.
         - All of that just to get a perfect balance of banana and clove in the aroma, with just the right amount of German hops.
@@ -822,7 +822,7 @@ products:
       og: '1.042'
       fg: '1.004'
       untappdId: 2006973
-      available: false
+      available: true
       description:
         - We tried to create a perfect session IPA, one that you could drink tons of. At the beach, at a barbecue, or hey, even at work. So we tested it out at first on a few dozen people.
         - Shockingly, after just a few pints, they started shouting nonsense and punching each other senseless. And still drinking beer at the same time!
@@ -867,7 +867,7 @@ products:
       og: '1.081'
       fg: '1.013'
       untappdId: 1977257
-      available: true
+      available: false
       description:
         - Joe is a pretty regular guy. Wakes up early, works his ass off all day long, and then gets back to bed late in the night.
         - Obviously, he goes through quite a few cups of java to maintain this fancy lifestyle.
@@ -942,7 +942,7 @@ products:
       og: '1.058'
       fg: '1.006'
       untappdId: 1951899
-      available: false
+      available: true
       description:
         - Lately, there’s been talk of a rather peculiar affair happening at the palace.
         - Each day, His Royal Highness dresses up in the fanciest robes and runs straight to the huge treasure room, where he locks himself up for almost half the day.
@@ -989,7 +989,7 @@ products:
       bg: '#9f80df'
       og: '1.059'
       fg: '1.014'
-      available: false
+      available: true
       untappdId: 1841181
       description:
         - Coconuts are weird. And not just because they look like huge mammoth balls.
@@ -1060,7 +1060,7 @@ products:
       og: '1.061'
       fg: '1.010'
       untappdId: 1841140
-      available: false
+      available: true
       description:
         - It’s a well known fact that the British people are not to be joked with, especially when it comes to their precious, warm, bland ales.
         - 'There’s a hidden chapter in their history that has lately resurfaced: For a short period of time, taverns served a tastier bitter ale, the rare English Very Special Bitter. It was brewed in accordance with the king’s secret recipe.'
