@@ -26,11 +26,25 @@
 .product__image {
   margin-bottom: 24px;
 
-  position: relative;
   height: 0;
   padding-top: 100%;
   background-size: cover;
   background-position: center center;
+
+  position: sticky;
+  top: 20px;
+
+  @include media-breakpoint-up(xs) {
+    top: 32px;
+  }
+
+  @include media-breakpoint-up(sm) {
+    top: 48px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    top: 72px;
+  }
 
   noscript & {
     position: absolute;
