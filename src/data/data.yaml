@@ -569,7 +569,7 @@ products:
       og: '1.042'
       fg: '1.005'
       untappdId: 2298502
-      available: false
+      available: true
       soon: false
       new: true
       description:
