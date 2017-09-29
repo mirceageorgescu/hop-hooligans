@@ -268,7 +268,7 @@ brewery:
             title: Yeast storage
             copy: |
               After fermentation is done we harvest the yeast and store it for later reuse. The yeast is kept in a dormant
-              state at almost freazing temperatura until needed in a new brew.
+              state at almost freazing temperature until needed in a new brew.
         - id: storage
           location:
             pitch: 0
@@ -533,28 +533,33 @@ products:
     href: /contact
   unavailable: Out of stock
   list:
-    - title: Crowd Control
+    - title: Game Over
       style: India Pale Ale
-      bg: '#65b3d7'
-      url: crowd-control
+      url: game-over
+      bg: '#7d5cab'
       abv: 6
       og: '1.061'
-      fg: '1.012'
-      featured: true
-      untappdId: 1833392
+      fg: '1.008'
+      untappdId: 2298504
       available: true
+      soon: false
+      featured: true
+      new: true
       description:
-        - You probably felt the undercurrent.
-        - The timid, squeamish whisper of something new, slowly but surely coming your way. It will not bring you false promises, like short-term bursts of delight and brief moments of pause from you daily toils. It will creep into your brain, hijack your senses, turn you into an addict and ultimately ruin you.
-        - In time, it will roar and thunder, and the cold, lifeless broadcast of the daily routine will be forever silenced. Not the usual type of cheap manipulation, but rather something that earns your appreciation.
-        - The best kind of Crowd Control.
-        - Achieve hop bliss.
+        - You might not be ready for this.
+        - We cleared out each and every bit of hop from our fridges and stuck it in this quadruple dry-hopped beast. That’s 4x, baby!
+        - We brushed up every tiny speck of lupulin powder, we hand-picked every stray hop pellet, we even squeezed the cleaning cloths.
+        - There’s no << retry >>. No << continue >>.
+        - No magic countdown to give you any chance of sticking in more coins for some extra lives.
+        - This is it.
+        - Game over.
+        - It’s been nice.
       ingredients:
         - Water
         - Malted Barley
         - Malted Wheat
         - Oats
-        - Hops
+        - Hops 30g/l (Columbus, Nelson Sauvin, El Dorado, Loral, Mosaic lupulin powder, Simcoe, Falconer's Flight)
         - Yeast
     - title: "Sourpuss: Blackberry"
       style: Berliner Weisse
@@ -565,7 +570,8 @@ products:
       fg: '1.005'
       untappdId: 2298502
       available: false
-      soon: true
+      soon: false
+      new: true
       description:
         - Be wary this season. There’s no telling what the night breeze might bring in through the window.
         - If misfortune has you in its sights, you might be receiving a surprise visit from a rather grim, dark figure that you’ll find paws deep into your booze cellar.
@@ -586,7 +592,7 @@ products:
     #   bg: '#7686c5'
     #   abv: 9
     #   og: '1.087'
-    #   fg: '1.020'
+    #   fg: '1.022'
     #   untappdId: #
     #   available: false
     #   soon: true
@@ -603,31 +609,28 @@ products:
     #     - Malted Rye
     #     - Hops
     #     - Yeast
-    - title: Game Over
+    - title: Crowd Control
       style: India Pale Ale
-      url: game-over
-      bg: '#7d5cab'
+      bg: '#65b3d7'
+      url: crowd-control
       abv: 6
       og: '1.061'
-      fg: '1.008'
-      untappdId: 2298504
-      available: false
-      soon: true
+      fg: '1.012'
+      featured: false
+      untappdId: 1833392
+      available: true
       description:
-        - You might not be ready for this.
-        - We cleared out each and every bit of hop from our fridges and stuck it in this quadruple dry-hopped beast. That’s 4x, baby!
-        - We brushed up every tiny speck of lupulin powder, we hand-picked every stray hop pellet, we even squeezed the cleaning cloths.
-        - There’s no << retry >>. No << continue >>.
-        - No magic countdown to give you any chance of sticking in more coins for some extra lives.
-        - This is it.
-        - Game over.
-        - It’s been nice.
+        - You probably felt the undercurrent.
+        - The timid, squeamish whisper of something new, slowly but surely coming your way. It will not bring you false promises, like short-term bursts of delight and brief moments of pause from you daily toils. It will creep into your brain, hijack your senses, turn you into an addict and ultimately ruin you.
+        - In time, it will roar and thunder, and the cold, lifeless broadcast of the daily routine will be forever silenced. Not the usual type of cheap manipulation, but rather something that earns your appreciation.
+        - The best kind of Crowd Control.
+        - Achieve hop bliss.
       ingredients:
         - Water
         - Malted Barley
         - Malted Wheat
         - Oats
-        - Lots of hops
+        - Hops
         - Yeast
     - title: Shock Therapy V5
       subtitle: 'Ekuanot single hop'
@@ -639,7 +642,7 @@ products:
       fg: '1.012'
       untappdId: 2268209
       available: true
-      new: true
+      new: false
       description:
         - 'WTF?! Another IPA?!'
         - 'Of course! Some people don’t know what’s good for them! So we will take it upon ourselves to educate. By force. We’ll strap you down to your bar stool, glue your eyelids open, accessorize you with a nice “harmless” metal hat and force feed you our own brand of medicine: hops!'
