@@ -4,7 +4,7 @@ meta:
   domain: https://www.hophooligans.ro
   image: /images/og/og.jpg
   title: Hop Hooligans Brewery
-  description: We only brew the beers we want to drink. And we like powerful, flavorful crazy shit.
+  description: We only brew the beer we want to drink. And we like powerful, flavorful crazy shit.
 
 header:
   logo:
@@ -25,7 +25,7 @@ social:
 nav:
   - copy: Home
     href: '/'
-  - copy: Our Beers
+  - copy: Our Beer
     href: '/beers.html'
   - copy: Our Brewery
     href: '/our-brewery.html'
@@ -48,11 +48,11 @@ home:
   hero:
     img: hero
     modifier: hero--full hero--dark
-    title: We only brew the beers<br>we want to drink.
+    title: We only brew the beer<br>we want to drink.
     subtitle: And we like powerful, flavorful crazy shit.
     cta:
       href: beers.html
-      copy: Explore our beers
+      copy: Explore our beer
   brewery:
     title: Our brewery
     subtitle: Explore our brewery in 3D virtual reality shit.
@@ -143,7 +143,7 @@ brewery:
           content:
             title: Maturation Vessel
             copy: |
-              This is where we keep our stronger beers a while longer to mature. We usually mature them on wood chips or
+              This is where we keep our stronger beer a while longer to mature. We usually mature them on wood chips or
               who knows what other crazy stuff we can think of.
         - id: bottling
           location:
@@ -526,7 +526,7 @@ beerMap:
       zoom: 14
 
 products:
-  title: Our beers
+  title: Our beer
   subtitle: Things we brew using our blood, sweat and tears.
   cta:
     copy: Buy now
