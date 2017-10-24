@@ -533,6 +533,30 @@ products:
     href: /contact
   unavailable: Out of stock
   list:
+    - title: Sinking Ship
+      style: Imperial Smoked Rye Porter
+      url: sinking-ship
+      bg: '#7686c5'
+      abv: 9
+      og: '1.087'
+      fg: '1.022'
+      untappdId: 2314276
+      available: false
+      soon: true
+      featured: true
+      description:
+        - Avast, ye mateys!
+        - No need fer battin’ down the hatches or pullin' up the Jolly Roger. There be no wild waves or cause fer pullin’ out yer cutlasses. ‘tis fer lack of caution that this here brig be scuttlin’ under our very feet.
+        - Bleedin’ scumbag stowaway from Sunstone Alehouse found his damned self playin’ with flame round our powder kegs, three sheets to the wind cause of our Captain’s special brew.
+        - Fetch the scurvy-ridden scallywag and make him dance the hempen jig by the mast! And get yer last jug of now smokey precious porter to have yer last giggle with yer fellow seadogs just before turnin’ all into sharkbait.
+        - If it be not to your likin’, well… dead men tell no tales.
+      ingredients:
+        - Water
+        - Beechwood smoked malt
+        - Malted Barley
+        - Malted Rye
+        - Hops
+        - Yeast
     - title: Game Over
       style: India Pale Ale
       url: game-over
@@ -543,7 +567,7 @@ products:
       untappdId: 2298504
       available: true
       soon: false
-      featured: true
+      featured: false
       new: true
       description:
         - You might not be ready for this.
@@ -586,29 +610,6 @@ products:
         - Hops
         - Yeast
         - Lactobacillus Helveticus
-    # - title: Sinking Ship
-    #   style: Imperial Smoked Rye Porter
-    #   url: sinking-ship
-    #   bg: '#7686c5'
-    #   abv: 9
-    #   og: '1.087'
-    #   fg: '1.022'
-    #   untappdId: #
-    #   available: false
-    #   soon: true
-    #   description:
-    #     - Avast, ye mateys!
-    #     - No need fer battin’ down the hatches or pullin' up the Jolly Roger. There be no wild waves or cause fer pullin’ out yer cutlasses. ‘tis fer lack of caution that this here brig be scuttlin’ under our very feet.
-    #     - Bleedin’ scumbag stowaway from Sunstone Alehouse found his damned self playin’ with flame round our powder kegs, three sheets to the wind cause of our Captain’s special brew.
-    #     - Fetch the scurvy-ridden scallywag and make him dance the hempen jig by the mast! And get yer last jug of now smokey precious porter to have yer last giggle with yer fellow seadogs just before turnin’ all into sharkbait.
-    #     - If it be not to your likin’, well… dead men tell no tales.
-    #   ingredients:
-    #     - Water
-    #     - Beechwood smoked malt
-    #     - Malted Barley
-    #     - Malted Rye
-    #     - Hops
-    #     - Yeast
     - title: Crowd Control
       style: India Pale Ale
       bg: '#65b3d7'
