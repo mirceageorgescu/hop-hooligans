@@ -556,7 +556,32 @@ products:
         - Beechwood smoked malt
         - Malted Barley
         - Malted Rye
-        - Hops
+        - Hops (Nugget)
+        - Yeast
+    - title: Shock Therapy V6
+      subtitle: 'Centennial & Mosaic'
+      style: India Pale Ale
+      url: shock-therapy-v6
+      bg: '#df4b4b'
+      abv: 6.5
+      og: '1.062'
+      fg: '1.012'
+      untappdId: 2356473
+      available: true
+      new: true
+      description:
+        - 'WTF?! Another IPA?!'
+        - 'Of course! Some people don’t know what’s good for them! So we will take it upon ourselves to educate. By force. We’ll strap you down to your bar stool, glue your eyelids open, accessorize you with a nice “harmless” metal hat and force feed you our own brand of medicine: hops!'
+        - Nevermind those zapping wires in the background... You’ll forget about them soon enough. If one form of treatment doesn’t work, there’s still time, we have a lot more lined up for you, it’s quite a busy schedule.
+        - If it’s not stated on the bottle, ask the closest nurse from this respectable medical institution about the exact version of the medicine.
+        - We keep changing the recipe. Just to make sure you get the best out of our
+        - Shock Therapy.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Oats
+        - Hops (Centennial & Mosaic)
         - Yeast
     - title: Game Over
       style: India Pale Ale
