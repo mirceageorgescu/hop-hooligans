@@ -537,6 +537,7 @@ products:
       style: Imperial Smoked Rye Porter
       url: sinking-ship
       bg: '#7686c5'
+      transparentImg: true
       abv: 9
       og: '1.087'
       fg: '1.022'

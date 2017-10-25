@@ -13,5 +13,6 @@ import Hashtag from './hashtag';
 import Reviews from './reviews';
 import Beermap from './beermap';
 import ContactMap from './contact-map';
+import Singing from './singing-ship';
 
 import * as mdl from './mdl';

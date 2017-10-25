@@ -272,6 +272,13 @@ gulp.task('fonts', function () {
     .pipe(gulp.dest('dist/fonts'));
 });
 
+// Copy audio files to dist
+gulp.task('audio', function () {
+  return gulp.src(['src/audio/**/*'])
+    .pipe($.plumber({errorHandler: $.notify.onError('Error: <%= error.message %>')}))
+    .pipe(gulp.dest('dist/audio'));
+});
+
 // Download API jsons to use for fallback
 gulp.task('api', function () {
 
@@ -312,6 +319,7 @@ gulp.task('default', ['clean'], function (cb) {
     'images',
     // 'resize',
     'svg',
+    'audio',
     'video',
     'fonts'
   ], cb);

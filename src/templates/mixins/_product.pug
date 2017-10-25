@@ -1,6 +1,6 @@
 mixin product(data)
 
-  section.section.text-center(style='background:' + locals.currentBeer.bg)
+  section.section.text-center.section--colored.js-colored(style='background-color:' + locals.currentBeer.bg, data-bg=locals.currentBeer.bg)
 
     article.container.product__container
       .row.hidden-md-up
@@ -18,7 +18,7 @@ mixin product(data)
 
       .row
         .col-12.col-md-6.col-lg-6.col-xxl-4.offset-xxl-2
-          +responsive-background('beers/' + data.url)(class='product__image')
+          +responsive-background('beers/' + data.url, data.transparentImg ? 'png' : 'jpg')(class='product__image')
 
         .product.col-12.col-md-6.col-lg-6.col-xxl-4
           header.product__header.hidden-sm-down

@@ -1,0 +1,38 @@
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+.product--sinking-ship {
+  .product__image {
+    mix-blend-mode: hard-light;
+  }
+  &.is-singing {
+    .section--colored,
+    .card-inverse,
+    .footer {
+      // background: linear-gradient(135deg, #f054ff 0%, #706dff 54%, #7db9e8 100%)!important;
+      background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB)!important;
+      background-size: 400% 400%!important;
+      animation: Gradient 15s ease infinite;
+    }
+  }
+  .card-inverse {
+    transition: none;
+    border: none;
+  }
+  .footer__nav {
+    border-top: none;
+  }
+  .footer__nav__link {
+    mix-blend-mode: screen;
+  }
+}
+
