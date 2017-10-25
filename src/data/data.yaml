@@ -630,10 +630,10 @@ products:
         - Next time drink your Berliner Weisses fresh, and maybe you won’t attract bad company such as the Sourpuss.
       ingredients:
         - Water
-        - Blackberries
+        - Blackberries (20%)
         - Malted Barley
         - Malted Wheat
-        - Hops
+        - Hops (Hallertau Mittelfrueh)
         - Yeast
         - Lactobacillus Helveticus
     - title: Crowd Control
@@ -657,7 +657,7 @@ products:
         - Malted Barley
         - Malted Wheat
         - Oats
-        - Hops
+        - Hops (Citra, Mosaic, Falconer's Flight, El Dorado, Simcoe)
         - Yeast
     - title: Shock Therapy V5
       subtitle: 'Ekuanot single hop'
@@ -682,7 +682,7 @@ products:
         - Malted Barley
         - Malted Wheat
         - Oats
-        - Hops
+        - Hops (Ekuanot)
         - Yeast
     - title: Sencha
       style: Japanese tea pale ale
@@ -704,11 +704,11 @@ products:
         - Water
         - Malted Barley
         - Malted Wheat
-        - Hops
+        - Hops (Simcoe, Crystal)
         - Yeast
         - Sencha tea leaves
     - title: Shock Therapy V4
-      subtitle: 'Falconer’s flight & Waimea'
+      subtitle: 'Falconer’s Flight & Waimea'
       style: India Pale Ale
       url: shock-therapy-v4
       bg: '#df4b4b'
@@ -730,7 +730,7 @@ products:
         - Malted Barley
         - Malted Wheat
         - Oats
-        - Hops
+        - Hops (Falconer’s Flight & Waimea)
         - Yeast
     - title: Nutbusters
       style: Coconut Vanilla Smoothie IPA
@@ -753,7 +753,7 @@ products:
         - Malted Wheat
         - Oats
         - Lactose
-        - Hops
+        - Hops (Columbus, Citra, Mosaic, El dorado)
         - Coconut flakes
         - Vanilla beans
         - Yeast
@@ -777,7 +777,7 @@ products:
         - Water
         - Malted Barley
         - Oats
-        - Hops
+        - Hops (Nugget, Bramling Cross)
         - Yeast
         - Matured on cherry barrel wood
     - title: Modern Mosaic
@@ -801,7 +801,7 @@ products:
         - Water
         - Malted Barley
         - Oats
-        - Lupulin Powder
+        - Mosaic Lupulin Powder
         - Yeast
     - title: Seven Years O'Clock
       style: India Pale Ale
@@ -819,7 +819,7 @@ products:
       ingredients:
         - Water
         - Malted Barley
-        - Hops
+        - Hops (Simcoe, Amarillo, Columbus)
         - Yeast
     - title: Shock Therapy V3
       subtitle: 'Simcoe & Azacca'
@@ -843,7 +843,7 @@ products:
         - Malted Barley
         - Malted Wheat
         - Oats
-        - Hops
+        - Hops (Simcoe, Azacca)
         - Yeast
     - title: Lederhosen
       style: Hefeweizen
@@ -864,7 +864,7 @@ products:
         - Water
         - Malted Barley
         - Malted Wheat
-        - Hops
+        - Hops (Hallertau Mittelfrueh)
         - Yeast
     - title: Fist Fight
       style: Session IPA
@@ -885,7 +885,7 @@ products:
         - Water
         - Malted Barley
         - Malted Wheat
-        - Hops
+        - Hops (Amarillo, Motueka)
         - Yeast
     - title: Melting pot
       style: English Barleywine
@@ -908,7 +908,7 @@ products:
         - Malted Barley
         - Oats
         - Demerara sugar
-        - Hops
+        - Hops (Nugget, Bramling Cross, East Kent Goldings, Target, Cascade)
         - Yeast
         - Matured on bourbon wood
     - title: Tonka Rush
@@ -933,7 +933,7 @@ products:
         - Malted Barley
         - Oats
         - Demerara Sugar
-        - Hops
+        - Hops (Nugget)
         - Tonka Beans
         - Coffee
         - Yeast
@@ -958,7 +958,7 @@ products:
         - Water
         - Malted Barley
         - Lactose
-        - Hops
+        - Hops (Simcoe, Mosaic, Northern Brewer)
         - Blueberries
         - Yeast
     - title: Shock Therapy V2
@@ -984,7 +984,7 @@ products:
         - Malted Barley
         - Malted Wheat
         - Oats
-        - Hops
+        - Hops (Hallertau Blanc & Hüll Melon)
         - Yeast
     - title: Emperor
       style: Mango Wheat Ale
@@ -1008,7 +1008,7 @@ products:
         - Water
         - Malted Barley
         - Malted Wheat
-        - Hops
+        - Hops (Simcoe, Mosaic, El Dorado)
         - Mango
         - Yeast
     - title: Shock Therapy V1
@@ -1033,7 +1033,7 @@ products:
         - Malted Barley
         - Malted Wheat
         - Oats
-        - Hops
+        - Hops (Rakau & Waimea)
         - Yeast
     - title: Cannon Fire
       style: Coconut Porter
@@ -1053,7 +1053,7 @@ products:
         - Water
         - Malted Barley
         - Oats
-        - Hops
+        - Hops (Northern Brewer, Bramling Cross)
         - Coconut
         - Yeast
     - title: Chupacabra
@@ -1076,7 +1076,7 @@ products:
         - Malted Barley
         - Oats
         - Lactose
-        - Hops
+        - Hops (Northern Brewer)
         - Cocoa nibs
         - Coffee
         - Cinnamon
@@ -1103,7 +1103,7 @@ products:
         - Water
         - Malted Barley
         - Oats
-        - Hops
+        - Hops (Centennial, Citra, Simcoe, Cascade)
         - Yeast
     - title: Royal Execution
       style: ESB
@@ -1122,7 +1122,7 @@ products:
       ingredients:
         - Water
         - Malted Barley
-        - Hops
+        - Hops (Target, East Kent Goldings, Sorachi Ace)
         - Yeast
     - title: Summer Punch
       style: American Pale Ale
@@ -1144,7 +1144,7 @@ products:
         - Malted Barley
         - Malted Wheat
         - Oats
-        - Hops
+        - Hops (Simcoe, Citra, Mosaic, El Dorado)
         - Yeast
     # - title: Coming soon
     #   isPlaceholder: true
