@@ -542,8 +542,8 @@ products:
       og: '1.087'
       fg: '1.022'
       untappdId: 2314276
-      available: false
-      soon: true
+      available: true
+      soon: false
       featured: true
       subtitle: Hop Hooligans & Sunstone Alehouse Collaboration
       description:
