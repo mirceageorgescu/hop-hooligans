@@ -543,6 +543,7 @@ products:
       fg: '1.022'
       untappdId: 2314276
       available: true
+      new: true
       soon: false
       featured: true
       subtitle: Hop Hooligans & Sunstone Alehouse Collaboration
