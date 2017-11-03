@@ -903,7 +903,7 @@ products:
       style: Session IPA
       new: false
       url: fist-fight
-      bg: '#7989ff'
+      bg: '#7c86d5'
       abv: 4.5
       og: '1.042'
       fg: '1.004'
@@ -948,7 +948,7 @@ products:
       style: Coffee Stout
       new: false
       url: tonka-rush
-      bg: '#b75b5d'
+      bg: '#ab4a4d'
       abv: 9
       og: '1.081'
       fg: '1.013'
@@ -1093,7 +1093,7 @@ products:
       style: Spiced Stout
       url: chupacabra
       abv: 8
-      bg: '#e2bc4a'
+      bg: '#dcb139'
       og: '1.074'
       fg: '1.020'
       untappdId: 1542767
@@ -1179,8 +1179,28 @@ products:
         - Oats
         - Hops (Simcoe, Citra, Mosaic, El Dorado)
         - Yeast
-    # - title: Coming soon
-    #   isPlaceholder: true
+    - title: Six years O'Clock
+      style: American Pale Ale
+      subtitle: Hop Hooligans & Ground Zero Collaboration
+      abv: 6
+      url: six-years-o-clock
+      bg: '#f5b00f'
+      og: '1.058'
+      fg: '1.010'
+      untappdId: 1540847
+      available: false
+      description:
+        - When local craft beer drinking hole Beer O'Clock decided to make something special for their six year anniversary, a tiny lightbulb lit up. Isn't it about time (bad pun intended!) for the first Romanian craft brewing collaboration?!
+        - New guys in town, Hop Hooligans, met up with the mad people at Ground Zero and teamed up.
+        - After much kicking, punching, swearing, screaming and breaking bottles, a juicy, tropical, overgenerously hopped IPA was born. A lot of sweat, blood and tears were spilled that day, some might've gotten in the beer, too.
+        - There was also a lot of passion involved here, but hey, a gentleman never tells!
+      ingredients:
+        - Water
+        - Malt (Maris Otter, Wheat, Rye, Caraaroma)
+        - Hops (Citra, Amarillo, Simcoe)
+        - Yeast (Lallemand American West Coast)
+    - title: Coming soon
+      isPlaceholder: true
     # - title: Coming soon
     #   isPlaceholder: true
 
