@@ -533,32 +533,36 @@ products:
     href: /contact
   unavailable: Out of stock
   list:
-    - title: Sinking Ship
-      style: Imperial Smoked Rye Porter
-      url: sinking-ship
-      bg: '#7686c5'
-      transparentImg: true
-      abv: 9
-      og: '1.087'
-      fg: '1.022'
-      untappdId: 2314276
-      available: true
-      new: true
-      soon: false
+    - title: Chunky Pith
+      style: Orange Chocolate Stout
+      url: chunky-pith
+      bg: '#e67721'
+      abv: 8.5
+      og: '1.080'
+      fg: '1.020'
+      untappdId: 2320173
+      available: false
+      new: false
+      soon: true
       featured: true
-      subtitle: Hop Hooligans & Sunstone Alehouse Collaboration
+      subtitle: Hop Hooligans & Hopcraft Brewing & Waen Beers Collaboration
       description:
-        - Avast, ye mateys!
-        - No need fer battin’ down the hatches or pullin' up the Jolly Roger. There be no wild waves or cause fer pullin’ out yer cutlasses. ‘tis fer lack of caution that this here brig be scuttlin’ under our very feet.
-        - Bleedin’ scumbag stowaway from Sunstone Alehouse found his damned self playin’ with flame round our powder kegs, three sheets to the wind cause of our Captain’s special brew.
-        - Fetch the scurvy-ridden scallywag and make him dance the hempen jig by the mast! And get yer last jug of now smokey precious porter to have yer last giggle with yer fellow seadogs just before turnin’ all into sharkbait.
-        - If it be not to your likin’, well… dead men tell no tales.
+        - You should feel him coming from quite some distance. His huge shadow enveloping everything around, your bones starting to shiver, pints starting to quiver on your table.
+        - And then you see his immense stature, his bushy, roughly brushed moustache, his big, burly arms with tacky prison tattoos that really aren’t just a fashion statement.
+        - You’ve definitely heard gruesome, violent stories about him.
+        - But don’t be afraid, Pith’s chosen to turn over a new leaf. He pushed aside his fury just to indulge in sweet chocolate bars and fresh, zesty oranges.
+        - A fresh, healthy start!
+        - Just don’t call him “fat”. Trust us. Maybe just… Chunky.
+        - Please?
       ingredients:
         - Water
-        - Beechwood smoked malt
         - Malted Barley
-        - Malted Rye
-        - Hops (Nugget)
+        - Oat Flakes
+        - Muscovado Sugar
+        - Lactose
+        - Cocoa Nibs
+        - Orange peel
+        - Hops
         - Yeast
     - title: Shock Therapy V6
       subtitle: 'Centennial & Mosaic'
@@ -584,6 +588,33 @@ products:
         - Malted Wheat
         - Oats
         - Hops (Centennial & Mosaic)
+        - Yeast
+    - title: Sinking Ship
+      style: Imperial Smoked Rye Porter
+      url: sinking-ship
+      bg: '#7686c5'
+      transparentImg: true
+      abv: 9
+      og: '1.087'
+      fg: '1.022'
+      untappdId: 2314276
+      available: true
+      new: true
+      soon: false
+      featured: false
+      subtitle: Hop Hooligans & Sunstone Alehouse Collaboration
+      description:
+        - Avast, ye mateys!
+        - No need fer battin’ down the hatches or pullin' up the Jolly Roger. There be no wild waves or cause fer pullin’ out yer cutlasses. ‘tis fer lack of caution that this here brig be scuttlin’ under our very feet.
+        - Bleedin’ scumbag stowaway from Sunstone Alehouse found his damned self playin’ with flame round our powder kegs, three sheets to the wind cause of our Captain’s special brew.
+        - Fetch the scurvy-ridden scallywag and make him dance the hempen jig by the mast! And get yer last jug of now smokey precious porter to have yer last giggle with yer fellow seadogs just before turnin’ all into sharkbait.
+        - If it be not to your likin’, well… dead men tell no tales.
+      ingredients:
+        - Water
+        - Beechwood smoked malt
+        - Malted Barley
+        - Malted Rye
+        - Hops (Nugget)
         - Yeast
     - title: Game Over
       style: India Pale Ale
@@ -1061,7 +1092,7 @@ products:
     - title: Chupacabra
       style: Spiced Stout
       url: chupacabra
-      abv: 7,5
+      abv: 8
       bg: '#e2bc4a'
       og: '1.074'
       fg: '1.020'
