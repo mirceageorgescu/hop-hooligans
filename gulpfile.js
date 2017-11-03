@@ -253,8 +253,8 @@ gulp.task('dev', ['default', 'setWatch'], function() {
   });
 
   gulp.watch(['src/styles/**/*.scss'], ['sass']);
-  gulp.watch(['src/images/**/*', '!src/images/resize/**/**'], ['images', reload]);
-  gulp.watch(['src/images/resize-src/**/*'], ['resize', reload]);
+  // gulp.watch(['src/images/**/*', '!src/images/resize/**/**'], ['images', reload]);
+  // gulp.watch(['src/images/resize-src/**/*'], ['resize', reload]);
   gulp.watch(['src/fonts/**/*'], ['fonts', reload]);
   gulp.watch(['src/jst/**/*'], ['jst', reload]);
   gulp.watch(['src/images/**/*'], ['images', reload]);
