@@ -1,7 +1,7 @@
 .btn {
   font-family: $font-primary;
   font-weight: bold;
-  transition: background 200ms ease-out, color 200ms ease-out;
+  transition: background 200ms ease-out, color 200ms ease-out, border-color 200ms ease-out;
 }
 
 .btn-primary {
@@ -16,9 +16,12 @@
 .btn-warning {
   &:active,
   &:visited,
+  &:hover,
   &:focus {
     color: black;
     box-shadow: none;
+    background-color: #ffff00;
+    border-color: #ffff00;
   }
 }
 
