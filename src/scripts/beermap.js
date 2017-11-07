@@ -19,10 +19,15 @@ class Beermap {
     this.initMap = this.initMap.bind(this);
     this.loadKmlLayer = this.loadKmlLayer.bind(this);
     this.updateMap = this.updateMap.bind(this);
+    this.updateActive = this.updateActive.bind(this);
 
     $('.js-cities-item').on('click', this.updateMap);
 
     this.initMap();
+
+    if(window.location.hash) {
+      this.updateActive(window.location.hash)
+    }
   }
 
   initMap() {
@@ -63,6 +68,17 @@ class Beermap {
 
     $('.js-cities-item').removeClass('btn-warning').addClass('btn-primary');
     $el.addClass('btn-warning');
+
+    history.pushState({}, "", '#' + $el.attr('data-id'));
+  }
+
+  updateActive(hash) {
+    var id = hash.replace('#', '')
+    var $item = $('.js-cities-list').find('[data-id=' + id + ']')
+
+    if($item.length === 1) {
+      $item.click();
+    }
   }
 }
 

@@ -9,7 +9,7 @@ mixin beer-map(data)
 
     .js-cities-list.text-center
       each item in data.cities
-        a.btn.btn-md.js-cities-item.vrview__btn(href='#', class= item.active ? 'btn-warning' : 'btn-primary', data-lat=item.lat, data-lng=item.lng, data-zoom=item.zoom)= item.copy
+        a.btn.btn-md.js-cities-item.vrview__btn(href='#', class= item.active ? 'btn-warning' : 'btn-primary', data-id=item.id, data-lat=item.lat, data-lng=item.lng, data-zoom=item.zoom)= item.copy
 
     .js-beermap.beer-map(data-map-id=data.mapId)
 

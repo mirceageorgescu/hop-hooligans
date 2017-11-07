@@ -492,35 +492,43 @@ beerMap:
   mapId: 1UnTzluVN3kl4AA2prcQp8vWxjdc
   cities:
     - copy: Bucharest
+      id: bucharest
       active: true
       lat: 44.439668270655226
       lng: 26.102045110680933
       zoom: 13
     - copy: Cluj
+      id: cluj
       lat: 46.76271916352077
       lng: 23.58405597814708
       zoom: 14
     - copy: Timisoara
+      id: timisoara
       lat: 45.755276644419126
       lng: 21.22457210402831
       zoom: 14
     - copy: Iasi
+      id: iasi
       lat: 47.170688674739594
       lng: 27.57522701888388
       zoom: 12
     - copy: Arad
+      id: arad
       lat: 46.16979026798762
       lng: 21.316728466992117
       zoom: 14
     - copy: Sibiu
+      id: sibiu
       lat: 45.80024868949094
       lng: 24.1580168064811
       zoom: 14
     - copy: Brasov
+      id: brasov
       lat: 45.64376659794689
       lng: 25.59306719999995
       zoom: 15
     - copy: Galati
+      id: galati
       lat: 45.433252748885195
       lng: 28.04887860262454
       zoom: 14
