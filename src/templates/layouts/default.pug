@@ -56,7 +56,13 @@ html
 
     +debug()
 
-    script(type='text/javascript') window.locals = !{JSON.stringify(locals, null, 2)}
+    //- only include brewery data on brewery page
+    - var breweryData = locals.page === 'our-brewery' ? locals.brewery : {}
+
+    //- include bare 🐻 necessities -- 60kb saving yay
+    - var trimmedLocals = { reviews: locals.reviews, brewery: breweryData, translations: locals.translations }
+
+    script(type='text/javascript') window.locals = !{JSON.stringify(trimmedLocals, null, 2)}
 
     script(type='text/javascript', src='/scripts/jst-' + locals.version + (locals.minify ? '.min' : '') + '.js', async)
     script(type='text/javascript', src='/scripts/app-' + locals.version + (locals.minify ? '.min' : '') + '.js', async)
