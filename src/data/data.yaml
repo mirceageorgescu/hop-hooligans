@@ -549,9 +549,9 @@ products:
       og: '1.080'
       fg: '1.020'
       untappdId: 2320173
-      available: false
-      new: false
-      soon: true
+      available: true
+      new: true
+      soon: false
       featured: true
       subtitle: Hop Hooligans & Hopcraft Brewing & Waen Beers Collaboration
       description:
