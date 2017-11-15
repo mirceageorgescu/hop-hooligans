@@ -1297,7 +1297,7 @@ contact:
 
 buy:
   title: awkward
-  subtitle: We're still working on a delivery system for humans like you.<br> You can buy our beer at the brewery, but don't forget to leave us a message first.
+  subtitle: We're still working on a delivery system for humans like you.<br> You can buy our beer at the brewery, but please let us know before you drop by.
   cta:
     href: contact.html
     copy: Contact us
