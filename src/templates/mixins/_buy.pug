@@ -1,7 +1,7 @@
 mixin buy(data)
 
   .section.section--full.section--dark
-    iframe.section__iframe(src='https://giphy.com/embed/3o6ozovtBb4wLpIVZ6')
+    iframe.section__iframe.js-random-gif(data-gifs=data.bg.join(','))
     .section__wrapper
       header.section__header.text-center
         h1.section__title= data.title
