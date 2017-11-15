@@ -115,10 +115,10 @@
   overflow: hidden;
   height: calc(100vh - 72px);
   @include media-breakpoint-up(sm) {
-    height: calc(100vh - 123px - 64px - 76px);
+    height: calc(100vh - 123px - 64px);
   }
   @include media-breakpoint-up(lg) {
-    height: calc(100vh - 221px - 76px - 94px);
+    height: calc(100vh - 221px - 76px);
   }
 
   .section__title {

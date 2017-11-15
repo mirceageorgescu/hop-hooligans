@@ -1255,10 +1255,10 @@ contact:
         value: RO35603101
       - title: Registry Number
         value: J23/477/05022016
-      - title: LEI Account
-        value: RO69UGBI0000792004182RON
-      - title: EUR Account
-        value: RO62UGBI0000792004183EUR
+      # - title: LEI Account
+      #   value: RO69UGBI0000792004182RON
+      # - title: EUR Account
+      #   value: RO62UGBI0000792004183EUR
   map:
     apiKey: AIzaSyDjqI3vXRv94I6NegKjbaLLqiFuQz5gjqY
     placeId: ChIJj10aJZEBrkAR3pIhWHdixTo
@@ -1305,3 +1305,9 @@ buy:
     - https://giphy.com/embed/3o6ozovtBb4wLpIVZ6
     - https://giphy.com/embed/1jDvQyhGd3L2g
     - https://giphy.com/embed/D7TPqyWCIR64o
+    - https://giphy.com/embed/7Vu4YRv1obshG
+    # # - https://giphy.com/embed/blPpTGDhn6hEI
+    # # - https://giphy.com/embed/S4R8ePSdrsGxG
+    - https://giphy.com/embed/R0MjFPwaGyRi0
+    # # - https://giphy.com/embed/SgaZMaG4VPewg
+    # - https://giphy.com/embed/DRy8G5x9DNkli
