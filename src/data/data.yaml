@@ -1222,7 +1222,6 @@ translations:
   soon: Soon
   comingSoon: Coming Soon
   rating: Rating
-  minimum: 20 bottles minimum
 
 reviews:
   title: Reviews
@@ -1292,7 +1291,16 @@ contact:
         required: true
     submit:
       copy: Send message
-
   thanks:
     title: Your message was sent
     subtitle: We'll get back to you as soon as possible
+
+buy:
+  title: awkward
+  subtitle: We're still working on a delivery system for humans like you.<br> We can work something out at the brewery, but don't forget to leave us a message first.
+  cta:
+    href: contact.html
+    copy: Contact us
+  randomBg:
+    - https://giphy.com/embed/3o6ozovtBb4wLpIVZ6
+    - https://giphy.com/embed/1jDvQyhGd3L2g

@@ -2,8 +2,8 @@ extends ../layouts/default
 
 block content
 
-  include ../mixins/_products
   include ../mixins/_footer
+  include ../mixins/_buy
 
-  +products(locals.products)
+  +buy(locals.buy)
   +footer(locals.nav)

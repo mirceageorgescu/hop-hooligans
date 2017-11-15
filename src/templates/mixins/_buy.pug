@@ -1,0 +1,9 @@
+mixin buy(data)
+
+  .section.section--full.section--dark
+    iframe.section__iframe(src='https://giphy.com/embed/3o6ozovtBb4wLpIVZ6')
+    .section__wrapper
+      header.section__header.text-center
+        h1.section__title= data.title
+        p.section__subtitle.hero__subtitle !{data.subtitle}
+        a.btn.btn-warning.btn-md.btn-uppercase(href=data.cta.href)= data.cta.copy

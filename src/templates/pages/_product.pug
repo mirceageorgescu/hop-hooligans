@@ -2,14 +2,10 @@ extends ../layouts/default
 
 block content
 
-  include ../mixins/_hashtag
-  include ../mixins/_the-end
   include ../mixins/_footer
   include ../mixins/_product
   include ../mixins/_product-reviews
 
   +product(locals.currentBeer)
   +product-reviews(locals.currentBeer)
-  //- +hashtag(locals.hashtag)
-  //- +the-end(locals.theEnd)
   +footer(locals.nav)

@@ -10,7 +10,7 @@
   padding: 32px;
 
   @include media-breakpoint-up(sm) {
-    padding: 64px 0;
+    padding: 64px 32px;
   }
   .section--light & {
     color: #222;
@@ -54,13 +54,6 @@
 
 .section--beta {
   background-color: #212121;
-  // this pattern was huge -- fuck it
-  // @include img-retina(
-  //   '../images/backgrounds/cartographer.png',
-  //   '../images/backgrounds/cartographer@2x.png',
-  //   500px,
-  //   499px
-  // )
 }
 
 .section--gamma {
@@ -91,6 +84,74 @@
     110px,
     110px
   )
+}
+
+.section__iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: none;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transform: scale(3);
+
+  @include media-breakpoint-up(md) {
+    transform: scale(2);
+  }
+  @include media-breakpoint-up(lg) {
+    transform: scale(1.5);
+  }
+  @include media-breakpoint-up(xl) {
+    transform: scale(1.7);
+  }
+}
+
+.section--full {
+  // padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh - 72px);
+  @include media-breakpoint-up(sm) {
+    height: calc(100vh - 123px - 64px - 76px);
+  }
+  @include media-breakpoint-up(lg) {
+    height: calc(100vh - 221px - 76px - 94px);
+  }
+
+  .section__title {
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 10px;
+
+    @include media-breakpoint-up(xs) {
+      font-size: 42px;
+    }
+
+    @include media-breakpoint-up(sm) {
+      font-size: 68px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 92px;
+    }
+  }
+}
+
+.section__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.4);
 }
 
 .section--b-0 {

@@ -2,13 +2,8 @@ extends ../layouts/default
 
 block content
 
-  include ../mixins/_products
-  include ../mixins/_hashtag
-  include ../mixins/_the-end
   include ../mixins/_footer
   include ../mixins/_contact
 
   +contact(locals.contact)
-
-  //- +the-end(locals.theEnd)
   +footer(locals.nav)
