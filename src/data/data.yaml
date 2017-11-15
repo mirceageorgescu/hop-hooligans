@@ -538,7 +538,7 @@ products:
   subtitle: Things we brew using our blood, sweat and tears.
   cta:
     copy: Buy now
-    href: /contact
+    href: /buy.html
   unavailable: Out of stock
   list:
     - title: Chunky Pith
