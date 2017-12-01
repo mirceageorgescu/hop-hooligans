@@ -633,7 +633,7 @@ products:
       fg: '1.022'
       untappdId: 2314276
       available: true
-      new: true
+      new: false
       soon: false
       featured: false
       subtitle: Hop Hooligans & Sunstone Alehouse Collaboration
@@ -661,7 +661,7 @@ products:
       available: true
       soon: false
       featured: false
-      new: true
+      new: false
       description:
         - You might not be ready for this.
         - We cleared out each and every bit of hop from our fridges and stuck it in this quadruple dry-hopped beast. That’s 4x, baby!
@@ -688,7 +688,7 @@ products:
       untappdId: 2298502
       available: true
       soon: false
-      new: true
+      new: false
       description:
         - Be wary this season. There’s no telling what the night breeze might bring in through the window.
         - If misfortune has you in its sights, you might be receiving a surprise visit from a rather grim, dark figure that you’ll find paws deep into your booze cellar.
