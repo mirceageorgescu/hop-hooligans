@@ -541,6 +541,32 @@ products:
     href: /buy.html
   unavailable: Out of stock
   list:
+    - title: Evergreen
+      style: Spruce Tip India Pale Ale
+      url: evergreen
+      bg: '#7cad43'
+      abv: 7
+      og: '1.064'
+      fg: '1.012'
+      untappdId: 2409045
+      available: true
+      new: true
+      soon: false
+      featured: true
+      description:
+        - Wanna know what a chick magnet really is? No, not a rooster covered in grain. Focus!
+        - It’s the burly, scruffy-looking lumberjack type that gets all the ladies crazy nowadays.
+        - But don’t go buying flannel shirts and avocado on toast just yet. Don’t drink PBR and don’t listen to Mumford & Sons ironically. And let’s not start with beard oil!
+        - Do it right! Be a true outdoorsman! Sleep under the open sky, drink tree sap, bathe in ice cold river water, eat small animals and tree bark!
+        - Maybe the occasional spruce tip to keep your stamina up.
+        - Ok, you can get the flannel shirt. People might think you’re homeless otherwise.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Hops
+        - Yeast
+        - Spruce tips
     - title: Chunky Pith
       style: Orange Chocolate Stout
       url: chunky-pith
@@ -552,7 +578,7 @@ products:
       available: true
       new: true
       soon: false
-      featured: true
+      featured: false
       subtitle: Hop Hooligans & Hopcraft Brewing & Waen Beers Collaboration
       description:
         - You should feel him coming from quite some distance. His huge shadow enveloping everything around, your bones starting to shiver, pints starting to quiver on your table.
