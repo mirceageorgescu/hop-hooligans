@@ -326,6 +326,7 @@ gulp.task('default', ['clean'], function (cb) {
     'images',
     // 'resize',
     'svg',
+    'admin',
     'audio',
     'video',
     'fonts'
