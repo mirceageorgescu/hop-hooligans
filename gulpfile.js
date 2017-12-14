@@ -279,6 +279,13 @@ gulp.task('audio', function () {
     .pipe(gulp.dest('dist/audio'));
 });
 
+// Copy satic admin files to dist
+gulp.task('admin', function () {
+  return gulp.src(['src/admin/**/*'])
+    .pipe($.plumber({errorHandler: $.notify.onError('Error: <%= error.message %>')}))
+    .pipe(gulp.dest('dist/admin'));
+});
+
 // Download API jsons to use for fallback
 gulp.task('api', function () {
 
