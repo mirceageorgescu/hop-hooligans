@@ -3,7 +3,7 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 publish_mode: editorial_workflow
 media_folder: "src/images/resize-src/beers" # Media files will be stored in the repo under images/uploads
-public_folder: "dist/images/resize-dist/beers"
+public_folder: "dist/images/resize-src/beers"
 collections:
   - name: "products" # Used in routes, e.g., /admin/collections/blog
     label: "Products" # Used in the UI
