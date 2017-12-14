@@ -281,7 +281,8 @@ gulp.task('audio', function () {
 
 // Copy satic admin files to dist
 gulp.task('admin', function () {
-  return gulp.src(['src/admin/**/*'])
+  console.log('copying the admin folder to dist');
+  return gulp.src(['src/admin/**'])
     .pipe($.plumber({errorHandler: $.notify.onError('Error: <%= error.message %>')}))
     .pipe(gulp.dest('dist/admin'));
 });
