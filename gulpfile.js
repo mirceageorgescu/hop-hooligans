@@ -317,7 +317,7 @@ gulp.task('default', ['clean'], function (cb) {
     'jst',
     'scripts',
     'images',
-    'resize',
+    // 'resize',
     'svg',
     'audio',
     'video',
