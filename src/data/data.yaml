@@ -541,6 +541,58 @@ products:
     href: /buy.html
   unavailable: Out of stock
   list:
+    - title: Winter Socks
+      style: Fig & Maple Winter Warmer
+      url: winter-socks
+      bg: '#229f2f'
+      abv: 9
+      og: '1.081'
+      fg: '1.016'
+      untappdId: 2436874
+      available: false
+      new: false
+      soon: true
+      featured: true
+      description:
+        - Winter time! Everybody’s favourite season! Glimmering seas of snow stretching as far as the eye can see. The muffled, but nostalgic sound of traditional carols through your window, as you peacefully sleep in your warm, cozy bed. And big, fluffy snowflakes dancing seductively as they float down on top of everything.
+        - Nevermind shovelling every morning for two hours in the freezing cold. Oh, and drunk kids on vacation shouting after midnight is just great for your beauty sleep!
+        - And the family getting together! And paying half your salary for a damn tree!
+        - Such a swell season! Wow! Magical! At least we got some sweet, gloopy, decadent alcoholic beverages to imbibe on.
+        - And Winter Socks.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Rye
+        - Figs
+        - Maple Syrup
+        - Hops
+        - Yeast
+    - title: Shock Therapy V7
+      subtitle: 'Sorachi Ace'
+      style: India Pale Ale
+      url: shock-therapy-v7
+      bg: '#df4b4b'
+      abv: 6.5
+      og: '1.062'
+      fg: '1.012'
+      untappdId: 2436878
+      available: false
+      soon: true
+      new: false
+      description:
+        - 'WTF?! Another IPA?!'
+        - 'Of course! Some people don’t know what’s good for them! So we will take it upon ourselves to educate. By force. We’ll strap you down to your bar stool, glue your eyelids open, accessorize you with a nice “harmless” metal hat and force feed you our own brand of medicine: hops!'
+        - Nevermind those zapping wires in the background... You’ll forget about them soon enough. If one form of treatment doesn’t work, there’s still time, we have a lot more lined up for you, it’s quite a busy schedule.
+        - If it’s not stated on the bottle, ask the closest nurse from this respectable medical institution about the exact version of the medicine.
+        - We keep changing the recipe. Just to make sure you get the best out of our
+        - Shock Therapy.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Oats
+        - Hops (Sorachi Ace)
+        - Yeast
     - title: Evergreen
       style: Spruce Tip India Pale Ale
       url: evergreen
@@ -552,7 +604,7 @@ products:
       available: true
       new: true
       soon: false
-      featured: true
+      featured: false
       description:
         - Wanna know what a chick magnet really is? No, not a rooster covered in grain. Focus!
         - It’s the burly, scruffy-looking lumberjack type that gets all the ladies crazy nowadays.
@@ -608,7 +660,7 @@ products:
       fg: '1.012'
       untappdId: 2356473
       available: true
-      new: true
+      new: false
       description:
         - 'WTF?! Another IPA?!'
         - 'Of course! Some people don’t know what’s good for them! So we will take it upon ourselves to educate. By force. We’ll strap you down to your bar stool, glue your eyelids open, accessorize you with a nice “harmless” metal hat and force feed you our own brand of medicine: hops!'
@@ -1234,10 +1286,10 @@ products:
         - Malt (Maris Otter, Wheat, Rye, Caraaroma)
         - Hops (Citra, Amarillo, Simcoe)
         - Yeast (Lallemand American West Coast)
-    # - title: Coming soon
-    #   isPlaceholder: true
-    # - title: Coming soon
-    #   isPlaceholder: true
+    - title: Coming soon
+      isPlaceholder: true
+    - title: Coming soon
+      isPlaceholder: true
 
 translations:
   abv: '% ABV'
