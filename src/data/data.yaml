@@ -549,9 +549,9 @@ products:
       og: '1.081'
       fg: '1.016'
       untappdId: 2436874
-      available: false
-      new: false
-      soon: true
+      available: true
+      new: true
+      soon: false
       featured: true
       description:
         - Winter time! Everybody’s favourite season! Glimmering seas of snow stretching as far as the eye can see. The muffled, but nostalgic sound of traditional carols through your window, as you peacefully sleep in your warm, cozy bed. And big, fluffy snowflakes dancing seductively as they float down on top of everything.
@@ -576,9 +576,9 @@ products:
       og: '1.062'
       fg: '1.012'
       untappdId: 2436878
-      available: false
-      soon: true
-      new: false
+      available: true
+      new: true
+      soon: false
       description:
         - 'WTF?! Another IPA?!'
         - 'Of course! Some people don’t know what’s good for them! So we will take it upon ourselves to educate. By force. We’ll strap you down to your bar stool, glue your eyelids open, accessorize you with a nice “harmless” metal hat and force feed you our own brand of medicine: hops!'
@@ -604,7 +604,6 @@ products:
       available: true
       new: true
       soon: false
-      featured: false
       description:
         - Wanna know what a chick magnet really is? No, not a rooster covered in grain. Focus!
         - It’s the burly, scruffy-looking lumberjack type that gets all the ladies crazy nowadays.
