@@ -532,6 +532,11 @@ beerMap:
       lat: 45.433252748885195
       lng: 28.04887860262454
       zoom: 14
+    - copy: Constanta
+      id: constanta
+      lat: 44.201145324877274
+      lng: 28.62829420990147
+      zoom: 14
 
 products:
   title: Our beer
