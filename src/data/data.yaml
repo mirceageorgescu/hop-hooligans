@@ -572,6 +572,31 @@ products:
         - Maple Syrup
         - Hops
         - Yeast
+    - title: "Sourpuss: Raspberry"
+      style: Berliner Weisse
+      url: sourpuss-raspberry
+      bg: '#fb5385'
+      abv: 5
+      og: '1.042'
+      fg: '1.005'
+      untappdId: 2474047
+      available: true
+      soon: true
+      new: false
+      description:
+        - Be wary this season. There’s no telling what the night breeze might bring in through the window.
+        - If misfortune has you in its sights, you might be receiving a surprise visit from a rather grim, dark figure that you’ll find paws deep into your booze cellar.
+        - This dandy gourmand is looking to gulp down only all of the most sour, tart, refreshing of your stocked brews, planning to turn himself into a real grouchy behemoth.
+        - You probably can't wait to turn those pulpy, fragrant raspberries from your fridge into a delicious breakfast smoothie, right?! Nope, think again!
+        - Next time drink your Berliner Weisses fresh, and maybe you won’t attract bad company such as the Sourpuss.
+      ingredients:
+        - Water
+        - Blackberries (13.5%)
+        - Malted Barley
+        - Malted Wheat
+        - Hops (Hallertau Mittelfrueh)
+        - Yeast
+        - Lactobacillus Plantarum
     - title: Shock Therapy V7
       subtitle: 'Sorachi Ace'
       style: India Pale Ale
@@ -1292,8 +1317,8 @@ products:
         - Yeast (Lallemand American West Coast)
     - title: Coming soon
       isPlaceholder: true
-    - title: Coming soon
-      isPlaceholder: true
+    # - title: Coming soon
+    #   isPlaceholder: true
 
 translations:
   abv: '% ABV'
