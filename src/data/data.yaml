@@ -1404,6 +1404,8 @@ products:
       isPlaceholder: true
     - title: Coming soon
       isPlaceholder: true
+    - title: Coming soon
+      isPlaceholder: true
 
 translations:
   abv: '% ABV'
