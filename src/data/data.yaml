@@ -619,18 +619,18 @@ products:
     #     - When chilling on the couch doesn’t do it anymore, you have to upgrade and get some serious hands-on  deep tissue massage. Really get in there!
     #     - Slide in a couple of extra bucks and you might even get a juicy, sloppy, exotic happy ending, packed with invigorating vitamins.
     #     - Just be sure they don’t bring out the gimp!
-      ingredients:
-        - Water
-        - Malted Barley
-        - Oat Flakes
-        - Malted Oats
-        - Malted Wheat
-        - Dextrin Malt
-        - Pineapple
-        - Passion Fruit
-        - Apricot
-        - Hops (Mosaic, Citra, Falconer's Flight)
-        - Yeast
+    #   ingredients:
+    #     - Water
+    #     - Malted Barley
+    #     - Oat Flakes
+    #     - Malted Oats
+    #     - Malted Wheat
+    #     - Dextrin Malt
+    #     - Pineapple
+    #     - Passion Fruit
+    #     - Apricot
+    #     - Hops (Mosaic, Citra, Falconer's Flight)
+    #     - Yeast
     - title: Shock Therapy V8
       subtitle: 'Citra & Ella'
       style: India Pale Ale
