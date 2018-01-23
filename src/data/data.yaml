@@ -601,36 +601,36 @@ products:
         - Hibiscus flowers
         - Yeast
         - Jalapeño Peppers
-    # - title: Pulp Friction
-    #   subtitle: Hop Hooligans & Bereta Collaboration
-    #   style: Pineapple, Passion Fruit, Apricot IPA
-    #   url: pulp-friction
-    #   bg: '#b954cf'
-    #   abv: 6.5
-    #   og: '1.062'
-    #   fg: '1.008'
-    #   untappdId: 2483620
-    #   available: false
-    #   new: false
-    #   soon: true
-    #   description:
-    #     - Work’s hard, and brewing work’s even harder.
-    #     - A lot of lifting and crouching puts a lot of stress on those pretty glutes and calves of yours.
-    #     - When chilling on the couch doesn’t do it anymore, you have to upgrade and get some serious hands-on  deep tissue massage. Really get in there!
-    #     - Slide in a couple of extra bucks and you might even get a juicy, sloppy, exotic happy ending, packed with invigorating vitamins.
-    #     - Just be sure they don’t bring out the gimp!
-    #   ingredients:
-    #     - Water
-    #     - Malted Barley
-    #     - Oat Flakes
-    #     - Malted Oats
-    #     - Malted Wheat
-    #     - Dextrin Malt
-    #     - Pineapple
-    #     - Passion Fruit
-    #     - Apricot
-    #     - Hops (Mosaic, Citra, Falconer's Flight)
-    #     - Yeast
+    - title: Pulp Friction
+      subtitle: Hop Hooligans & Bereta Collaboration
+      style: Pineapple, Passion Fruit, Apricot IPA
+      url: pulp-friction
+      bg: '#b954cf'
+      abv: 6.5
+      og: '1.062'
+      fg: '1.008'
+      untappdId: 2483620
+      available: false
+      new: false
+      soon: true
+      description:
+        - Work’s hard, and brewing work’s even harder.
+        - A lot of lifting and crouching puts a lot of stress on those pretty glutes and calves of yours.
+        - When chilling on the couch doesn’t do it anymore, you have to upgrade and get some serious hands-on  deep tissue massage. Really get in there!
+        - Slide in a couple of extra bucks and you might even get a juicy, sloppy, exotic happy ending, packed with invigorating vitamins.
+        - Just be sure they don’t bring out the gimp!
+      ingredients:
+        - Water
+        - Malted Barley
+        - Oat Flakes
+        - Malted Oats
+        - Malted Wheat
+        - Dextrin Malt
+        - Pineapple
+        - Passion Fruit
+        - Apricot
+        - Hops (Mosaic, Citra, Falconer's Flight)
+        - Yeast
     - title: Shock Therapy V8
       subtitle: 'Citra & Ella'
       style: India Pale Ale
