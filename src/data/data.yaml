@@ -546,32 +546,6 @@ products:
     href: /buy.html
   unavailable: Out of stock
   list:
-    - title: "Sourpuss: Raspberry"
-      style: Berliner Weisse
-      url: sourpuss-raspberry
-      bg: '#fb5385'
-      abv: 5
-      og: '1.042'
-      fg: '1.005'
-      untappdId: 2474047
-      available: true
-      soon: false
-      new: true
-      featured: true
-      description:
-        - Be wary this season. There’s no telling what the night breeze might bring in through the window.
-        - If misfortune has you in its sights, you might be receiving a surprise visit from a rather grim, dark figure that you’ll find paws deep into your booze cellar.
-        - This dandy gourmand is looking to gulp down only all of the most sour, tart, refreshing of your stocked brews, planning to turn himself into a real grouchy behemoth.
-        - You probably can't wait to turn those pulpy, fragrant raspberries from your fridge into a delicious breakfast smoothie, right?! Nope, think again!
-        - Next time drink your Berliner Weisses fresh, and maybe you won’t attract bad company such as the Sourpuss.
-      ingredients:
-        - Water
-        - Raspberries (13.5%)
-        - Malted Barley
-        - Malted Wheat
-        - Hops (Hallertau Mittelfrueh)
-        - Yeast
-        - Lactobacillus Plantarum
     - title: Heartbreaker
       subtitle: 'Hibiscus, Lime & Jalapeño IPA'
       style: India Pale Ale
@@ -581,9 +555,10 @@ products:
       og: '1.062'
       fg: '1.012'
       untappdId: 2483616
-      available: false
-      new: false
-      soon: true
+      available: true
+      new: true
+      soon: false
+      featured: true
       description:
         - Springtime. A special season of transition, of motion and emotion, passing from a monochromatic snow-laden picture to one that is fresh and vibrant.
         - It’s only natural to feel enticed by these new landscapes, to frolic and flourish for entire months, carelessly.
@@ -601,36 +576,61 @@ products:
         - Hibiscus flowers
         - Yeast
         - Jalapeño Peppers
-    # - title: Pulp Friction
-    #   subtitle: Hop Hooligans & Bereta Collaboration
-    #   style: Pineapple, Passion Fruit, Apricot IPA
-    #   url: pulp-friction
-    #   bg: '#b954cf'
-    #   abv: 6.5
-    #   og: '1.062'
-    #   fg: '1.008'
-    #   untappdId: 2483620
-    #   available: false
-    #   new: false
-    #   soon: true
-    #   description:
-    #     - Work’s hard, and brewing work’s even harder.
-    #     - A lot of lifting and crouching puts a lot of stress on those pretty glutes and calves of yours.
-    #     - When chilling on the couch doesn’t do it anymore, you have to upgrade and get some serious hands-on  deep tissue massage. Really get in there!
-    #     - Slide in a couple of extra bucks and you might even get a juicy, sloppy, exotic happy ending, packed with invigorating vitamins.
-    #     - Just be sure they don’t bring out the gimp!
-    #   ingredients:
-    #     - Water
-    #     - Malted Barley
-    #     - Oat Flakes
-    #     - Malted Oats
-    #     - Malted Wheat
-    #     - Dextrin Malt
-    #     - Pineapple
-    #     - Passion Fruit
-    #     - Apricot
-    #     - Hops (Mosaic, Citra, Falconer's Flight)
-    #     - Yeast
+    - title: Pulp Friction
+      subtitle: Hop Hooligans & Bereta Collaboration
+      style: Pineapple, Passion Fruit, Apricot IPA
+      url: pulp-friction
+      bg: '#b954cf'
+      abv: 6.5
+      og: '1.062'
+      fg: '1.008'
+      untappdId: 2483620
+      available: false
+      new: false
+      soon: true
+      description:
+        - Work’s hard, and brewing work’s even harder.
+        - A lot of lifting and crouching puts a lot of stress on those pretty glutes and calves of yours.
+        - When chilling on the couch doesn’t do it anymore, you have to upgrade and get some serious hands-on  deep tissue massage. Really get in there!
+        - Slide in a couple of extra bucks and you might even get a juicy, sloppy, exotic happy ending, packed with invigorating vitamins.
+        - Just be sure they don’t bring out the gimp!
+      ingredients:
+        - Water
+        - Malted Barley
+        - Oat Flakes
+        - Malted Oats
+        - Malted Wheat
+        - Dextrin Malt
+        - Pineapple
+        - Passion Fruit
+        - Apricot
+        - Hops (Mosaic, Citra, Falconer's Flight)
+        - Yeast
+    - title: "Sourpuss: Raspberry"
+      style: Berliner Weisse
+      url: sourpuss-raspberry
+      bg: '#fb5385'
+      abv: 5
+      og: '1.042'
+      fg: '1.005'
+      untappdId: 2474047
+      available: true
+      soon: false
+      new: true
+      description:
+        - Be wary this season. There’s no telling what the night breeze might bring in through the window.
+        - If misfortune has you in its sights, you might be receiving a surprise visit from a rather grim, dark figure that you’ll find paws deep into your booze cellar.
+        - This dandy gourmand is looking to gulp down only all of the most sour, tart, refreshing of your stocked brews, planning to turn himself into a real grouchy behemoth.
+        - You probably can't wait to turn those pulpy, fragrant raspberries from your fridge into a delicious breakfast smoothie, right?! Nope, think again!
+        - Next time drink your Berliner Weisses fresh, and maybe you won’t attract bad company such as the Sourpuss.
+      ingredients:
+        - Water
+        - Raspberries (13.5%)
+        - Malted Barley
+        - Malted Wheat
+        - Hops (Hallertau Mittelfrueh)
+        - Yeast
+        - Lactobacillus Plantarum
     - title: Shock Therapy V8
       subtitle: 'Citra & Ella'
       style: India Pale Ale
@@ -1404,8 +1404,8 @@ products:
       isPlaceholder: true
     - title: Coming soon
       isPlaceholder: true
-    - title: Coming soon
-      isPlaceholder: true
+    # - title: Coming soon
+    #   isPlaceholder: true
 
 translations:
   abv: '% ABV'
