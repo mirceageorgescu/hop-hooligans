@@ -541,6 +541,29 @@ products:
     href: /buy.html
   unavailable: Out of stock
   list:
+    - title: Crowd Control
+      style: India Pale Ale
+      bg: '#65b3d7'
+      url: crowd-control
+      abv: 6
+      og: '1.061'
+      fg: '1.012'
+      featured: true
+      untappdId: 1833392
+      available: true
+      description:
+        - You probably felt the undercurrent.
+        - The timid, squeamish whisper of something new, slowly but surely coming your way. It will not bring you false promises, like short-term bursts of delight and brief moments of pause from you daily toils. It will creep into your brain, hijack your senses, turn you into an addict and ultimately ruin you.
+        - In time, it will roar and thunder, and the cold, lifeless broadcast of the daily routine will be forever silenced. Not the usual type of cheap manipulation, but rather something that earns your appreciation.
+        - The best kind of Crowd Control.
+        - Achieve hop bliss.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Oats
+        - Hops (Citra, Mosaic, Falconer's Flight, El Dorado, Simcoe)
+        - Yeast
     - title: Heartbreaker
       subtitle: 'Hibiscus, Lime & Jalapeño IPA'
       style: India Pale Ale
@@ -551,9 +574,9 @@ products:
       fg: '1.012'
       untappdId: 2483616
       available: true
-      new: true
+      new: false
       soon: false
-      featured: true
+      featured: false
       description:
         - Springtime. A special season of transition, of motion and emotion, passing from a monochromatic snow-laden picture to one that is fresh and vibrant.
         - It’s only natural to feel enticed by these new landscapes, to frolic and flourish for entire months, carelessly.
@@ -582,7 +605,7 @@ products:
       untappdId: 2483620
       available: false
       new: false
-      soon: true
+      soon: false
       description:
         - Work’s hard, and brewing work’s even harder.
         - A lot of lifting and crouching puts a lot of stress on those pretty glutes and calves of yours.
@@ -611,7 +634,7 @@ products:
       untappdId: 2474047
       available: true
       soon: false
-      new: true
+      new: false
       description:
         - Be wary this season. There’s no telling what the night breeze might bring in through the window.
         - If misfortune has you in its sights, you might be receiving a surprise visit from a rather grim, dark figure that you’ll find paws deep into your booze cellar.
@@ -637,7 +660,7 @@ products:
       untappdId: 2483615
       available: false
       new: false
-      soon: true
+      soon: false
       description:
         - 'WTF?! Another IPA?!'
         - 'Of course! Some people don’t know what’s good for them! So we will take it upon ourselves to educate. By force. We’ll strap you down to your bar stool, glue your eyelids open, accessorize you with a nice “harmless” metal hat and force feed you our own brand of medicine: hops!'
@@ -661,7 +684,7 @@ products:
       fg: '1.016'
       untappdId: 2436874
       available: true
-      new: true
+      new: false
       soon: false
       description:
         - Winter time! Everybody’s favourite season! Glimmering seas of snow stretching as far as the eye can see. The muffled, but nostalgic sound of traditional carols through your window, as you peacefully sleep in your warm, cozy bed. And big, fluffy snowflakes dancing seductively as they float down on top of everything.
