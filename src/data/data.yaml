@@ -1616,8 +1616,8 @@ products:
         - Yeast (Lallemand American West Coast)
     - title: Coming soon
       isPlaceholder: true
-    - title: Coming soon
-      isPlaceholder: true
+    # - title: Coming soon
+    #   isPlaceholder: true
     # - title: Coming soon
     #   isPlaceholder: true
 
