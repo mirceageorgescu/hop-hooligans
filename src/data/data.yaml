@@ -527,11 +527,6 @@ beerMap:
       lat: 45.64376659794689
       lng: 25.59306719999995
       zoom: 15
-    - copy: Galati
-      id: galati
-      lat: 45.433252748885195
-      lng: 28.04887860262454
-      zoom: 14
     - copy: Constanta
       id: constanta
       lat: 44.201145324877274
