@@ -564,6 +564,178 @@ products:
         - Oats
         - Hops (Citra, Mosaic, Falconer's Flight, El Dorado, Simcoe)
         - Yeast
+    - title: Shock Therapy V11
+      subtitle: Citra
+      style: India Pale Ale
+      url: shock-therapy-v11
+      bg: '#df4b4b'
+      abv: 6.5
+      og: '1.062'
+      fg: '1.012'
+      untappdId: 2655001
+      available: false
+      new: false
+      soon: false
+      description:
+        - 'WTF?! Another IPA?!'
+        - 'Of course! Some people don’t know what’s good for them! So we will take it upon ourselves to educate. By force. We’ll strap you down to your bar stool, glue your eyelids open, accessorize you with a nice “harmless” metal hat and force feed you our own brand of medicine: hops!'
+        - Nevermind those zapping wires in the background... You’ll forget about them soon enough. If one form of treatment doesn’t work, there’s still time, we have a lot more lined up for you, it’s quite a busy schedule.
+        - If it’s not stated on the bottle, ask the closest nurse from this respectable medical institution about the exact version of the medicine.
+        - We keep changing the recipe. Just to make sure you get the best out of our
+        - Shock Therapy.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Oats
+        - Hops (Citra)
+        - Yeast
+    - title: "Eight Years O'Clock"
+      subtitle: Bereta TM and Ground Zero collab
+      style: India Pale Ale
+      url: eight-years
+      bg: '#131313'
+      abv: 6
+      og: '1.057'
+      fg: '1.012'
+      untappdId: 2640966
+      available: false
+      new: false
+      soon: false
+      description:
+        - ""
+      ingredients:
+        - Water
+        - Malted Barley
+        - Hops (Azacca)
+        - Yeast
+    - title: Time
+      style: 'Imperial Stout aged on Chocolate, Coffee & Vanilla'
+      url: time
+      bg: '#41554c'
+      abv: 11
+      og: '1.104'
+      fg: '1.031'
+      untappdId: 2618997
+      available: true
+      new: false
+      soon: false
+      description:
+        - There is nothing more important or fragile than time.
+        - Cherish every moment.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Flaked Oats
+        - Hops
+        - Yeast
+        - Cocoa Nibs
+        - Coffee
+        - Vanilla
+    - title: Shock Therapy V10
+      subtitle: Azacca
+      style: India Pale Ale
+      url: shock-therapy-v10
+      bg: '#df4b4b'
+      abv: 6.5
+      og: '1.062'
+      fg: '1.012'
+      untappdId: 2606767
+      available: false
+      new: false
+      soon: false
+      description:
+        - 'WTF?! Another IPA?!'
+        - 'Of course! Some people don’t know what’s good for them! So we will take it upon ourselves to educate. By force. We’ll strap you down to your bar stool, glue your eyelids open, accessorize you with a nice “harmless” metal hat and force feed you our own brand of medicine: hops!'
+        - Nevermind those zapping wires in the background... You’ll forget about them soon enough. If one form of treatment doesn’t work, there’s still time, we have a lot more lined up for you, it’s quite a busy schedule.
+        - If it’s not stated on the bottle, ask the closest nurse from this respectable medical institution about the exact version of the medicine.
+        - We keep changing the recipe. Just to make sure you get the best out of our
+        - Shock Therapy.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Oats
+        - Hops (Azacca)
+        - Yeast
+    - title: Why The Long Face
+      style: Cinnamon Raisin Oatmeal Stout
+      bg: '#d9ae3d'
+      url: wtlf
+      abv: 7.5
+      og: '1.074'
+      fg: '1.022'
+      featured: false
+      untappdId: 2578177
+      available: true
+      description:
+        - A horse walks into a bar.
+        - And now you’re all waiting for the punchline.
+        - Nobody’s considering that the horse actually had a really bad day.
+        - He’s making too few bucks at work. His nightmare of a wife ran away with his stallion neighbour.
+        - Plus he hasn’t been hitting the hay that much lately. Nothing in his life is stable anymore!
+        - Pretty sure he’s not in the mood for someone else’s manure.
+        - So quit foaling around, pony up, saddle up, and hoof it outta here!
+        - And stop it with the puns!
+      ingredients:
+        - Water
+        - Malted Barley
+        - Oat Flakes
+        - Malted Wheat
+        - Hops
+        - Yeast
+        - Raisins
+        - Lactose
+        - Cinnamon
+    - title: New Lands
+      style: Norwegian Farmhouse IPA
+      bg: '#359b84'
+      url: new-lands
+      abv: 7.5
+      og: '1.065'
+      fg: '1.010'
+      featured: false
+      untappdId: 2566152
+      available: false
+      description:
+        - Cooking up this collaboration beer with Wicked Barrel was kinda like a trip.
+        - We started off our journey on top of the small, new kveik bandwagon.
+        - After that we went a bit back to Ancient times, for some fat bags of spelt malt.
+        - And then we settled Down Under, bringing in funky, tropical hops.
+        - Not the smartest move, going in blind like that, but that fits our profile.
+        - Besides, without courage, taking risks and a bit of madness, you can’t really discover New Lands.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Spelt Malt
+        - Hops (Vic Sectret, Waimea)
+        - Yeast (Voss Kveik)
+    - title: Shock Therapy V9
+      subtitle: "Falconer's Flight"
+      style: India Pale Ale
+      url: shock-therapy-v9
+      bg: '#df4b4b'
+      abv: 6.5
+      og: '1.062'
+      fg: '1.012'
+      untappdId: 2543954
+      available: false
+      new: false
+      soon: false
+      description:
+        - 'WTF?! Another IPA?!'
+        - 'Of course! Some people don’t know what’s good for them! So we will take it upon ourselves to educate. By force. We’ll strap you down to your bar stool, glue your eyelids open, accessorize you with a nice “harmless” metal hat and force feed you our own brand of medicine: hops!'
+        - Nevermind those zapping wires in the background... You’ll forget about them soon enough. If one form of treatment doesn’t work, there’s still time, we have a lot more lined up for you, it’s quite a busy schedule.
+        - If it’s not stated on the bottle, ask the closest nurse from this respectable medical institution about the exact version of the medicine.
+        - We keep changing the recipe. Just to make sure you get the best out of our
+        - Shock Therapy.
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Wheat
+        - Oats
+        - "Hops (Falconer's Flight)"
+        - Yeast
     - title: Heartbreaker
       subtitle: 'Hibiscus, Lime & Jalapeño IPA'
       style: India Pale Ale
@@ -573,7 +745,7 @@ products:
       og: '1.062'
       fg: '1.012'
       untappdId: 2483616
-      available: true
+      available: false
       new: false
       soon: false
       featured: false
@@ -594,6 +766,30 @@ products:
         - Hibiscus flowers
         - Yeast
         - Jalapeño Peppers
+    - title: Screwed Up IPA
+      subtitle: Hop Hooligans & Hophead Collaboration
+      style: Triple dry-hopped rye IPA
+      url: screwed-up
+      bg: '#d7bd32'
+      abv: 7.5
+      og: '1.070'
+      fg: '1.012'
+      untappdId: 2504565
+      available: false
+      new: false
+      soon: false
+      description:
+        - This collaboration brew is all about courage, maturity, self discovery, mortality and other deep, thoughtful things like that.
+        - It’s about stepping out of line, ruffling the wrong bird’s feathers and facing the consequences.
+        - Or maybe we just accidentally added unapologetic amounts of hops in it and now we’re trying to play it cool and smart.
+        - And no, it’s not a reference to Duck Hunt!
+      ingredients:
+        - Water
+        - Malted Barley
+        - Malted Rye
+        - Malted Wheat
+        - Hops (Chinook, Centennial, Citra, Mosaic)
+        - Yeast
     - title: Pulp Friction
       subtitle: Hop Hooligans & Bereta Collaboration
       style: Pineapple, Passion Fruit, Apricot IPA
@@ -632,7 +828,7 @@ products:
       og: '1.042'
       fg: '1.005'
       untappdId: 2474047
-      available: true
+      available: false
       soon: false
       new: false
       description:
@@ -759,7 +955,7 @@ products:
       og: '1.080'
       fg: '1.020'
       untappdId: 2320173
-      available: true
+      available: false
       new: false
       soon: false
       featured: false
@@ -791,7 +987,7 @@ products:
       og: '1.062'
       fg: '1.012'
       untappdId: 2356473
-      available: true
+      available: false
       new: false
       description:
         - 'WTF?! Another IPA?!'
@@ -870,7 +1066,7 @@ products:
       og: '1.042'
       fg: '1.005'
       untappdId: 2298502
-      available: true
+      available: false
       soon: false
       new: false
       description:
@@ -919,7 +1115,7 @@ products:
       og: '1.062'
       fg: '1.012'
       untappdId: 2268209
-      available: true
+      available: false
       new: false
       description:
         - 'WTF?! Another IPA?!'
@@ -1016,7 +1212,7 @@ products:
       og: '1.110'
       fg: '1.034'
       untappdId: 2071031
-      available: true
+      available: false
       new: false
       description:
         - Tremble and despair, mortals! An ageless demon, an infernal force of nature has broken its shackles and is now hacking and slashing his way throughout the land. He's munching on little children, stealing future wives and setting your homes ablaze. Your pain is his life force!
@@ -1039,7 +1235,7 @@ products:
       og: '1.078'
       fg: '1.014'
       untappdId: 2100783
-      available: true
+      available: false
       new: false
       description:
         - A few years ago a silent competition started between hop growers. No longer were the grassy, citrusy, spicy breeds enough for the fancy beer connoisseurs.
@@ -1126,7 +1322,7 @@ products:
       og: '1.042'
       fg: '1.004'
       untappdId: 2006973
-      available: true
+      available: false
       description:
         - We tried to create a perfect session IPA, one that you could drink tons of. At the beach, at a barbecue, or hey, even at work. So we tested it out at first on a few dozen people.
         - Shockingly, after just a few pints, they started shouting nonsense and punching each other senseless. And still drinking beer at the same time!
@@ -1147,7 +1343,7 @@ products:
       og: '1.105'
       fg: '1.012'
       untappdId: 2006982
-      available: true
+      available: false
       description:
         - Will it all fit in? What if it gets stuck? Will we have enough wood? How much longer will it take?
         - Nope, nothing dirty here, just a few things to consider when brewing a solid barleywine. But be sure you do it with the windows closed anyway.
@@ -1246,7 +1442,7 @@ products:
       og: '1.058'
       fg: '1.006'
       untappdId: 1951899
-      available: true
+      available: false
       description:
         - Lately, there’s been talk of a rather peculiar affair happening at the palace.
         - Each day, His Royal Highness dresses up in the fanciest robes and runs straight to the huge treasure room, where he locks himself up for almost half the day.
@@ -1293,7 +1489,7 @@ products:
       bg: '#9f80df'
       og: '1.059'
       fg: '1.014'
-      available: true
+      available: false
       untappdId: 1841181
       description:
         - Coconuts are weird. And not just because they look like huge mammoth balls.
@@ -1316,7 +1512,7 @@ products:
       og: '1.074'
       fg: '1.020'
       untappdId: 1542767
-      available: false
+      available: true
       description:
         - Everybody knows of the vicious, terrible, goat-sucking creature that strikes fear into the hearts of every poblano down in Mexico.
         - It might be an ugly midget-bear, it might be a hairless mutt, or even some kind of alien, but no footage was ever clear. And it’s been like this for decades. Maybe it got bored of goats?
@@ -1344,7 +1540,7 @@ products:
       og: '1.062'
       fg: '1.012'
       untappdId: 1843779
-      available: true
+      available: false
       description:
         - You might be able to carelessly tuck yourself in and sleep soundly after a long stressful day. But right outside your window the city continues to suffer on its own.
         - Car alarms, music, laughter, sirens, stray dogs, broken glass, drunkards singing, bums fighting it out in the alleys and maybe some people even start redecorating their homes at these late hours.
@@ -1365,7 +1561,7 @@ products:
       og: '1.061'
       fg: '1.010'
       untappdId: 1841140
-      available: true
+      available: false
       description:
         - It’s a well known fact that the British people are not to be joked with, especially when it comes to their precious, warm, bland ales.
         - 'There’s a hidden chapter in their history that has lately resurfaced: For a short period of time, taverns served a tastier bitter ale, the rare English Very Special Bitter. It was brewed in accordance with the king’s secret recipe.'
